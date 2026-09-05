@@ -1,0 +1,366 @@
+bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+[info] welcome to sbt 1.13.0 (Eclipse Adoptium Java 25.0.4.1)
+[info] loading settings for project scala-effect-bench-build from plugins.sbt...
+[info] loading project definition from /workspaces/scala-effect-bench/project
+[info] loading settings for project root from build.sbt...
+[info] set current project to scala-effect-bench (in build file:/workspaces/scala-effect-bench/)
+[info] running (fork) org.openjdk.jmh.generators.bytecode.JmhBytecodeGenerator /workspaces/scala-effect-bench/bench/target/scala-3.8.4/classes /workspaces/scala-effect-bench/bench/target/scala-3.8.4/src_managed/jmh /workspaces/scala-effect-bench/bench/target/scala-3.8.4/resource_managed/jmh default
+[info] Processing 299 classes from /workspaces/scala-effect-bench/bench/target/scala-3.8.4/classes with "reflection" generator
+[info] Writing out Java source to /workspaces/scala-effect-bench/bench/target/scala-3.8.4/src_managed/jmh and resources to /workspaces/scala-effect-bench/bench/target/scala-3.8.4/resource_managed/jmh
+[info] compiling 7 Java sources to /workspaces/scala-effect-bench/bench/target/scala-3.8.4/classes ...
+[info] done compiling
+[info] running (fork) org.openjdk.jmh.Main -i 3 -wi 2 -f 1 -r 1s -w 1s -rf json -rff /workspaces/scala-effect-bench/results/isolation-semaphore.json .*SemaphoreIsolationBench.*
+[error] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[error] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/workspaces/scala-effect-bench/target/bg-jobs/sbt_50d13d5f/target/4fc75ae5/1296d6b9/jmh-core-1.37.jar)
+[error] WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+[error] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] # JMH version: 1.37
+[info] # VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
+[info] # VM invoker: /usr/lib/jvm/temurin-25-jdk-arm64/bin/java
+[info] # VM options: --add-opens=java.base/java.lang=ALL-UNNAMED
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 2 iterations, 1 s each
+[info] # Measurement: 3 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Throughput, ops/time
+[info] # Benchmark: bench.SemaphoreIsolationBench.ceMiniSemaphore
+[info] # Parameters: (fibers = 8, permits = 1)
+[info] # Run progress: 0.00% complete, ETA 00:01:00
+[info] # Fork: 1 of 1
+[info] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/workspaces/scala-effect-bench/target/bg-jobs/sbt_50d13d5f/target/4fc75ae5/1296d6b9/jmh-core-1.37.jar)
+[info] WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] # Warmup Iteration   1: 498.441 ops/s
+[info] # Warmup Iteration   2: 1027.011 ops/s
+[info] Iteration   1: 1048.855 ops/s
+[info] Iteration   2: 1163.281 ops/s
+[info] Iteration   3: 1215.353 ops/s
+[info] Result "bench.SemaphoreIsolationBench.ceMiniSemaphore":
+[info]   1142.496 ?(99.9%) 1553.870 ops/s [Average]
+[info]   (min, avg, max) = (1048.855, 1142.496, 1215.353), stdev = 85.173
+[info]   CI (99.9%): [? 0, 2696.366] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
+[info] # VM invoker: /usr/lib/jvm/temurin-25-jdk-arm64/bin/java
+[info] # VM options: --add-opens=java.base/java.lang=ALL-UNNAMED
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 2 iterations, 1 s each
+[info] # Measurement: 3 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Throughput, ops/time
+[info] # Benchmark: bench.SemaphoreIsolationBench.ceMiniSemaphore
+[info] # Parameters: (fibers = 8, permits = 8)
+[info] # Run progress: 8.33% complete, ETA 00:00:56
+[info] # Fork: 1 of 1
+[info] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/workspaces/scala-effect-bench/target/bg-jobs/sbt_50d13d5f/target/4fc75ae5/1296d6b9/jmh-core-1.37.jar)
+[info] WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] # Warmup Iteration   1: 1602.196 ops/s
+[info] # Warmup Iteration   2: 3669.258 ops/s
+[info] Iteration   1: 3813.411 ops/s
+[info] Iteration   2: 3791.403 ops/s
+[info] Iteration   3: 3901.880 ops/s
+[info] Result "bench.SemaphoreIsolationBench.ceMiniSemaphore":
+[info]   3835.564 ?(99.9%) 1066.812 ops/s [Average]
+[info]   (min, avg, max) = (3791.403, 3835.564, 3901.880), stdev = 58.476
+[info]   CI (99.9%): [2768.752, 4902.377] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
+[info] # VM invoker: /usr/lib/jvm/temurin-25-jdk-arm64/bin/java
+[info] # VM options: --add-opens=java.base/java.lang=ALL-UNNAMED
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 2 iterations, 1 s each
+[info] # Measurement: 3 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Throughput, ops/time
+[info] # Benchmark: bench.SemaphoreIsolationBench.ceMiniSemaphore
+[info] # Parameters: (fibers = 64, permits = 1)
+[info] # Run progress: 16.67% complete, ETA 00:00:51
+[info] # Fork: 1 of 1
+[info] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/workspaces/scala-effect-bench/target/bg-jobs/sbt_50d13d5f/target/4fc75ae5/1296d6b9/jmh-core-1.37.jar)
+[info] WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] # Warmup Iteration   1: 64.958 ops/s
+[info] # Warmup Iteration   2: 127.672 ops/s
+[info] Iteration   1: 130.516 ops/s
+[info] Iteration   2: 133.216 ops/s
+[info] Iteration   3: 131.543 ops/s
+[info] Result "bench.SemaphoreIsolationBench.ceMiniSemaphore":
+[info]   131.758 ?(99.9%) 24.858 ops/s [Average]
+[info]   (min, avg, max) = (130.516, 131.758, 133.216), stdev = 1.363
+[info]   CI (99.9%): [106.900, 156.617] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
+[info] # VM invoker: /usr/lib/jvm/temurin-25-jdk-arm64/bin/java
+[info] # VM options: --add-opens=java.base/java.lang=ALL-UNNAMED
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 2 iterations, 1 s each
+[info] # Measurement: 3 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Throughput, ops/time
+[info] # Benchmark: bench.SemaphoreIsolationBench.ceMiniSemaphore
+[info] # Parameters: (fibers = 64, permits = 8)
+[info] # Run progress: 25.00% complete, ETA 00:00:46
+[info] # Fork: 1 of 1
+[info] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/workspaces/scala-effect-bench/target/bg-jobs/sbt_50d13d5f/target/4fc75ae5/1296d6b9/jmh-core-1.37.jar)
+[info] WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] # Warmup Iteration   1: 130.589 ops/s
+[info] # Warmup Iteration   2: 260.278 ops/s
+[info] Iteration   1: 264.656 ops/s
+[info] Iteration   2: 259.200 ops/s
+[info] Iteration   3: 261.655 ops/s
+[info] Result "bench.SemaphoreIsolationBench.ceMiniSemaphore":
+[info]   261.837 ?(99.9%) 49.849 ops/s [Average]
+[info]   (min, avg, max) = (259.200, 261.837, 264.656), stdev = 2.732
+[info]   CI (99.9%): [211.988, 311.686] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
+[info] # VM invoker: /usr/lib/jvm/temurin-25-jdk-arm64/bin/java
+[info] # VM options: --add-opens=java.base/java.lang=ALL-UNNAMED
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 2 iterations, 1 s each
+[info] # Measurement: 3 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Throughput, ops/time
+[info] # Benchmark: bench.SemaphoreIsolationBench.ceSemaphore
+[info] # Parameters: (fibers = 8, permits = 1)
+[info] # Run progress: 33.33% complete, ETA 00:00:41
+[info] # Fork: 1 of 1
+[info] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/workspaces/scala-effect-bench/target/bg-jobs/sbt_50d13d5f/target/4fc75ae5/1296d6b9/jmh-core-1.37.jar)
+[info] WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] # Warmup Iteration   1: 326.255 ops/s
+[info] # Warmup Iteration   2: 708.551 ops/s
+[info] Iteration   1: 725.151 ops/s
+[info] Iteration   2: 776.983 ops/s
+[info] Iteration   3: 773.830 ops/s
+[info] Result "bench.SemaphoreIsolationBench.ceSemaphore":
+[info]   758.654 ?(99.9%) 530.121 ops/s [Average]
+[info]   (min, avg, max) = (725.151, 758.654, 776.983), stdev = 29.058
+[info]   CI (99.9%): [228.533, 1288.775] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
+[info] # VM invoker: /usr/lib/jvm/temurin-25-jdk-arm64/bin/java
+[info] # VM options: --add-opens=java.base/java.lang=ALL-UNNAMED
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 2 iterations, 1 s each
+[info] # Measurement: 3 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Throughput, ops/time
+[info] # Benchmark: bench.SemaphoreIsolationBench.ceSemaphore
+[info] # Parameters: (fibers = 8, permits = 8)
+[info] # Run progress: 41.67% complete, ETA 00:00:36
+[info] # Fork: 1 of 1
+[info] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/workspaces/scala-effect-bench/target/bg-jobs/sbt_50d13d5f/target/4fc75ae5/1296d6b9/jmh-core-1.37.jar)
+[info] WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] # Warmup Iteration   1: 1659.070 ops/s
+[info] # Warmup Iteration   2: 3442.497 ops/s
+[info] Iteration   1: 3509.595 ops/s
+[info] Iteration   2: 3420.588 ops/s
+[info] Iteration   3: 3529.138 ops/s
+[info] Result "bench.SemaphoreIsolationBench.ceSemaphore":
+[info]   3486.440 ?(99.9%) 1055.603 ops/s [Average]
+[info]   (min, avg, max) = (3420.588, 3486.440, 3529.138), stdev = 57.861
+[info]   CI (99.9%): [2430.838, 4542.043] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
+[info] # VM invoker: /usr/lib/jvm/temurin-25-jdk-arm64/bin/java
+[info] # VM options: --add-opens=java.base/java.lang=ALL-UNNAMED
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 2 iterations, 1 s each
+[info] # Measurement: 3 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Throughput, ops/time
+[info] # Benchmark: bench.SemaphoreIsolationBench.ceSemaphore
+[info] # Parameters: (fibers = 64, permits = 1)
+[info] # Run progress: 50.00% complete, ETA 00:00:30
+[info] # Fork: 1 of 1
+[info] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/workspaces/scala-effect-bench/target/bg-jobs/sbt_50d13d5f/target/4fc75ae5/1296d6b9/jmh-core-1.37.jar)
+[info] WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] # Warmup Iteration   1: 37.801 ops/s
+[info] # Warmup Iteration   2: 86.700 ops/s
+[info] Iteration   1: 87.507 ops/s
+[info] Iteration   2: 88.348 ops/s
+[info] Iteration   3: 89.137 ops/s
+[info] Result "bench.SemaphoreIsolationBench.ceSemaphore":
+[info]   88.331 ?(99.9%) 14.868 ops/s [Average]
+[info]   (min, avg, max) = (87.507, 88.331, 89.137), stdev = 0.815
+[info]   CI (99.9%): [73.463, 103.199] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
+[info] # VM invoker: /usr/lib/jvm/temurin-25-jdk-arm64/bin/java
+[info] # VM options: --add-opens=java.base/java.lang=ALL-UNNAMED
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 2 iterations, 1 s each
+[info] # Measurement: 3 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Throughput, ops/time
+[info] # Benchmark: bench.SemaphoreIsolationBench.ceSemaphore
+[info] # Parameters: (fibers = 64, permits = 8)
+[info] # Run progress: 58.33% complete, ETA 00:00:25
+[info] # Fork: 1 of 1
+[info] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/workspaces/scala-effect-bench/target/bg-jobs/sbt_50d13d5f/target/4fc75ae5/1296d6b9/jmh-core-1.37.jar)
+[info] WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] # Warmup Iteration   1: 81.670 ops/s
+[info] # Warmup Iteration   2: 203.490 ops/s
+[info] Iteration   1: 206.493 ops/s
+[info] Iteration   2: 205.811 ops/s
+[info] Iteration   3: 202.916 ops/s
+[info] Result "bench.SemaphoreIsolationBench.ceSemaphore":
+[info]   205.073 ?(99.9%) 34.656 ops/s [Average]
+[info]   (min, avg, max) = (202.916, 205.073, 206.493), stdev = 1.900
+[info]   CI (99.9%): [170.418, 239.729] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
+[info] # VM invoker: /usr/lib/jvm/temurin-25-jdk-arm64/bin/java
+[info] # VM options: --add-opens=java.base/java.lang=ALL-UNNAMED
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 2 iterations, 1 s each
+[info] # Measurement: 3 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Throughput, ops/time
+[info] # Benchmark: bench.SemaphoreIsolationBench.kyoMeter
+[info] # Parameters: (fibers = 8, permits = 1)
+[info] # Run progress: 66.67% complete, ETA 00:00:20
+[info] # Fork: 1 of 1
+[info] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/workspaces/scala-effect-bench/target/bg-jobs/sbt_50d13d5f/target/4fc75ae5/1296d6b9/jmh-core-1.37.jar)
+[info] WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] # Warmup Iteration   1: 4988.035 ops/s
+[info] # Warmup Iteration   2: 8677.174 ops/s
+[info] Iteration   1: 8668.826 ops/s
+[info] Iteration   2: 8495.376 ops/s
+[info] Iteration   3: 8542.602 ops/s
+[info] Result "bench.SemaphoreIsolationBench.kyoMeter":
+[info]   8568.935 ?(99.9%) 1635.977 ops/s [Average]
+[info]   (min, avg, max) = (8495.376, 8568.935, 8668.826), stdev = 89.673
+[info]   CI (99.9%): [6932.957, 10204.912] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
+[info] # VM invoker: /usr/lib/jvm/temurin-25-jdk-arm64/bin/java
+[info] # VM options: --add-opens=java.base/java.lang=ALL-UNNAMED
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 2 iterations, 1 s each
+[info] # Measurement: 3 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Throughput, ops/time
+[info] # Benchmark: bench.SemaphoreIsolationBench.kyoMeter
+[info] # Parameters: (fibers = 8, permits = 8)
+[info] # Run progress: 75.00% complete, ETA 00:00:15
+[info] # Fork: 1 of 1
+[info] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/workspaces/scala-effect-bench/target/bg-jobs/sbt_50d13d5f/target/4fc75ae5/1296d6b9/jmh-core-1.37.jar)
+[info] WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] # Warmup Iteration   1: 5171.312 ops/s
+[info] # Warmup Iteration   2: 8463.888 ops/s
+[info] Iteration   1: 8077.079 ops/s
+[info] Iteration   2: 8092.308 ops/s
+[info] Iteration   3: 8282.280 ops/s
+[info] Result "bench.SemaphoreIsolationBench.kyoMeter":
+[info]   8150.556 ?(99.9%) 2085.816 ops/s [Average]
+[info]   (min, avg, max) = (8077.079, 8150.556, 8282.280), stdev = 114.331
+[info]   CI (99.9%): [6064.739, 10236.372] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
+[info] # VM invoker: /usr/lib/jvm/temurin-25-jdk-arm64/bin/java
+[info] # VM options: --add-opens=java.base/java.lang=ALL-UNNAMED
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 2 iterations, 1 s each
+[info] # Measurement: 3 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Throughput, ops/time
+[info] # Benchmark: bench.SemaphoreIsolationBench.kyoMeter
+[info] # Parameters: (fibers = 64, permits = 1)
+[info] # Run progress: 83.33% complete, ETA 00:00:10
+[info] # Fork: 1 of 1
+[info] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/workspaces/scala-effect-bench/target/bg-jobs/sbt_50d13d5f/target/4fc75ae5/1296d6b9/jmh-core-1.37.jar)
+[info] WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] # Warmup Iteration   1: 1019.953 ops/s
+[info] # Warmup Iteration   2: 1552.781 ops/s
+[info] Iteration   1: 1541.332 ops/s
+[info] Iteration   2: 1590.028 ops/s
+[info] Iteration   3: 1544.308 ops/s
+[info] Result "bench.SemaphoreIsolationBench.kyoMeter":
+[info]   1558.556 ?(99.9%) 497.985 ops/s [Average]
+[info]   (min, avg, max) = (1541.332, 1558.556, 1590.028), stdev = 27.296
+[info]   CI (99.9%): [1060.571, 2056.541] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
+[info] # VM invoker: /usr/lib/jvm/temurin-25-jdk-arm64/bin/java
+[info] # VM options: --add-opens=java.base/java.lang=ALL-UNNAMED
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 2 iterations, 1 s each
+[info] # Measurement: 3 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Throughput, ops/time
+[info] # Benchmark: bench.SemaphoreIsolationBench.kyoMeter
+[info] # Parameters: (fibers = 64, permits = 8)
+[info] # Run progress: 91.67% complete, ETA 00:00:05
+[info] # Fork: 1 of 1
+[info] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/workspaces/scala-effect-bench/target/bg-jobs/sbt_50d13d5f/target/4fc75ae5/1296d6b9/jmh-core-1.37.jar)
+[info] WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] # Warmup Iteration   1: 934.384 ops/s
+[info] # Warmup Iteration   2: 1437.633 ops/s
+[info] Iteration   1: 1430.365 ops/s
+[info] Iteration   2: 1406.252 ops/s
+[info] Iteration   3: 1421.061 ops/s
+[info] Result "bench.SemaphoreIsolationBench.kyoMeter":
+[info]   1419.226 ?(99.9%) 221.862 ops/s [Average]
+[info]   (min, avg, max) = (1406.252, 1419.226, 1430.365), stdev = 12.161
+[info]   CI (99.9%): [1197.365, 1641.088] (assumes normal distribution)
+[info] # Run complete. Total time: 00:01:01
+[info] REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+[info] why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+[info] experiments, perform baseline and negative tests that provide experimental control, make sure
+[info] the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+[info] Do not assume the numbers tell you what you want them to tell.
+[info] NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+[info] extra caution when trusting the results, look into the generated code to check the benchmark still
+[info] works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+[info] different JVMs are already problematic, the performance difference caused by different Blackhole
+[info] modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+[info] Benchmark                                (fibers)  (permits)   Mode  Cnt     Score      Error  Units
+[info] SemaphoreIsolationBench.ceMiniSemaphore         8          1  thrpt    3  1142.496 ? 1553.870  ops/s
+[info] SemaphoreIsolationBench.ceMiniSemaphore         8          8  thrpt    3  3835.564 ? 1066.812  ops/s
+[info] SemaphoreIsolationBench.ceMiniSemaphore        64          1  thrpt    3   131.758 ?   24.858  ops/s
+[info] SemaphoreIsolationBench.ceMiniSemaphore        64          8  thrpt    3   261.837 ?   49.849  ops/s
+[info] SemaphoreIsolationBench.ceSemaphore             8          1  thrpt    3   758.654 ?  530.121  ops/s
+[info] SemaphoreIsolationBench.ceSemaphore             8          8  thrpt    3  3486.440 ? 1055.603  ops/s
+[info] SemaphoreIsolationBench.ceSemaphore            64          1  thrpt    3    88.331 ?   14.868  ops/s
+[info] SemaphoreIsolationBench.ceSemaphore            64          8  thrpt    3   205.073 ?   34.656  ops/s
+[info] SemaphoreIsolationBench.kyoMeter                8          1  thrpt    3  8568.935 ? 1635.977  ops/s
+[info] SemaphoreIsolationBench.kyoMeter                8          8  thrpt    3  8150.556 ? 2085.816  ops/s
+[info] SemaphoreIsolationBench.kyoMeter               64          1  thrpt    3  1558.556 ?  497.985  ops/s
+[info] SemaphoreIsolationBench.kyoMeter               64          8  thrpt    3  1419.226 ?  221.862  ops/s
+[info] Benchmark result is saved to /workspaces/scala-effect-bench/results/isolation-semaphore.json
+[success] Total time: 64 s (0:01:04.0), completed Sep 1, 2026, 11:08:38 PM

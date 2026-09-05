@@ -1,0 +1,12 @@
+target/
+project/target/
+project/project/
+.bsp/
+.metals/
+.bloop/
+.idea/
+__pycache__/
+.devcontainer/
+.agents/
+.codex/
+.DS_Store

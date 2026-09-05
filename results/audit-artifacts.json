@@ -1,0 +1,54 @@
+{
+  "platform": "macOS-26.6.1-arm64-arm-64bit-Mach-O",
+  "date": "2026-09-05",
+  "artifacts": [
+    {
+      "artifact": "kyo-core_3-1.0.0-RC6.jar",
+      "sha256": "ab2909ecc6c73a4edb444e562b867c9ea7e3dcba672cc60a1b1af0e2c40cbf88"
+    },
+    {
+      "artifact": "kyo-core_3-1.0.0-RC6-sources.jar",
+      "sha256": "f916f2001bb82f4024664ce12b3dd9271f6213b29687fac90e390ad836a9f274"
+    },
+    {
+      "artifact": "kyo-kernel_3-1.0.0-RC6.jar",
+      "sha256": "e7e41bdd5c6360b499f9dc54e86724c0c0e4e63c1815d62151243c7578b230d1"
+    },
+    {
+      "artifact": "kyo-kernel_3-1.0.0-RC6-sources.jar",
+      "sha256": "dc83b0bba5d4b667e28c94ee1587a25b8025ed48f81543bc8a856d63b5a3a088"
+    },
+    {
+      "artifact": "kyo-prelude_3-1.0.0-RC6.jar",
+      "sha256": "460b81c797eda078d6b4634935aac3b10ac2ba308c42d5d639139db7435fd3e5"
+    },
+    {
+      "artifact": "kyo-prelude_3-1.0.0-RC6-sources.jar",
+      "sha256": "2f83d12cee33afa7fa62382ddc54253caad3f7bc6aa933f68c2e237020c6d32d"
+    },
+    {
+      "artifact": "fs2-core_3-3.13.0.jar",
+      "sha256": "66a3cc3561604588162a02b7d05a3ced9c9d2b712b73da50d57a1e5c7bcf5415"
+    },
+    {
+      "artifact": "fs2-core_3-3.13.0-sources.jar",
+      "sha256": "c6d646555b3e3ac18bc7de0ccabe6b0434bdffc99b9aa50c486897b25231e150"
+    },
+    {
+      "artifact": "cats-effect_3-3.7.1.jar",
+      "sha256": "391ba6383dd218da14ad824deba9a96d61875c33a9d9ce7d4be68b5ed4236371"
+    },
+    {
+      "artifact": "cats-effect_3-3.7.1-sources.jar",
+      "sha256": "204134e018e6e9745246e4f25fd4f23cd4ffde430ddda4a868a162b72f14f5d1"
+    },
+    {
+      "artifact": "cats-effect-std_3-3.7.1.jar",
+      "sha256": "12c5568e94ac08861603e9cabaa6893fdddaa305515dd80fc97f5c20c74eed48"
+    },
+    {
+      "artifact": "cats-effect-std_3-3.7.1-sources.jar",
+      "sha256": "844c5a43694e87e11b61426a78f5c6eacc403702825014eae2bfbbd54516c7e1"
+    }
+  ]
+}

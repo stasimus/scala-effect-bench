@@ -1,0 +1,366 @@
+bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+[info] welcome to sbt 1.13.0 (Eclipse Adoptium Java 25.0.4.1)
+[info] loading settings for project scala-effect-bench-build from plugins.sbt...
+[info] loading project definition from /workspaces/scala-effect-bench/project
+[info] loading settings for project root from build.sbt...
+[info] set current project to scala-effect-bench (in build file:/workspaces/scala-effect-bench/)
+[info] running (fork) org.openjdk.jmh.generators.bytecode.JmhBytecodeGenerator /workspaces/scala-effect-bench/bench/target/scala-3.8.4/classes /workspaces/scala-effect-bench/bench/target/scala-3.8.4/src_managed/jmh /workspaces/scala-effect-bench/bench/target/scala-3.8.4/resource_managed/jmh default
+[info] Processing 294 classes from /workspaces/scala-effect-bench/bench/target/scala-3.8.4/classes with "reflection" generator
+[info] Writing out Java source to /workspaces/scala-effect-bench/bench/target/scala-3.8.4/src_managed/jmh and resources to /workspaces/scala-effect-bench/bench/target/scala-3.8.4/resource_managed/jmh
+[info] compiling 10 Java sources to /workspaces/scala-effect-bench/bench/target/scala-3.8.4/classes ...
+[info] done compiling
+[info] running (fork) org.openjdk.jmh.Main -i 3 -wi 2 -f 1 -r 1s -w 1s -rf json -rff /workspaces/scala-effect-bench/results/pool-traversal.json .*BoundedTraversalBench.*
+[error] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[error] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/workspaces/scala-effect-bench/target/bg-jobs/sbt_169139e5/target/4fc75ae5/1296d6b9/jmh-core-1.37.jar)
+[error] WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+[error] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] # JMH version: 1.37
+[info] # VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
+[info] # VM invoker: /usr/lib/jvm/temurin-25-jdk-arm64/bin/java
+[info] # VM options: --add-opens=java.base/java.lang=ALL-UNNAMED
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 2 iterations, 1 s each
+[info] # Measurement: 3 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Throughput, ops/time
+[info] # Benchmark: bench.BoundedTraversalBench.ceParTraverseN
+[info] # Parameters: (limit = 8, size = 4096)
+[info] # Run progress: 0.00% complete, ETA 00:01:00
+[info] # Fork: 1 of 1
+[info] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/workspaces/scala-effect-bench/target/bg-jobs/sbt_169139e5/target/4fc75ae5/1296d6b9/jmh-core-1.37.jar)
+[info] WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] # Warmup Iteration   1: 48.719 ops/s
+[info] # Warmup Iteration   2: 108.193 ops/s
+[info] Iteration   1: 117.996 ops/s
+[info] Iteration   2: 118.258 ops/s
+[info] Iteration   3: 115.081 ops/s
+[info] Result "bench.BoundedTraversalBench.ceParTraverseN":
+[info]   117.111 ?(99.9%) 32.173 ops/s [Average]
+[info]   (min, avg, max) = (115.081, 117.111, 118.258), stdev = 1.764
+[info]   CI (99.9%): [84.938, 149.285] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
+[info] # VM invoker: /usr/lib/jvm/temurin-25-jdk-arm64/bin/java
+[info] # VM options: --add-opens=java.base/java.lang=ALL-UNNAMED
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 2 iterations, 1 s each
+[info] # Measurement: 3 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Throughput, ops/time
+[info] # Benchmark: bench.BoundedTraversalBench.ceParTraverseN
+[info] # Parameters: (limit = 64, size = 4096)
+[info] # Run progress: 8.33% complete, ETA 00:00:57
+[info] # Fork: 1 of 1
+[info] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/workspaces/scala-effect-bench/target/bg-jobs/sbt_169139e5/target/4fc75ae5/1296d6b9/jmh-core-1.37.jar)
+[info] WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] # Warmup Iteration   1: 90.920 ops/s
+[info] # Warmup Iteration   2: 148.396 ops/s
+[info] Iteration   1: 151.048 ops/s
+[info] Iteration   2: 151.656 ops/s
+[info] Iteration   3: 149.092 ops/s
+[info] Result "bench.BoundedTraversalBench.ceParTraverseN":
+[info]   150.599 ?(99.9%) 24.441 ops/s [Average]
+[info]   (min, avg, max) = (149.092, 150.599, 151.656), stdev = 1.340
+[info]   CI (99.9%): [126.158, 175.040] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
+[info] # VM invoker: /usr/lib/jvm/temurin-25-jdk-arm64/bin/java
+[info] # VM options: --add-opens=java.base/java.lang=ALL-UNNAMED
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 2 iterations, 1 s each
+[info] # Measurement: 3 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Throughput, ops/time
+[info] # Benchmark: bench.BoundedTraversalBench.ceParTraverseNFailure
+[info] # Parameters: (limit = 8, size = 4096)
+[info] # Run progress: 16.67% complete, ETA 00:00:52
+[info] # Fork: 1 of 1
+[info] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/workspaces/scala-effect-bench/target/bg-jobs/sbt_169139e5/target/4fc75ae5/1296d6b9/jmh-core-1.37.jar)
+[info] WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] # Warmup Iteration   1: 730.766 ops/s
+[info] # Warmup Iteration   2: 1581.457 ops/s
+[info] Iteration   1: 1659.247 ops/s
+[info] Iteration   2: 1638.876 ops/s
+[info] Iteration   3: 1650.823 ops/s
+[info] Result "bench.BoundedTraversalBench.ceParTraverseNFailure":
+[info]   1649.649 ?(99.9%) 186.749 ops/s [Average]
+[info]   (min, avg, max) = (1638.876, 1649.649, 1659.247), stdev = 10.236
+[info]   CI (99.9%): [1462.899, 1836.398] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
+[info] # VM invoker: /usr/lib/jvm/temurin-25-jdk-arm64/bin/java
+[info] # VM options: --add-opens=java.base/java.lang=ALL-UNNAMED
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 2 iterations, 1 s each
+[info] # Measurement: 3 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Throughput, ops/time
+[info] # Benchmark: bench.BoundedTraversalBench.ceParTraverseNFailure
+[info] # Parameters: (limit = 64, size = 4096)
+[info] # Run progress: 25.00% complete, ETA 00:00:47
+[info] # Fork: 1 of 1
+[info] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/workspaces/scala-effect-bench/target/bg-jobs/sbt_169139e5/target/4fc75ae5/1296d6b9/jmh-core-1.37.jar)
+[info] WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] # Warmup Iteration   1: 597.452 ops/s
+[info] # Warmup Iteration   2: 1408.940 ops/s
+[info] Iteration   1: 1496.309 ops/s
+[info] Iteration   2: 1516.467 ops/s
+[info] Iteration   3: 1523.665 ops/s
+[info] Result "bench.BoundedTraversalBench.ceParTraverseNFailure":
+[info]   1512.147 ?(99.9%) 258.708 ops/s [Average]
+[info]   (min, avg, max) = (1496.309, 1512.147, 1523.665), stdev = 14.181
+[info]   CI (99.9%): [1253.439, 1770.855] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
+[info] # VM invoker: /usr/lib/jvm/temurin-25-jdk-arm64/bin/java
+[info] # VM options: --add-opens=java.base/java.lang=ALL-UNNAMED
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 2 iterations, 1 s each
+[info] # Measurement: 3 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Throughput, ops/time
+[info] # Benchmark: bench.BoundedTraversalBench.cePoolParTraverseN
+[info] # Parameters: (limit = 8, size = 4096)
+[info] # Run progress: 33.33% complete, ETA 00:00:41
+[info] # Fork: 1 of 1
+[info] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/workspaces/scala-effect-bench/target/bg-jobs/sbt_169139e5/target/4fc75ae5/1296d6b9/jmh-core-1.37.jar)
+[info] WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] # Warmup Iteration   1: 1466.283 ops/s
+[info] # Warmup Iteration   2: 2960.282 ops/s
+[info] Iteration   1: 3056.817 ops/s
+[info] Iteration   2: 3129.310 ops/s
+[info] Iteration   3: 3320.958 ops/s
+[info] Result "bench.BoundedTraversalBench.cePoolParTraverseN":
+[info]   3169.028 ?(99.9%) 2489.831 ops/s [Average]
+[info]   (min, avg, max) = (3056.817, 3169.028, 3320.958), stdev = 136.476
+[info]   CI (99.9%): [679.198, 5658.859] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
+[info] # VM invoker: /usr/lib/jvm/temurin-25-jdk-arm64/bin/java
+[info] # VM options: --add-opens=java.base/java.lang=ALL-UNNAMED
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 2 iterations, 1 s each
+[info] # Measurement: 3 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Throughput, ops/time
+[info] # Benchmark: bench.BoundedTraversalBench.cePoolParTraverseN
+[info] # Parameters: (limit = 64, size = 4096)
+[info] # Run progress: 41.67% complete, ETA 00:00:36
+[info] # Fork: 1 of 1
+[info] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/workspaces/scala-effect-bench/target/bg-jobs/sbt_169139e5/target/4fc75ae5/1296d6b9/jmh-core-1.37.jar)
+[info] WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] # Warmup Iteration   1: 1407.235 ops/s
+[info] # Warmup Iteration   2: 2340.202 ops/s
+[info] Iteration   1: 2384.207 ops/s
+[info] Iteration   2: 2399.099 ops/s
+[info] Iteration   3: 2465.171 ops/s
+[info] Result "bench.BoundedTraversalBench.cePoolParTraverseN":
+[info]   2416.159 ?(99.9%) 786.185 ops/s [Average]
+[info]   (min, avg, max) = (2384.207, 2416.159, 2465.171), stdev = 43.093
+[info]   CI (99.9%): [1629.974, 3202.344] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
+[info] # VM invoker: /usr/lib/jvm/temurin-25-jdk-arm64/bin/java
+[info] # VM options: --add-opens=java.base/java.lang=ALL-UNNAMED
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 2 iterations, 1 s each
+[info] # Measurement: 3 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Throughput, ops/time
+[info] # Benchmark: bench.BoundedTraversalBench.cePoolParTraverseNFailure
+[info] # Parameters: (limit = 8, size = 4096)
+[info] # Run progress: 50.00% complete, ETA 00:00:31
+[info] # Fork: 1 of 1
+[info] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/workspaces/scala-effect-bench/target/bg-jobs/sbt_169139e5/target/4fc75ae5/1296d6b9/jmh-core-1.37.jar)
+[info] WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] # Warmup Iteration   1: 1990.032 ops/s
+[info] # Warmup Iteration   2: 4495.204 ops/s
+[info] Iteration   1: 4173.024 ops/s
+[info] Iteration   2: 3871.901 ops/s
+[info] Iteration   3: 3984.072 ops/s
+[info] Result "bench.BoundedTraversalBench.cePoolParTraverseNFailure":
+[info]   4009.665 ?(99.9%) 2776.402 ops/s [Average]
+[info]   (min, avg, max) = (3871.901, 4009.665, 4173.024), stdev = 152.184
+[info]   CI (99.9%): [1233.263, 6786.068] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
+[info] # VM invoker: /usr/lib/jvm/temurin-25-jdk-arm64/bin/java
+[info] # VM options: --add-opens=java.base/java.lang=ALL-UNNAMED
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 2 iterations, 1 s each
+[info] # Measurement: 3 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Throughput, ops/time
+[info] # Benchmark: bench.BoundedTraversalBench.cePoolParTraverseNFailure
+[info] # Parameters: (limit = 64, size = 4096)
+[info] # Run progress: 58.33% complete, ETA 00:00:26
+[info] # Fork: 1 of 1
+[info] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/workspaces/scala-effect-bench/target/bg-jobs/sbt_169139e5/target/4fc75ae5/1296d6b9/jmh-core-1.37.jar)
+[info] WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] # Warmup Iteration   1: 1261.518 ops/s
+[info] # Warmup Iteration   2: 2640.981 ops/s
+[info] Iteration   1: 2665.738 ops/s
+[info] Iteration   2: 2671.428 ops/s
+[info] Iteration   3: 2733.899 ops/s
+[info] Result "bench.BoundedTraversalBench.cePoolParTraverseNFailure":
+[info]   2690.355 ?(99.9%) 689.926 ops/s [Average]
+[info]   (min, avg, max) = (2665.738, 2690.355, 2733.899), stdev = 37.817
+[info]   CI (99.9%): [2000.430, 3380.281] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
+[info] # VM invoker: /usr/lib/jvm/temurin-25-jdk-arm64/bin/java
+[info] # VM options: --add-opens=java.base/java.lang=ALL-UNNAMED
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 2 iterations, 1 s each
+[info] # Measurement: 3 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Throughput, ops/time
+[info] # Benchmark: bench.BoundedTraversalBench.ceWorkerPool
+[info] # Parameters: (limit = 8, size = 4096)
+[info] # Run progress: 66.67% complete, ETA 00:00:20
+[info] # Fork: 1 of 1
+[info] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/workspaces/scala-effect-bench/target/bg-jobs/sbt_169139e5/target/4fc75ae5/1296d6b9/jmh-core-1.37.jar)
+[info] WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] # Warmup Iteration   1: 1676.419 ops/s
+[info] # Warmup Iteration   2: 3296.117 ops/s
+[info] Iteration   1: 3021.949 ops/s
+[info] Iteration   2: 2970.171 ops/s
+[info] Iteration   3: 2971.751 ops/s
+[info] Result "bench.BoundedTraversalBench.ceWorkerPool":
+[info]   2987.957 ?(99.9%) 537.248 ops/s [Average]
+[info]   (min, avg, max) = (2970.171, 2987.957, 3021.949), stdev = 29.448
+[info]   CI (99.9%): [2450.709, 3525.206] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
+[info] # VM invoker: /usr/lib/jvm/temurin-25-jdk-arm64/bin/java
+[info] # VM options: --add-opens=java.base/java.lang=ALL-UNNAMED
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 2 iterations, 1 s each
+[info] # Measurement: 3 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Throughput, ops/time
+[info] # Benchmark: bench.BoundedTraversalBench.ceWorkerPool
+[info] # Parameters: (limit = 64, size = 4096)
+[info] # Run progress: 75.00% complete, ETA 00:00:15
+[info] # Fork: 1 of 1
+[info] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/workspaces/scala-effect-bench/target/bg-jobs/sbt_169139e5/target/4fc75ae5/1296d6b9/jmh-core-1.37.jar)
+[info] WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] # Warmup Iteration   1: 1618.279 ops/s
+[info] # Warmup Iteration   2: 2559.614 ops/s
+[info] Iteration   1: 2547.592 ops/s
+[info] Iteration   2: 2319.324 ops/s
+[info] Iteration   3: 2382.860 ops/s
+[info] Result "bench.BoundedTraversalBench.ceWorkerPool":
+[info]   2416.592 ?(99.9%) 2149.353 ops/s [Average]
+[info]   (min, avg, max) = (2319.324, 2416.592, 2547.592), stdev = 117.813
+[info]   CI (99.9%): [267.239, 4565.945] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
+[info] # VM invoker: /usr/lib/jvm/temurin-25-jdk-arm64/bin/java
+[info] # VM options: --add-opens=java.base/java.lang=ALL-UNNAMED
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 2 iterations, 1 s each
+[info] # Measurement: 3 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Throughput, ops/time
+[info] # Benchmark: bench.BoundedTraversalBench.kyoAsyncForeach
+[info] # Parameters: (limit = 8, size = 4096)
+[info] # Run progress: 83.33% complete, ETA 00:00:10
+[info] # Fork: 1 of 1
+[info] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/workspaces/scala-effect-bench/target/bg-jobs/sbt_169139e5/target/4fc75ae5/1296d6b9/jmh-core-1.37.jar)
+[info] WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] # Warmup Iteration   1: 4399.166 ops/s
+[info] # Warmup Iteration   2: 5942.548 ops/s
+[info] Iteration   1: 5901.692 ops/s
+[info] Iteration   2: 5721.716 ops/s
+[info] Iteration   3: 5915.381 ops/s
+[info] Result "bench.BoundedTraversalBench.kyoAsyncForeach":
+[info]   5846.263 ?(99.9%) 1971.736 ops/s [Average]
+[info]   (min, avg, max) = (5721.716, 5846.263, 5915.381), stdev = 108.078
+[info]   CI (99.9%): [3874.527, 7817.999] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 25.0.4.1, OpenJDK 64-Bit Server VM, 25.0.4.1+1-LTS
+[info] # VM invoker: /usr/lib/jvm/temurin-25-jdk-arm64/bin/java
+[info] # VM options: --add-opens=java.base/java.lang=ALL-UNNAMED
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 2 iterations, 1 s each
+[info] # Measurement: 3 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Throughput, ops/time
+[info] # Benchmark: bench.BoundedTraversalBench.kyoAsyncForeach
+[info] # Parameters: (limit = 64, size = 4096)
+[info] # Run progress: 91.67% complete, ETA 00:00:05
+[info] # Fork: 1 of 1
+[info] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/workspaces/scala-effect-bench/target/bg-jobs/sbt_169139e5/target/4fc75ae5/1296d6b9/jmh-core-1.37.jar)
+[info] WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] # Warmup Iteration   1: 3865.813 ops/s
+[info] # Warmup Iteration   2: 5544.353 ops/s
+[info] Iteration   1: 5601.727 ops/s
+[info] Iteration   2: 5600.219 ops/s
+[info] Iteration   3: 5666.336 ops/s
+[info] Result "bench.BoundedTraversalBench.kyoAsyncForeach":
+[info]   5622.760 ?(99.9%) 688.608 ops/s [Average]
+[info]   (min, avg, max) = (5600.219, 5622.760, 5666.336), stdev = 37.745
+[info]   CI (99.9%): [4934.153, 6311.368] (assumes normal distribution)
+[info] # Run complete. Total time: 00:01:02
+[info] REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+[info] why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+[info] experiments, perform baseline and negative tests that provide experimental control, make sure
+[info] the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+[info] Do not assume the numbers tell you what you want them to tell.
+[info] NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+[info] extra caution when trusting the results, look into the generated code to check the benchmark still
+[info] works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+[info] different JVMs are already problematic, the performance difference caused by different Blackhole
+[info] modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+[info] Benchmark                                        (limit)  (size)   Mode  Cnt     Score      Error  Units
+[info] BoundedTraversalBench.ceParTraverseN                   8    4096  thrpt    3   117.111 ?   32.173  ops/s
+[info] BoundedTraversalBench.ceParTraverseN                  64    4096  thrpt    3   150.599 ?   24.441  ops/s
+[info] BoundedTraversalBench.ceParTraverseNFailure            8    4096  thrpt    3  1649.649 ?  186.749  ops/s
+[info] BoundedTraversalBench.ceParTraverseNFailure           64    4096  thrpt    3  1512.147 ?  258.708  ops/s
+[info] BoundedTraversalBench.cePoolParTraverseN               8    4096  thrpt    3  3169.028 ? 2489.831  ops/s
+[info] BoundedTraversalBench.cePoolParTraverseN              64    4096  thrpt    3  2416.159 ?  786.185  ops/s
+[info] BoundedTraversalBench.cePoolParTraverseNFailure        8    4096  thrpt    3  4009.665 ? 2776.402  ops/s
+[info] BoundedTraversalBench.cePoolParTraverseNFailure       64    4096  thrpt    3  2690.355 ?  689.926  ops/s
+[info] BoundedTraversalBench.ceWorkerPool                     8    4096  thrpt    3  2987.957 ?  537.248  ops/s
+[info] BoundedTraversalBench.ceWorkerPool                    64    4096  thrpt    3  2416.592 ? 2149.353  ops/s
+[info] BoundedTraversalBench.kyoAsyncForeach                  8    4096  thrpt    3  5846.263 ? 1971.736  ops/s
+[info] BoundedTraversalBench.kyoAsyncForeach                 64    4096  thrpt    3  5622.760 ?  688.608  ops/s
+[info] Benchmark result is saved to /workspaces/scala-effect-bench/results/pool-traversal.json
+[success] Total time: 65 s (0:01:05.0), completed Sep 1, 2026, 11:00:43 PM
