@@ -102,7 +102,7 @@ def render(rows, result_file, meta):
         "JMH benchmarks comparing equivalent cats-effect and Kyo constructions. Only benchmark code is adjusted; libraries remain unchanged.", "",
         "[Blocking TCP and virtual-thread experiment](docs/blocking-io.md).", "",
         "[CE, Kyo, Gears and Ox: blocking/nonblocking TCP results](results/four-io-measured/report.md).", "",
-        "[Blog: Kyo's blocking gap and manual flush](docs/blog/kyo-blocking.md).", "",
+        "[Blog: Kyo's blocking gap and manual flush](https://sgektor.blogspot.com/2026/09/blocking-io-made-kyo-30x-slower-then-i.html).", "",
         "cats-effect **3.7.1**, Kyo **1.0.0-RC6**, fs2 **3.13.0**, cats-core **2.13.0**, Scala **3.8.4**.", "",
         "These pairs use the same application-level construction. The streaming rows compare fs2 on IO",
         "with Kyo Stream. Native API diagnostics and withdrawn cancellation comparisons are excluded.",
