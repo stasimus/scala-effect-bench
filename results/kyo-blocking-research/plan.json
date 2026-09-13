@@ -1,0 +1,46 @@
+{
+  "scope": "Explain the unhinted and remaining flush gap for CE3.7.1 vsKyoRC6 on the existing Mac/JDK25 TCP fixture; benchmark-only experiments; no library fixes or publication.",
+  "format": "Concise HTML report with primary-source links and raw experimental data.",
+  "planning_tool": "update_plan unavailable in tool catalog; recording the plan here.",
+  "steps": [
+    {
+      "step": "Verify exact sources and alternative mechanisms",
+      "status": "complete"
+    },
+    {
+      "step": "Test queue activation, worker capacity, adaptation, and platform controls",
+      "status": "complete"
+    },
+    {
+      "step": "Synthesize supported causes and verify report",
+      "status": "complete"
+    }
+  ],
+  "gaps": [
+    {
+      "claim": "Local queue concentration",
+      "evidence": "Nested/external, flush, fixed64 without flush, admission probe cadence controls agree with source",
+      "confidence": "high",
+      "next": "Complete; report scope limits retained"
+    },
+    {
+      "claim": "Remaining flush loss includes worker capacity",
+      "evidence": "Fixed16 slower; fixed64 faster; 30s warmup gives 38 workers; virtual workers retain cap",
+      "confidence": "high",
+      "next": "Complete; report scope limits retained"
+    },
+    {
+      "claim": "Remaining fixed64 gap involves tail placement",
+      "evidence": "Full-scan and spare-capacity controls near CE in three JVMs each; fixed64 default-scan slower in all three",
+      "confidence": "high for this workload",
+      "next": "Complete; report scope limits retained"
+    },
+    {
+      "claim": "Platform monitor cadence delays short blocking detection",
+      "evidence": "Read-only reflection confirms 6.4 or 12.8ms cadence; default10ms stalling threshold; long waits and 1ms slice behave differently",
+      "confidence": "high for this host",
+      "next": "Complete; report scope limits retained"
+    }
+  ],
+  "stop_reason": "Source-supported mechanisms confirmed by interventions and three-JVM placement replication. General performance and resource claims remain explicitly out of scope."
+}

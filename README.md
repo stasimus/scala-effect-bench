@@ -2,6 +2,12 @@
 
 JMH benchmarks comparing equivalent cats-effect and Kyo constructions. Only benchmark code is adjusted; libraries remain unchanged.
 
+[Blocking TCP and virtual-thread experiment](docs/blocking-io.md).
+
+[CE, Kyo, Gears and Ox: blocking/nonblocking TCP results](results/four-io-measured/report.md).
+
+[Blog: Kyo's blocking gap and manual flush](docs/blog/kyo-blocking.md).
+
 cats-effect **3.7.1**, Kyo **1.0.0-RC6**, fs2 **3.13.0**, cats-core **2.13.0**, Scala **3.8.4**.
 
 These pairs use the same application-level construction. The streaming rows compare fs2 on IO
@@ -29,7 +35,7 @@ batch boundaries, empty/all-failed inputs, partial batches, queue backpressure, 
 
 | Construction | Parameters | CE ops/s | Kyo ops/s | Ratio of means | CE B/op | Kyo B/op |
 | --- | --- | ---: | ---: | --- | ---: | ---: |
-| Runner overhead | — | 119,173.45 ± 2,576.87 | 143,294.95 ± 5,626.38 | Kyo ~1.20× | 1,075 | 584 |
+| Runner overhead | n/a | 119,173.45 ± 2,576.87 | 143,294.95 ± 5,626.38 | Kyo ~1.20× | 1,075 | 584 |
 
 ## Core chains
 
@@ -61,11 +67,11 @@ four fail, and 4,092 successes are returned in order. This is not `Async.gather`
 
 | Construction | Parameters | CE ops/s | Kyo ops/s | Ratio of means | CE B/op | Kyo B/op |
 | --- | --- | ---: | ---: | --- | ---: | ---: |
-| CAS reference updates | — | 36,391.43 ± 3,730.17 | 36,536.30 ± 392.65 | Kyo ~1.00× (CIs overlap) | 111,198 | 110,705 |
-| Complete then read promise | — | 12,833.45 ± 231.59 | 11,670.20 ± 115.51 | CE ~1.10× | 503,073 | 446,525 |
-| Queue: one producer / consumer | — | 6,885.46 ± 72.56 | 9,965.27 ± 87.86 | Kyo ~1.45× | 386,094 | 382,802 |
-| Uncontended non-reentrant permit | — | 2,532.39 ± 26.23 | 12,712.57 ± 1,226.12 | Kyo ~5.02× | 1,945,464 | 329,642 |
-| Sequential child spawn / join | — | 1,949.69 ± 33.01 | 5,363.24 ± 131.32 | Kyo ~2.75× | 1,454,321 | 522,596 |
+| CAS reference updates | n/a | 36,391.43 ± 3,730.17 | 36,536.30 ± 392.65 | Kyo ~1.00× (CIs overlap) | 111,198 | 110,705 |
+| Complete then read promise | n/a | 12,833.45 ± 231.59 | 11,670.20 ± 115.51 | CE ~1.10× | 503,073 | 446,525 |
+| Queue: one producer / consumer | n/a | 6,885.46 ± 72.56 | 9,965.27 ± 87.86 | Kyo ~1.45× | 386,094 | 382,802 |
+| Uncontended non-reentrant permit | n/a | 2,532.39 ± 26.23 | 12,712.57 ± 1,226.12 | Kyo ~5.02× | 1,945,464 | 329,642 |
+| Sequential child spawn / join | n/a | 1,949.69 ± 33.01 | 5,363.24 ± 131.32 | Kyo ~2.75× | 1,454,321 | 522,596 |
 
 ## Streaming constructions
 

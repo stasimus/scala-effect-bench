@@ -1,0 +1,207 @@
+{
+  "started_at": "2026-09-06T13:49:08.461099+00:00",
+  "command": [
+    "sbt",
+    "set bench / Test / fork := true",
+    "set bench / Test / javaOptions := Seq(\"--add-opens=java.base/java.lang=ALL-UNNAMED\",\"-Xms2g\",\"-Xmx2g\",\"-XX:+UseG1GC\")",
+    "bench/Test/runMain bench.blocking.SchedulerResearchProbe ce 256 64 1000 6 10 ceRun1",
+    "set bench / Test / javaOptions := Seq(\"--add-opens=java.base/java.lang=ALL-UNNAMED\",\"-Xms2g\",\"-Xmx2g\",\"-XX:+UseG1GC\",\"-Dkyo.scheduler.coreWorkers=64\",\"-Dkyo.scheduler.minWorkers=64\",\"-Dkyo.scheduler.maxWorkers=64\")",
+    "bench/Test/runMain bench.blocking.SchedulerResearchProbe kyoFlush 256 64 1000 6 10 flush64Run1",
+    "set bench / Test / javaOptions := Seq(\"--add-opens=java.base/java.lang=ALL-UNNAMED\",\"-Xms2g\",\"-Xmx2g\",\"-XX:+UseG1GC\",\"-Dkyo.scheduler.coreWorkers=64\",\"-Dkyo.scheduler.minWorkers=64\",\"-Dkyo.scheduler.maxWorkers=64\",\"-Dkyo.scheduler.scheduleStride=64\")",
+    "bench/Test/runMain bench.blocking.SchedulerResearchProbe kyoFlush 256 64 1000 6 10 flush64Stride64Run1",
+    "set bench / Test / javaOptions := Seq(\"--add-opens=java.base/java.lang=ALL-UNNAMED\",\"-Xms2g\",\"-Xmx2g\",\"-XX:+UseG1GC\",\"-Dkyo.scheduler.coreWorkers=128\",\"-Dkyo.scheduler.minWorkers=128\",\"-Dkyo.scheduler.maxWorkers=128\")",
+    "bench/Test/runMain bench.blocking.SchedulerResearchProbe kyoFlush 256 64 1000 6 10 flush128Run1",
+    "set bench / Test / javaOptions := Seq(\"--add-opens=java.base/java.lang=ALL-UNNAMED\",\"-Xms2g\",\"-Xmx2g\",\"-XX:+UseG1GC\")",
+    "bench/Test/runMain bench.blocking.SchedulerResearchProbe ce 256 64 1000 6 10 ceRun2",
+    "set bench / Test / javaOptions := Seq(\"--add-opens=java.base/java.lang=ALL-UNNAMED\",\"-Xms2g\",\"-Xmx2g\",\"-XX:+UseG1GC\",\"-Dkyo.scheduler.coreWorkers=64\",\"-Dkyo.scheduler.minWorkers=64\",\"-Dkyo.scheduler.maxWorkers=64\")",
+    "bench/Test/runMain bench.blocking.SchedulerResearchProbe kyoFlush 256 64 1000 6 10 flush64Run2",
+    "set bench / Test / javaOptions := Seq(\"--add-opens=java.base/java.lang=ALL-UNNAMED\",\"-Xms2g\",\"-Xmx2g\",\"-XX:+UseG1GC\",\"-Dkyo.scheduler.coreWorkers=64\",\"-Dkyo.scheduler.minWorkers=64\",\"-Dkyo.scheduler.maxWorkers=64\",\"-Dkyo.scheduler.scheduleStride=64\")",
+    "bench/Test/runMain bench.blocking.SchedulerResearchProbe kyoFlush 256 64 1000 6 10 flush64Stride64Run2",
+    "set bench / Test / javaOptions := Seq(\"--add-opens=java.base/java.lang=ALL-UNNAMED\",\"-Xms2g\",\"-Xmx2g\",\"-XX:+UseG1GC\",\"-Dkyo.scheduler.coreWorkers=128\",\"-Dkyo.scheduler.minWorkers=128\",\"-Dkyo.scheduler.maxWorkers=128\")",
+    "bench/Test/runMain bench.blocking.SchedulerResearchProbe kyoFlush 256 64 1000 6 10 flush128Run2",
+    "set bench / Test / javaOptions := Seq(\"--add-opens=java.base/java.lang=ALL-UNNAMED\",\"-Xms2g\",\"-Xmx2g\",\"-XX:+UseG1GC\")",
+    "bench/Test/runMain bench.blocking.SchedulerResearchProbe ce 256 64 1000 6 10 ceRun3",
+    "set bench / Test / javaOptions := Seq(\"--add-opens=java.base/java.lang=ALL-UNNAMED\",\"-Xms2g\",\"-Xmx2g\",\"-XX:+UseG1GC\",\"-Dkyo.scheduler.coreWorkers=64\",\"-Dkyo.scheduler.minWorkers=64\",\"-Dkyo.scheduler.maxWorkers=64\")",
+    "bench/Test/runMain bench.blocking.SchedulerResearchProbe kyoFlush 256 64 1000 6 10 flush64Run3",
+    "set bench / Test / javaOptions := Seq(\"--add-opens=java.base/java.lang=ALL-UNNAMED\",\"-Xms2g\",\"-Xmx2g\",\"-XX:+UseG1GC\",\"-Dkyo.scheduler.coreWorkers=64\",\"-Dkyo.scheduler.minWorkers=64\",\"-Dkyo.scheduler.maxWorkers=64\",\"-Dkyo.scheduler.scheduleStride=64\")",
+    "bench/Test/runMain bench.blocking.SchedulerResearchProbe kyoFlush 256 64 1000 6 10 flush64Stride64Run3",
+    "set bench / Test / javaOptions := Seq(\"--add-opens=java.base/java.lang=ALL-UNNAMED\",\"-Xms2g\",\"-Xmx2g\",\"-XX:+UseG1GC\",\"-Dkyo.scheduler.coreWorkers=128\",\"-Dkyo.scheduler.minWorkers=128\",\"-Dkyo.scheduler.maxWorkers=128\")",
+    "bench/Test/runMain bench.blocking.SchedulerResearchProbe kyoFlush 256 64 1000 6 10 flush128Run3"
+  ],
+  "cases": [
+    {
+      "label": "ceRun1",
+      "runtime": "ce",
+      "props": {},
+      "size": 256,
+      "parallelism": 64,
+      "delay": 1000,
+      "warmup": 6,
+      "samples": 10
+    },
+    {
+      "label": "flush64Run1",
+      "runtime": "kyoFlush",
+      "props": {
+        "kyo.scheduler.coreWorkers": 64,
+        "kyo.scheduler.minWorkers": 64,
+        "kyo.scheduler.maxWorkers": 64
+      },
+      "size": 256,
+      "parallelism": 64,
+      "delay": 1000,
+      "warmup": 6,
+      "samples": 10
+    },
+    {
+      "label": "flush64Stride64Run1",
+      "runtime": "kyoFlush",
+      "props": {
+        "kyo.scheduler.coreWorkers": 64,
+        "kyo.scheduler.minWorkers": 64,
+        "kyo.scheduler.maxWorkers": 64,
+        "kyo.scheduler.scheduleStride": 64
+      },
+      "size": 256,
+      "parallelism": 64,
+      "delay": 1000,
+      "warmup": 6,
+      "samples": 10
+    },
+    {
+      "label": "flush128Run1",
+      "runtime": "kyoFlush",
+      "props": {
+        "kyo.scheduler.coreWorkers": 128,
+        "kyo.scheduler.minWorkers": 128,
+        "kyo.scheduler.maxWorkers": 128
+      },
+      "size": 256,
+      "parallelism": 64,
+      "delay": 1000,
+      "warmup": 6,
+      "samples": 10
+    },
+    {
+      "label": "ceRun2",
+      "runtime": "ce",
+      "props": {},
+      "size": 256,
+      "parallelism": 64,
+      "delay": 1000,
+      "warmup": 6,
+      "samples": 10
+    },
+    {
+      "label": "flush64Run2",
+      "runtime": "kyoFlush",
+      "props": {
+        "kyo.scheduler.coreWorkers": 64,
+        "kyo.scheduler.minWorkers": 64,
+        "kyo.scheduler.maxWorkers": 64
+      },
+      "size": 256,
+      "parallelism": 64,
+      "delay": 1000,
+      "warmup": 6,
+      "samples": 10
+    },
+    {
+      "label": "flush64Stride64Run2",
+      "runtime": "kyoFlush",
+      "props": {
+        "kyo.scheduler.coreWorkers": 64,
+        "kyo.scheduler.minWorkers": 64,
+        "kyo.scheduler.maxWorkers": 64,
+        "kyo.scheduler.scheduleStride": 64
+      },
+      "size": 256,
+      "parallelism": 64,
+      "delay": 1000,
+      "warmup": 6,
+      "samples": 10
+    },
+    {
+      "label": "flush128Run2",
+      "runtime": "kyoFlush",
+      "props": {
+        "kyo.scheduler.coreWorkers": 128,
+        "kyo.scheduler.minWorkers": 128,
+        "kyo.scheduler.maxWorkers": 128
+      },
+      "size": 256,
+      "parallelism": 64,
+      "delay": 1000,
+      "warmup": 6,
+      "samples": 10
+    },
+    {
+      "label": "ceRun3",
+      "runtime": "ce",
+      "props": {},
+      "size": 256,
+      "parallelism": 64,
+      "delay": 1000,
+      "warmup": 6,
+      "samples": 10
+    },
+    {
+      "label": "flush64Run3",
+      "runtime": "kyoFlush",
+      "props": {
+        "kyo.scheduler.coreWorkers": 64,
+        "kyo.scheduler.minWorkers": 64,
+        "kyo.scheduler.maxWorkers": 64
+      },
+      "size": 256,
+      "parallelism": 64,
+      "delay": 1000,
+      "warmup": 6,
+      "samples": 10
+    },
+    {
+      "label": "flush64Stride64Run3",
+      "runtime": "kyoFlush",
+      "props": {
+        "kyo.scheduler.coreWorkers": 64,
+        "kyo.scheduler.minWorkers": 64,
+        "kyo.scheduler.maxWorkers": 64,
+        "kyo.scheduler.scheduleStride": 64
+      },
+      "size": 256,
+      "parallelism": 64,
+      "delay": 1000,
+      "warmup": 6,
+      "samples": 10
+    },
+    {
+      "label": "flush128Run3",
+      "runtime": "kyoFlush",
+      "props": {
+        "kyo.scheduler.coreWorkers": 128,
+        "kyo.scheduler.minWorkers": 128,
+        "kyo.scheduler.maxWorkers": 128
+      },
+      "size": 256,
+      "parallelism": 64,
+      "delay": 1000,
+      "warmup": 6,
+      "samples": 10
+    }
+  ],
+  "source_sha256": {
+    "build.sbt": "97a92fba60cacf9e372bd17413c462171114078bb0a45d8dae0da394ed1836c2",
+    "bench/src/main/scala/bench/BaseBench.scala": "b15786c9ba294b0083d264cdd7f8b7dbf9415b3e575c7ba8c2ab1169e867dc19",
+    "bench/src/main/scala/bench/matched/MatchedBase.scala": "97caf4e93e6902850ab3a18b502f624a2158803b08b90bf79d619e2dbd8ceca2",
+    "scripts/research_kyo_blocking.py": "4ddb83aa1fbac7efd8672f270d974c8d23015045dce86495eea4c654387f7b28",
+    "bench/src/main/scala/bench/blocking/BlockingBench.scala": "2ee926b8a578ad33fac056e0af864b21a4c476044b41f792da8dab04aebaf254",
+    "bench/src/main/scala/bench/blocking/BlockingHintBench.scala": "d7dd03fdeb5d9f701dc10e68447fbfa843abe5729a2826373521407aafc575e1",
+    "bench/src/main/scala/bench/blocking/SocketFixture.scala": "5e020f4765162633946403594974c205330968b72b8efb522b86425bc38c3d6f",
+    "bench/src/test/scala/bench/blocking/SchedulerResearchProbe.scala": "29db84ecb7a5c9fbe2fe639a38c04efb51426fc85fdb612c5cb059451e9ede7b"
+  },
+  "kind": "instrumented diagnostic, not JMH",
+  "exit_code": 0,
+  "source_changed_during_run": false,
+  "completed_at": "2026-09-06T13:50:40.029489+00:00",
+  "run_log_sha256": "bd5a1549bc0311b1cfa9ac860ae7c28edc9d638fd576fd36062d71097bfc1ed6"
+}

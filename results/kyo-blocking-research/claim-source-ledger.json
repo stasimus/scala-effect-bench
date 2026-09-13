@@ -1,0 +1,210 @@
+{
+  "checked_at": "2026-09-06T13:55:02.801503+00:00",
+  "source_verification": [
+    {
+      "library": "Kyo",
+      "revision": "2e58c0550b209317b85a30fc5787c24b7e4dd63c",
+      "file": "kyo-scheduler/jvm-native/src/main/scala/kyo/scheduler/Scheduler.scala",
+      "sha256": "fbe1e540db5bbab82f5169ef4b93bd8fadbb9d120f40a34b26170019c5d71529",
+      "release_source_jar": "kyo-scheduler_3-1.0.0-RC6-sources.jar",
+      "source_matches_jar": true
+    },
+    {
+      "library": "Kyo",
+      "revision": "2e58c0550b209317b85a30fc5787c24b7e4dd63c",
+      "file": "kyo-scheduler/jvm-native/src/main/scala/kyo/scheduler/Worker.scala",
+      "sha256": "07f5a14aaa5cf12681c6f3a8161a493b0335a558b3eae52a05be59da478b8d82",
+      "release_source_jar": "kyo-scheduler_3-1.0.0-RC6-sources.jar",
+      "source_matches_jar": true
+    },
+    {
+      "library": "Kyo",
+      "revision": "2e58c0550b209317b85a30fc5787c24b7e4dd63c",
+      "file": "kyo-scheduler/jvm-native/src/main/scala/kyo/scheduler/BlockingMonitor.scala",
+      "sha256": "76578300a518f1a15ee062a3d52249b78f75c8f78100d9ba78e318a4d95d9337",
+      "release_source_jar": "kyo-scheduler_3-1.0.0-RC6-sources.jar",
+      "source_matches_jar": true
+    },
+    {
+      "library": "Kyo",
+      "revision": "2e58c0550b209317b85a30fc5787c24b7e4dd63c",
+      "file": "kyo-scheduler/jvm/src/main/scala/kyo/scheduler/util/ThreadUserTime.scala",
+      "sha256": "1edec279240c03a695ab7d1f920470f37562130c66bef8b31d0b790fd43045f5",
+      "release_source_jar": "kyo-scheduler_3-1.0.0-RC6-sources.jar",
+      "source_matches_jar": true
+    },
+    {
+      "library": "Kyo",
+      "revision": "2e58c0550b209317b85a30fc5787c24b7e4dd63c",
+      "file": "kyo-scheduler/jvm-native/src/main/scala/kyo/scheduler/regulator/Admission.scala",
+      "sha256": "a8a78738b7842801953c11205c6b71b837614403dffcd9951131b4c2eecfcdf8",
+      "release_source_jar": "kyo-scheduler_3-1.0.0-RC6-sources.jar",
+      "source_matches_jar": true
+    },
+    {
+      "library": "Kyo",
+      "revision": "2e58c0550b209317b85a30fc5787c24b7e4dd63c",
+      "file": "kyo-scheduler/jvm-native/src/main/scala/kyo/scheduler/regulator/Regulator.scala",
+      "sha256": "b0253988a7abba7df67c6092d7baac2c221c7aef45e17f1f2f9f1650fe7b0fa5",
+      "release_source_jar": "kyo-scheduler_3-1.0.0-RC6-sources.jar",
+      "source_matches_jar": true
+    },
+    {
+      "library": "Kyo",
+      "revision": "2e58c0550b209317b85a30fc5787c24b7e4dd63c",
+      "file": "kyo-scheduler/shared/src/main/scala/kyo/scheduler/Flags.scala",
+      "sha256": "d4d66d1243dcb39b96a6d0e3e44ec3fe311fcfea738698e074a964949d4fd6e1",
+      "release_source_jar": "kyo-scheduler_3-1.0.0-RC6-sources.jar",
+      "source_matches_jar": true
+    },
+    {
+      "library": "Cats Effect",
+      "revision": "v3.7.1",
+      "file": "core/jvm-native/src/main/scala/cats/effect/unsafe/WorkerThread.scala",
+      "sha256": "dc08e348557cf9aeb23c1a82147e09faeec8c3388cb6f9a589bf0c679c867c44",
+      "release_source_jar": "cats-effect_3-3.7.1-sources.jar",
+      "source_matches_jar": true
+    },
+    {
+      "library": "Cats Effect",
+      "revision": "v3.7.1",
+      "file": "core/shared/src/main/scala/cats/effect/IOFiber.scala",
+      "sha256": "a9da13276fc0781eb4ada950afad243192ae936298bf6be16f5bba001d44d065",
+      "release_source_jar": "cats-effect_3-3.7.1-sources.jar",
+      "source_matches_jar": true
+    }
+  ],
+  "machine": {
+    "platform": "macOS-26.6.1-arm64-arm-64bit-Mach-O",
+    "architecture": "arm64",
+    "hw.model": "Mac15,9",
+    "hw.ncpu": "16",
+    "hw.memsize": "51539607552"
+  },
+  "sources": [
+    {
+      "id": "KYO",
+      "title": "Kyo RC6 scheduler and blocking contention benchmark",
+      "publisher": "Kyo contributors",
+      "revision": "2e58c0550b209317b85a30fc5787c24b7e4dd63c",
+      "date": "2026-08-04",
+      "url": "https://github.com/getkyo/kyo/tree/2e58c0550b209317b85a30fc5787c24b7e4dd63c",
+      "access": "Cloned repository; relevant scheduler files matched release source JAR byte for byte. Exact file links appear near claims in report."
+    },
+    {
+      "id": "CE",
+      "title": "Cats Effect v3.7.1 IOFiber and WorkerThread",
+      "publisher": "Cats Effect contributors",
+      "revision": "eb0cc258fc732fc37f22f117c2e81d5554d67024",
+      "date": "2026-08-23",
+      "url": "https://github.com/typelevel/cats-effect/tree/v3.7.1",
+      "access": "git show v3.7.1, not local working tree. Relevant files matched release source JAR byte for byte."
+    },
+    {
+      "id": "DOCS",
+      "title": "kyo-scheduler, Kyo docs 1.0.0-RC6",
+      "publisher": "Kyo contributors",
+      "date": null,
+      "url": "https://getkyo.io/latest/kyo-scheduler/",
+      "access": "Web page opened 2026-09-06; publication date not shown. Version-pinned repository README used for final flush citation.",
+      "native_reference": "turn14view0"
+    },
+    {
+      "id": "DATA",
+      "title": "Blocking scheduler experiments",
+      "publisher": "scala-effect-bench local investigation",
+      "date": "2026-09-06",
+      "url": null,
+      "access": "Local raw JSON and logs: results/blocking, blocking-hint, blocking-investigation, kyo-blocking-research/controls and placement. Instrumented diagnostics explicitly separated from JMH."
+    }
+  ],
+  "claims": [
+    {
+      "claim": "Sync.defer is supported for blocking; flush optional",
+      "sources": [
+        "KYO",
+        "DOCS"
+      ],
+      "evidence": "BlockingContentionBench.scala and scheduler README flush section",
+      "confidence": "high"
+    },
+    {
+      "claim": "Local submission queues explain initial concentration",
+      "sources": [
+        "KYO",
+        "DATA"
+      ],
+      "evidence": "Scheduler.schedule, Worker enqueue/retire; nested vs external plain tasks, native Async.foreach, flush and fixed64 controls",
+      "confidence": "high"
+    },
+    {
+      "claim": "Admission probes activate workers and affect observed delay",
+      "sources": [
+        "KYO",
+        "DATA"
+      ],
+      "evidence": "Admission.collect external ProbeTask; 1ms/default100ms/1000ms interval intervention",
+      "confidence": "high; activation mechanism inferred from source plus intervention, not traced per event"
+    },
+    {
+      "claim": "Automatic adaptation does not promptly supply 64 active lanes",
+      "sources": [
+        "KYO",
+        "DATA"
+      ],
+      "evidence": "Worker time slice, BlockingMonitor, ThreadUserTime, regulator; actual monitor cadence and worker status; fixed16/64 and warmup30 controls",
+      "confidence": "high for this host and workload"
+    },
+    {
+      "claim": "CE immediately transfers queued work on IO.blocking",
+      "sources": [
+        "CE",
+        "DATA"
+      ],
+      "evidence": "IOFiber blocking branch and WorkerThread.prepareForBlocking; peak64 socket calls",
+      "confidence": "high"
+    },
+    {
+      "claim": "Limited placement scan explains most remaining fixed64 gap",
+      "sources": [
+        "KYO",
+        "DATA"
+      ],
+      "evidence": "scheduleStride default16, late first-call starts; full scan and spare capacity controls in three fresh JVMs each",
+      "confidence": "high for effect of intervention; individual placement race untraced"
+    },
+    {
+      "claim": "Virtual workers alone do not fix Kyo case",
+      "sources": [
+        "KYO",
+        "DATA"
+      ],
+      "evidence": "plainVirtual/flushVirtual, all256 calls verified virtual",
+      "confidence": "high for these configs"
+    },
+    {
+      "claim": "CE virtual request variant includes executor transition overhead",
+      "sources": [
+        "CE",
+        "DATA"
+      ],
+      "evidence": "BlockingBench ceVirtual definition and IOFiber blocking execution path",
+      "confidence": "high; whole-lane virtual variant not measured"
+    },
+    {
+      "claim": "No new tuned throughput ranking established",
+      "sources": [
+        "DATA"
+      ],
+      "evidence": "Final controls are instrumented diagnostic medians, three JVMs; no JMH for fixed64 stride64",
+      "confidence": "high"
+    }
+  ],
+  "searches_and_stop": [
+    "Read pinned Kyo scheduling, worker, monitor, CPU-time sampling, regulator, configuration, tests, benchmark and current-main differences.",
+    "Read exact CE release blocking dispatch and replacement-worker lifecycle; checked release source JARs.",
+    "Opened official Kyo documentation. Web exact-source URLs failed; verified cloned git sources instead.",
+    "Ran construction, submission, admission-cadence, worker-capacity, virtual-carrier, warmup, duration and placement controls.",
+    "Stopped after repeated placement controls closed most residual gap and alternative interpretations were bounded. Production and cross-platform generalization require separate benchmarks, not more source searches."
+  ]
+}

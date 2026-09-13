@@ -3,7 +3,7 @@ ThisBuild / organization := "bench"
 ThisBuild / version      := "0.1.0-SNAPSHOT"
 
 lazy val root = (project in file("."))
-    .aggregate(bench)
+    .aggregate(bench, ioBench)
     .settings(name := "scala-effect-bench", publish / skip := true)
 
 lazy val bench = (project in file("bench"))
@@ -17,4 +17,16 @@ lazy val bench = (project in file("bench"))
             "co.fs2"        %% "fs2-core"    % "3.13.0"
         ),
         scalacOptions ++= Seq("-deprecation", "-feature", "-Wconf:msg=unused:s")
+    )
+
+lazy val ioBench = (project in file("io-bench"))
+    .dependsOn(bench)
+    .enablePlugins(JmhPlugin)
+    .settings(
+        name := "io-bench",
+        libraryDependencies ++= Seq(
+            "ch.epfl.lamp" %% "gears" % "0.3.1",
+            "com.softwaremill.ox" %% "core" % "1.0.6"
+        ),
+        scalacOptions ++= Seq("-deprecation", "-feature")
     )

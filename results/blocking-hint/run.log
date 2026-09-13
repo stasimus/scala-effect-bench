@@ -1,0 +1,869 @@
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::arrayBaseOffset has been called by net.openhft.hashing.UnsafeAccess (file:/Users/stas/.sbt/boot/scala-2.12.21/org.scala-sbt/sbt/1.13.0/zero-allocation-hashing-0.16.jar)
+WARNING: Please consider reporting this to the maintainers of class net.openhft.hashing.UnsafeAccess
+WARNING: sun.misc.Unsafe::arrayBaseOffset will be removed in a future release
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.scalasbt.ipcsocket.NativeLoader in an unnamed module (file:/Users/stas/.sbt/boot/scala-2.12.21/org.scala-sbt/sbt/1.13.0/ipcsocket-1.8.0.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+[info] welcome to sbt 1.13.0 (Oracle Corporation Java 25.0.3)
+[info] loading global plugins from /Users/stas/.sbt/1.0/plugins
+[info] loading settings for project scala-effect-bench-build from plugins.sbt...
+[info] loading project definition from /Users/stas/projects/scala-effect-bench/project
+[info] loading settings for project root from build.sbt...
+[info] set current project to scala-effect-bench (in build file:/Users/stas/projects/scala-effect-bench/)
+[info] Defining bench / Test / fork
+[info] The new value will be used by bench / Jmh / testGrouping, bench / Test / run / runner and 1 others.
+[info] 	Run `last` for details.
+[info] Reapplying settings...
+[info] set current project to scala-effect-bench (in build file:/Users/stas/projects/scala-effect-bench/)
+[info] compiling 1 Scala source to /Users/stas/projects/scala-effect-bench/bench/target/scala-3.8.4/test-classes ...
+[info] done compiling
+[info] running (fork) bench.blocking.BlockingHintValidation 
+[error] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[error] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by scala.runtime.LazyVals$ (file:/Users/stas/projects/scala-effect-bench/target/bg-jobs/sbt_cdaa28d5/target/d0b0f281/97ac0ce1/scala-library-3.8.4.jar)
+[error] WARNING: Please consider reporting this to the maintainers of class scala.runtime.LazyVals$
+[error] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] PASS 48 blocking hint checks
+[success] Total time: 24 s, completed 6 Sept 2026, 15:16:16
+[info] running (fork) org.openjdk.jmh.generators.bytecode.JmhBytecodeGenerator /Users/stas/projects/scala-effect-bench/bench/target/scala-3.8.4/classes /Users/stas/projects/scala-effect-bench/bench/target/scala-3.8.4/src_managed/jmh /Users/stas/projects/scala-effect-bench/bench/target/scala-3.8.4/resource_managed/jmh default
+[info] Processing 421 classes from /Users/stas/projects/scala-effect-bench/bench/target/scala-3.8.4/classes with "reflection" generator
+[info] Writing out Java source to /Users/stas/projects/scala-effect-bench/bench/target/scala-3.8.4/src_managed/jmh and resources to /Users/stas/projects/scala-effect-bench/bench/target/scala-3.8.4/resource_managed/jmh
+[info] compiling 5 Java sources to /Users/stas/projects/scala-effect-bench/bench/target/scala-3.8.4/classes ...
+[info] done compiling
+[info] running (fork) org.openjdk.jmh.Main -i 5 -wi 5 -f 3 -r 1s -w 1s -foe true -prof gc -rf json -p parallelism=64 -p delayMicros=1000 -rff /Users/stas/projects/scala-effect-bench/results/blocking-hint/current.json .*bench.blocking.BlockingHintBench.requests
+[error] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[error] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/Users/stas/projects/scala-effect-bench/target/bg-jobs/sbt_cdaa28d5/target/ec0caa91/1296d6b9/jmh-core-1.37.jar)
+[error] WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+[error] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] # JMH version: 1.37
+[info] # VM version: JDK 25.0.3, Java HotSpot(TM) 64-Bit Server VM, 25.0.3+9-LTS-195
+[info] # VM invoker: /Users/stas/.sdkman/candidates/java/25.0.3-oracle/bin/java
+[info] # VM options: --add-opens=java.base/java.lang=ALL-UNNAMED -Xms2g -Xmx2g -XX:+UseG1GC
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Throughput, ops/time
+[info] # Benchmark: bench.blocking.BlockingHintBench.requests
+[info] # Parameters: (delayMicros = 1000, parallelism = 64, runtime = ce, size = 256)
+[info] # Run progress: 0,00% complete, ETA 00:02:00
+[info] # Fork: 1 of 3
+[info] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/Users/stas/projects/scala-effect-bench/target/bg-jobs/sbt_cdaa28d5/target/ec0caa91/1296d6b9/jmh-core-1.37.jar)
+[info] WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] # Warmup Iteration   1: 112,405 ops/s
+[info] # Warmup Iteration   2: 144,666 ops/s
+[info] # Warmup Iteration   3: 143,608 ops/s
+[info] # Warmup Iteration   4: 148,940 ops/s
+[info] # Warmup Iteration   5: 143,527 ops/s
+[info] Iteration   1: 144,326 ops/s
+[info]                  gc.alloc.rate:      22,598 MB/sec
+[info]                  gc.alloc.rate.norm: 164197,131 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info] Iteration   2: 148,520 ops/s
+[info]                  gc.alloc.rate:      23,311 MB/sec
+[info]                  gc.alloc.rate.norm: 164593,450 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info] Iteration   3: 150,443 ops/s
+[info]                  gc.alloc.rate:      23,619 MB/sec
+[info]                  gc.alloc.rate.norm: 164638,887 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info] Iteration   4: 143,321 ops/s
+[info]                  gc.alloc.rate:      22,456 MB/sec
+[info]                  gc.alloc.rate.norm: 164314,167 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info] Iteration   5: 149,750 ops/s
+[info]                  gc.alloc.rate:      17,801 MB/sec
+[info]                  gc.alloc.rate.norm: 164989,813 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info] # Run progress: 8,33% complete, ETA 00:02:53
+[info] # Fork: 2 of 3
+[info] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/Users/stas/projects/scala-effect-bench/target/bg-jobs/sbt_cdaa28d5/target/ec0caa91/1296d6b9/jmh-core-1.37.jar)
+[info] WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] # Warmup Iteration   1: 122,865 ops/s
+[info] # Warmup Iteration   2: 151,393 ops/s
+[info] # Warmup Iteration   3: 147,749 ops/s
+[info] # Warmup Iteration   4: 148,255 ops/s
+[info] # Warmup Iteration   5: 145,371 ops/s
+[info] Iteration   1: 151,516 ops/s
+[info]                  gc.alloc.rate:      23,758 MB/sec
+[info]                  gc.alloc.rate.norm: 164442,158 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info] Iteration   2: 150,313 ops/s
+[info]                  gc.alloc.rate:      23,582 MB/sec
+[info]                  gc.alloc.rate.norm: 164518,199 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info] Iteration   3: 153,423 ops/s
+[info]                  gc.alloc.rate:      24,059 MB/sec
+[info]                  gc.alloc.rate.norm: 164450,961 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info] Iteration   4: 151,439 ops/s
+[info]                  gc.alloc.rate:      23,712 MB/sec
+[info]                  gc.alloc.rate.norm: 164227,190 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info] Iteration   5: 151,516 ops/s
+[info]                  gc.alloc.rate:      18,166 MB/sec
+[info]                  gc.alloc.rate.norm: 164715,789 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info] # Run progress: 16,67% complete, ETA 00:02:37
+[info] # Fork: 3 of 3
+[info] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/Users/stas/projects/scala-effect-bench/target/bg-jobs/sbt_cdaa28d5/target/ec0caa91/1296d6b9/jmh-core-1.37.jar)
+[info] WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] # Warmup Iteration   1: 121,749 ops/s
+[info] # Warmup Iteration   2: 151,962 ops/s
+[info] # Warmup Iteration   3: 151,550 ops/s
+[info] # Warmup Iteration   4: 151,322 ops/s
+[info] # Warmup Iteration   5: 156,506 ops/s
+[info] Iteration   1: 154,100 ops/s
+[info]                  gc.alloc.rate:      24,450 MB/sec
+[info]                  gc.alloc.rate.norm: 166399,484 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info] Iteration   2: 157,927 ops/s
+[info]                  gc.alloc.rate:      24,985 MB/sec
+[info]                  gc.alloc.rate.norm: 165911,648 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info] Iteration   3: 152,043 ops/s
+[info]                  gc.alloc.rate:      24,116 MB/sec
+[info]                  gc.alloc.rate.norm: 166337,098 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info] Iteration   4: 152,696 ops/s
+[info]                  gc.alloc.rate:      24,140 MB/sec
+[info]                  gc.alloc.rate.norm: 165792,784 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info] Iteration   5: 150,208 ops/s
+[info]                  gc.alloc.rate:      18,030 MB/sec
+[info]                  gc.alloc.rate.norm: 166019,815 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info] Result "bench.blocking.BlockingHintBench.requests":
+[info]   150,769 ±(99.9%) 3,833 ops/s [Average]
+[info]   (min, avg, max) = (143,321, 150,769, 157,927), stdev = 3,586
+[info]   CI (99.9%): [146,936, 154,603] (assumes normal distribution)
+[info] Secondary result "bench.blocking.BlockingHintBench.requests:gc.alloc.rate":
+[info]   22,586 ±(99.9%) 2,628 MB/sec [Average]
+[info]   (min, avg, max) = (17,801, 22,586, 24,985), stdev = 2,458
+[info]   CI (99.9%): [19,958, 25,213] (assumes normal distribution)
+[info] Secondary result "bench.blocking.BlockingHintBench.requests:gc.alloc.rate.norm":
+[info]   165036,572 ±(99.9%) 864,717 B/op [Average]
+[info]   (min, avg, max) = (164197,131, 165036,572, 166399,484), stdev = 808,857
+[info]   CI (99.9%): [164171,855, 165901,288] (assumes normal distribution)
+[info] Secondary result "bench.blocking.BlockingHintBench.requests:gc.count":
+[info]   ≈ 0 counts
+[info] # JMH version: 1.37
+[info] # VM version: JDK 25.0.3, Java HotSpot(TM) 64-Bit Server VM, 25.0.3+9-LTS-195
+[info] # VM invoker: /Users/stas/.sdkman/candidates/java/25.0.3-oracle/bin/java
+[info] # VM options: --add-opens=java.base/java.lang=ALL-UNNAMED -Xms2g -Xmx2g -XX:+UseG1GC
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Throughput, ops/time
+[info] # Benchmark: bench.blocking.BlockingHintBench.requests
+[info] # Parameters: (delayMicros = 1000, parallelism = 64, runtime = kyoFlush, size = 256)
+[info] # Run progress: 25,00% complete, ETA 00:02:22
+[info] # Fork: 1 of 3
+[info] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/Users/stas/projects/scala-effect-bench/target/bg-jobs/sbt_cdaa28d5/target/ec0caa91/1296d6b9/jmh-core-1.37.jar)
+[info] WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] # Warmup Iteration   1: 38,970 ops/s
+[info] # Warmup Iteration   2: 44,430 ops/s
+[info] # Warmup Iteration   3: 45,236 ops/s
+[info] # Warmup Iteration   4: 44,993 ops/s
+[info] # Warmup Iteration   5: 51,434 ops/s
+[info] Iteration   1: 58,532 ops/s
+[info]                  gc.alloc.rate:      9,037 MB/sec
+[info]                  gc.alloc.rate.norm: 161912,542 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info] Iteration   2: 58,581 ops/s
+[info]                  gc.alloc.rate:      9,007 MB/sec
+[info]                  gc.alloc.rate.norm: 161240,814 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info] Iteration   3: 72,407 ops/s
+[info]                  gc.alloc.rate:      10,969 MB/sec
+[info]                  gc.alloc.rate.norm: 158871,890 B/op
+[info]                  gc.count:           1,000 counts
+[info]                  gc.time:            2,000 ms
+[info] Iteration   4: 82,720 ops/s
+[info]                  gc.alloc.rate:      12,405 MB/sec
+[info]                  gc.alloc.rate.norm: 157267,333 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info] Iteration   5: 83,692 ops/s
+[info]                  gc.alloc.rate:      9,555 MB/sec
+[info]                  gc.alloc.rate.norm: 157424,667 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info] # Run progress: 33,33% complete, ETA 00:02:06
+[info] # Fork: 2 of 3
+[info] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/Users/stas/projects/scala-effect-bench/target/bg-jobs/sbt_cdaa28d5/target/ec0caa91/1296d6b9/jmh-core-1.37.jar)
+[info] WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] # Warmup Iteration   1: 39,874 ops/s
+[info] # Warmup Iteration   2: 45,087 ops/s
+[info] # Warmup Iteration   3: 45,079 ops/s
+[info] # Warmup Iteration   4: 44,920 ops/s
+[info] # Warmup Iteration   5: 44,753 ops/s
+[info] Iteration   1: 44,572 ops/s
+[info]                  gc.alloc.rate:      7,039 MB/sec
+[info]                  gc.alloc.rate.norm: 165630,400 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info] Iteration   2: 44,622 ops/s
+[info]                  gc.alloc.rate:      7,051 MB/sec
+[info]                  gc.alloc.rate.norm: 165702,222 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info] Iteration   3: 44,978 ops/s
+[info]                  gc.alloc.rate:      7,111 MB/sec
+[info]                  gc.alloc.rate.norm: 165802,783 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info] Iteration   4: 44,882 ops/s
+[info]                  gc.alloc.rate:      7,091 MB/sec
+[info]                  gc.alloc.rate.norm: 165681,391 B/op
+[info]                  gc.count:           1,000 counts
+[info]                  gc.time:            2,000 ms
+[info] Iteration   5: 45,213 ops/s
+[info]                  gc.alloc.rate:      5,441 MB/sec
+[info]                  gc.alloc.rate.norm: 165462,783 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info] # Run progress: 41,67% complete, ETA 00:01:50
+[info] # Fork: 3 of 3
+[info] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/Users/stas/projects/scala-effect-bench/target/bg-jobs/sbt_cdaa28d5/target/ec0caa91/1296d6b9/jmh-core-1.37.jar)
+[info] WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] # Warmup Iteration   1: 37,966 ops/s
+[info] # Warmup Iteration   2: 45,096 ops/s
+[info] # Warmup Iteration   3: 45,216 ops/s
+[info] # Warmup Iteration   4: 45,244 ops/s
+[info] # Warmup Iteration   5: 45,198 ops/s
+[info] Iteration   1: 45,182 ops/s
+[info]                  gc.alloc.rate:      7,074 MB/sec
+[info]                  gc.alloc.rate.norm: 164200,870 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info] Iteration   2: 44,986 ops/s
+[info]                  gc.alloc.rate:      7,048 MB/sec
+[info]                  gc.alloc.rate.norm: 164293,867 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info] Iteration   3: 45,285 ops/s
+[info]                  gc.alloc.rate:      7,085 MB/sec
+[info]                  gc.alloc.rate.norm: 164058,261 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info] Iteration   4: 46,225 ops/s
+[info]                  gc.alloc.rate:      7,212 MB/sec
+[info]                  gc.alloc.rate.norm: 163616,000 B/op
+[info]                  gc.count:           1,000 counts
+[info]                  gc.time:            1,000 ms
+[info] Iteration   5: 58,908 ops/s
+[info]                  gc.alloc.rate:      6,971 MB/sec
+[info]                  gc.alloc.rate.norm: 162825,867 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info] Result "bench.blocking.BlockingHintBench.requests":
+[info]   54,719 ±(99.9%) 15,165 ops/s [Average]
+[info]   (min, avg, max) = (44,572, 54,719, 83,692), stdev = 14,185
+[info]   CI (99.9%): [39,554, 69,884] (assumes normal distribution)
+[info] Secondary result "bench.blocking.BlockingHintBench.requests:gc.alloc.rate":
+[info]   8,006 ±(99.9%) 1,959 MB/sec [Average]
+[info]   (min, avg, max) = (5,441, 8,006, 12,405), stdev = 1,832
+[info]   CI (99.9%): [6,048, 9,965] (assumes normal distribution)
+[info] Secondary result "bench.blocking.BlockingHintBench.requests:gc.alloc.rate.norm":
+[info]   162932,779 ±(99.9%) 3196,681 B/op [Average]
+[info]   (min, avg, max) = (157267,333, 162932,779, 165802,783), stdev = 2990,177
+[info]   CI (99.9%): [159736,098, 166129,460] (assumes normal distribution)
+[info] Secondary result "bench.blocking.BlockingHintBench.requests:gc.count":
+[info]   3,000 ±(99.9%) 0,001 counts [Sum]
+[info]   (min, avg, max) = (≈ 0, 0,200, 1,000), stdev = 0,414
+[info]   CI (99.9%): [3,000, 3,000] (assumes normal distribution)
+[info] Secondary result "bench.blocking.BlockingHintBench.requests:gc.time":
+[info]   5,000 ±(99.9%) 0,001 ms [Sum]
+[info]   (min, avg, max) = (≈ 0, 0,333, 2,000), stdev = 0,724
+[info]   CI (99.9%): [5,000, 5,000] (assumes normal distribution)
+[info] # JMH version: 1.37
+[info] # VM version: JDK 25.0.3, Java HotSpot(TM) 64-Bit Server VM, 25.0.3+9-LTS-195
+[info] # VM invoker: /Users/stas/.sdkman/candidates/java/25.0.3-oracle/bin/java
+[info] # VM options: --add-opens=java.base/java.lang=ALL-UNNAMED -Xms2g -Xmx2g -XX:+UseG1GC
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Sampling time
+[info] # Benchmark: bench.blocking.BlockingHintBench.requests
+[info] # Parameters: (delayMicros = 1000, parallelism = 64, runtime = ce, size = 256)
+[info] # Run progress: 50,00% complete, ETA 00:01:35
+[info] # Fork: 1 of 3
+[info] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/Users/stas/projects/scala-effect-bench/target/bg-jobs/sbt_cdaa28d5/target/ec0caa91/1296d6b9/jmh-core-1.37.jar)
+[info] WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] # Warmup Iteration   1: 0,008 ±(99.9%) 0,005 s/op
+[info] # Warmup Iteration   2: 0,007 ±(99.9%) 0,001 s/op
+[info] # Warmup Iteration   3: 0,007 ±(99.9%) 0,001 s/op
+[info] # Warmup Iteration   4: 0,007 ±(99.9%) 0,001 s/op
+[info] # Warmup Iteration   5: 0,007 ±(99.9%) 0,001 s/op
+[info] Iteration   1: 0,007 ±(99.9%) 0,001 s/op
+[info]                  gc.alloc.rate:      24,130 MB/sec
+[info]                  gc.alloc.rate.norm: 166713,474 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info]                  p0.00:              0,006 s/op
+[info]                  p0.50:              0,007 s/op
+[info]                  p0.90:              0,007 s/op
+[info]                  p0.95:              0,007 s/op
+[info]                  p0.99:              0,008 s/op
+[info]                  p0.999:             0,008 s/op
+[info]                  p0.9999:            0,008 s/op
+[info]                  p1.00:              0,008 s/op
+[info] Iteration   2: 0,007 ±(99.9%) 0,001 s/op
+[info]                  gc.alloc.rate:      23,773 MB/sec
+[info]                  gc.alloc.rate.norm: 166144,795 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info]                  p0.00:              0,006 s/op
+[info]                  p0.50:              0,007 s/op
+[info]                  p0.90:              0,007 s/op
+[info]                  p0.95:              0,007 s/op
+[info]                  p0.99:              0,008 s/op
+[info]                  p0.999:             0,008 s/op
+[info]                  p0.9999:            0,008 s/op
+[info]                  p1.00:              0,008 s/op
+[info] Iteration   3: 0,007 ±(99.9%) 0,001 s/op
+[info]                  gc.alloc.rate:      24,140 MB/sec
+[info]                  gc.alloc.rate.norm: 166667,974 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info]                  p0.00:              0,006 s/op
+[info]                  p0.50:              0,007 s/op
+[info]                  p0.90:              0,007 s/op
+[info]                  p0.95:              0,007 s/op
+[info]                  p0.99:              0,008 s/op
+[info]                  p0.999:             0,008 s/op
+[info]                  p0.9999:            0,008 s/op
+[info]                  p1.00:              0,008 s/op
+[info] Iteration   4: 0,007 ±(99.9%) 0,001 s/op
+[info]                  gc.alloc.rate:      23,261 MB/sec
+[info]                  gc.alloc.rate.norm: 166310,432 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info]                  p0.00:              0,006 s/op
+[info]                  p0.50:              0,007 s/op
+[info]                  p0.90:              0,008 s/op
+[info]                  p0.95:              0,008 s/op
+[info]                  p0.99:              0,009 s/op
+[info]                  p0.999:             0,011 s/op
+[info]                  p0.9999:            0,011 s/op
+[info]                  p1.00:              0,011 s/op
+[info] Iteration   5: 0,007 ±(99.9%) 0,001 s/op
+[info]                  gc.alloc.rate:      17,852 MB/sec
+[info]                  gc.alloc.rate.norm: 166487,839 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info]                  p0.00:              0,006 s/op
+[info]                  p0.50:              0,007 s/op
+[info]                  p0.90:              0,008 s/op
+[info]                  p0.95:              0,008 s/op
+[info]                  p0.99:              0,008 s/op
+[info]                  p0.999:             0,008 s/op
+[info]                  p0.9999:            0,008 s/op
+[info]                  p1.00:              0,008 s/op
+[info] # Run progress: 58,33% complete, ETA 00:01:19
+[info] # Fork: 2 of 3
+[info] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/Users/stas/projects/scala-effect-bench/target/bg-jobs/sbt_cdaa28d5/target/ec0caa91/1296d6b9/jmh-core-1.37.jar)
+[info] WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] # Warmup Iteration   1: 0,008 ±(99.9%) 0,005 s/op
+[info] # Warmup Iteration   2: 0,007 ±(99.9%) 0,001 s/op
+[info] # Warmup Iteration   3: 0,006 ±(99.9%) 0,001 s/op
+[info] # Warmup Iteration   4: 0,007 ±(99.9%) 0,001 s/op
+[info] # Warmup Iteration   5: 0,007 ±(99.9%) 0,001 s/op
+[info] Iteration   1: 0,007 ±(99.9%) 0,001 s/op
+[info]                  gc.alloc.rate:      23,366 MB/sec
+[info]                  gc.alloc.rate.norm: 164321,547 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info]                  p0.00:              0,006 s/op
+[info]                  p0.50:              0,007 s/op
+[info]                  p0.90:              0,007 s/op
+[info]                  p0.95:              0,007 s/op
+[info]                  p0.99:              0,008 s/op
+[info]                  p0.999:             0,008 s/op
+[info]                  p0.9999:            0,008 s/op
+[info]                  p1.00:              0,008 s/op
+[info] Iteration   2: 0,007 ±(99.9%) 0,001 s/op
+[info]                  gc.alloc.rate:      23,253 MB/sec
+[info]                  gc.alloc.rate.norm: 164501,799 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info]                  p0.00:              0,006 s/op
+[info]                  p0.50:              0,007 s/op
+[info]                  p0.90:              0,007 s/op
+[info]                  p0.95:              0,008 s/op
+[info]                  p0.99:              0,008 s/op
+[info]                  p0.999:             0,008 s/op
+[info]                  p0.9999:            0,008 s/op
+[info]                  p1.00:              0,008 s/op
+[info] Iteration   3: 0,007 ±(99.9%) 0,001 s/op
+[info]                  gc.alloc.rate:      23,991 MB/sec
+[info]                  gc.alloc.rate.norm: 164802,614 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info]                  p0.00:              0,006 s/op
+[info]                  p0.50:              0,006 s/op
+[info]                  p0.90:              0,007 s/op
+[info]                  p0.95:              0,007 s/op
+[info]                  p0.99:              0,008 s/op
+[info]                  p0.999:             0,008 s/op
+[info]                  p0.9999:            0,008 s/op
+[info]                  p1.00:              0,008 s/op
+[info] Iteration   4: 0,007 ±(99.9%) 0,001 s/op
+[info]                  gc.alloc.rate:      24,189 MB/sec
+[info]                  gc.alloc.rate.norm: 165243,844 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info]                  p0.00:              0,006 s/op
+[info]                  p0.50:              0,006 s/op
+[info]                  p0.90:              0,007 s/op
+[info]                  p0.95:              0,007 s/op
+[info]                  p0.99:              0,007 s/op
+[info]                  p0.999:             0,008 s/op
+[info]                  p0.9999:            0,008 s/op
+[info]                  p1.00:              0,008 s/op
+[info] Iteration   5: 0,007 ±(99.9%) 0,001 s/op
+[info]                  gc.alloc.rate:      17,833 MB/sec
+[info]                  gc.alloc.rate.norm: 164732,397 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info]                  p0.00:              0,006 s/op
+[info]                  p0.50:              0,007 s/op
+[info]                  p0.90:              0,007 s/op
+[info]                  p0.95:              0,008 s/op
+[info]                  p0.99:              0,008 s/op
+[info]                  p0.999:             0,008 s/op
+[info]                  p0.9999:            0,008 s/op
+[info]                  p1.00:              0,008 s/op
+[info] # Run progress: 66,67% complete, ETA 00:01:03
+[info] # Fork: 3 of 3
+[info] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/Users/stas/projects/scala-effect-bench/target/bg-jobs/sbt_cdaa28d5/target/ec0caa91/1296d6b9/jmh-core-1.37.jar)
+[info] WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] # Warmup Iteration   1: 0,008 ±(99.9%) 0,005 s/op
+[info] # Warmup Iteration   2: 0,007 ±(99.9%) 0,001 s/op
+[info] # Warmup Iteration   3: 0,007 ±(99.9%) 0,001 s/op
+[info] # Warmup Iteration   4: 0,006 ±(99.9%) 0,001 s/op
+[info] # Warmup Iteration   5: 0,007 ±(99.9%) 0,001 s/op
+[info] Iteration   1: 0,007 ±(99.9%) 0,001 s/op
+[info]                  gc.alloc.rate:      24,003 MB/sec
+[info]                  gc.alloc.rate.norm: 164861,752 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info]                  p0.00:              0,006 s/op
+[info]                  p0.50:              0,007 s/op
+[info]                  p0.90:              0,007 s/op
+[info]                  p0.95:              0,007 s/op
+[info]                  p0.99:              0,007 s/op
+[info]                  p0.999:             0,008 s/op
+[info]                  p0.9999:            0,008 s/op
+[info]                  p1.00:              0,008 s/op
+[info] Iteration   2: 0,007 ±(99.9%) 0,001 s/op
+[info]                  gc.alloc.rate:      23,495 MB/sec
+[info]                  gc.alloc.rate.norm: 164613,934 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info]                  p0.00:              0,006 s/op
+[info]                  p0.50:              0,007 s/op
+[info]                  p0.90:              0,007 s/op
+[info]                  p0.95:              0,007 s/op
+[info]                  p0.99:              0,008 s/op
+[info]                  p0.999:             0,008 s/op
+[info]                  p0.9999:            0,008 s/op
+[info]                  p1.00:              0,008 s/op
+[info] Iteration   3: 0,006 ±(99.9%) 0,001 s/op
+[info]                  gc.alloc.rate:      24,271 MB/sec
+[info]                  gc.alloc.rate.norm: 165178,890 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info]                  p0.00:              0,006 s/op
+[info]                  p0.50:              0,006 s/op
+[info]                  p0.90:              0,007 s/op
+[info]                  p0.95:              0,007 s/op
+[info]                  p0.99:              0,008 s/op
+[info]                  p0.999:             0,008 s/op
+[info]                  p0.9999:            0,008 s/op
+[info]                  p1.00:              0,008 s/op
+[info] Iteration   4: 0,007 ±(99.9%) 0,001 s/op
+[info]                  gc.alloc.rate:      23,861 MB/sec
+[info]                  gc.alloc.rate.norm: 164810,667 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info]                  p0.00:              0,006 s/op
+[info]                  p0.50:              0,007 s/op
+[info]                  p0.90:              0,007 s/op
+[info]                  p0.95:              0,007 s/op
+[info]                  p0.99:              0,008 s/op
+[info]                  p0.999:             0,008 s/op
+[info]                  p0.9999:            0,008 s/op
+[info]                  p1.00:              0,008 s/op
+[info] Iteration   5: 0,007 ±(99.9%) 0,001 s/op
+[info]                  gc.alloc.rate:      18,056 MB/sec
+[info]                  gc.alloc.rate.norm: 165046,275 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info]                  p0.00:              0,006 s/op
+[info]                  p0.50:              0,007 s/op
+[info]                  p0.90:              0,007 s/op
+[info]                  p0.95:              0,007 s/op
+[info]                  p0.99:              0,008 s/op
+[info]                  p0.999:             0,008 s/op
+[info]                  p0.9999:            0,008 s/op
+[info]                  p1.00:              0,008 s/op
+[info] Result "bench.blocking.BlockingHintBench.requests":
+[info]   N = 2275
+[info]   mean =      0,007 ±(99.9%) 0,001 s/op
+[info]   Histogram, s/op:
+[info]     [0,005, 0,006) = 0 
+[info]     [0,006, 0,006) = 165 
+[info]     [0,006, 0,007) = 786 
+[info]     [0,007, 0,007) = 900 
+[info]     [0,007, 0,008) = 327 
+[info]     [0,008, 0,008) = 88 
+[info]     [0,008, 0,009) = 8 
+[info]     [0,009, 0,009) = 0 
+[info]     [0,009, 0,010) = 0 
+[info]     [0,010, 0,010) = 0 
+[info]     [0,010, 0,010) = 0 
+[info]   Percentiles, s/op:
+[info]       p(0,0000) =      0,006 s/op
+[info]      p(50,0000) =      0,007 s/op
+[info]      p(90,0000) =      0,007 s/op
+[info]      p(95,0000) =      0,007 s/op
+[info]      p(99,0000) =      0,008 s/op
+[info]      p(99,9000) =      0,008 s/op
+[info]      p(99,9900) =      0,011 s/op
+[info]      p(99,9990) =      0,011 s/op
+[info]      p(99,9999) =      0,011 s/op
+[info]     p(100,0000) =      0,011 s/op
+[info] Secondary result "bench.blocking.BlockingHintBench.requests:gc.alloc.rate":
+[info]   22,632 ±(99.9%) 2,635 MB/sec [Average]
+[info]   (min, avg, max) = (17,833, 22,632, 24,271), stdev = 2,465
+[info]   CI (99.9%): [19,997, 25,267] (assumes normal distribution)
+[info] Secondary result "bench.blocking.BlockingHintBench.requests:gc.alloc.rate.norm":
+[info]   165362,549 ±(99.9%) 908,236 B/op [Average]
+[info]   (min, avg, max) = (164321,547, 165362,549, 166713,474), stdev = 849,565
+[info]   CI (99.9%): [164454,313, 166270,785] (assumes normal distribution)
+[info] Secondary result "bench.blocking.BlockingHintBench.requests:gc.count":
+[info]   ≈ 0 counts
+[info] # JMH version: 1.37
+[info] # VM version: JDK 25.0.3, Java HotSpot(TM) 64-Bit Server VM, 25.0.3+9-LTS-195
+[info] # VM invoker: /Users/stas/.sdkman/candidates/java/25.0.3-oracle/bin/java
+[info] # VM options: --add-opens=java.base/java.lang=ALL-UNNAMED -Xms2g -Xmx2g -XX:+UseG1GC
+[info] # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Sampling time
+[info] # Benchmark: bench.blocking.BlockingHintBench.requests
+[info] # Parameters: (delayMicros = 1000, parallelism = 64, runtime = kyoFlush, size = 256)
+[info] # Run progress: 75,00% complete, ETA 00:00:47
+[info] # Fork: 1 of 3
+[info] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/Users/stas/projects/scala-effect-bench/target/bg-jobs/sbt_cdaa28d5/target/ec0caa91/1296d6b9/jmh-core-1.37.jar)
+[info] WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] # Warmup Iteration   1: 0,029 ±(99.9%) 0,022 s/op
+[info] # Warmup Iteration   2: 0,022 ±(99.9%) 0,001 s/op
+[info] # Warmup Iteration   3: 0,022 ±(99.9%) 0,001 s/op
+[info] # Warmup Iteration   4: 0,022 ±(99.9%) 0,001 s/op
+[info] # Warmup Iteration   5: 0,022 ±(99.9%) 0,001 s/op
+[info] Iteration   1: 0,022 ±(99.9%) 0,001 s/op
+[info]                  gc.alloc.rate:      7,046 MB/sec
+[info]                  gc.alloc.rate.norm: 162958,087 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info]                  p0.00:              0,021 s/op
+[info]                  p0.50:              0,022 s/op
+[info]                  p0.90:              0,023 s/op
+[info]                  p0.95:              0,023 s/op
+[info]                  p0.99:              0,023 s/op
+[info]                  p0.999:             0,023 s/op
+[info]                  p0.9999:            0,023 s/op
+[info]                  p1.00:              0,023 s/op
+[info] Iteration   2: 0,022 ±(99.9%) 0,001 s/op
+[info]                  gc.alloc.rate:      6,911 MB/sec
+[info]                  gc.alloc.rate.norm: 161336,522 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info]                  p0.00:              0,021 s/op
+[info]                  p0.50:              0,022 s/op
+[info]                  p0.90:              0,023 s/op
+[info]                  p0.95:              0,023 s/op
+[info]                  p0.99:              0,024 s/op
+[info]                  p0.999:             0,024 s/op
+[info]                  p0.9999:            0,024 s/op
+[info]                  p1.00:              0,024 s/op
+[info] Iteration   3: 0,019 ±(99.9%) 0,001 s/op
+[info]                  gc.alloc.rate:      8,066 MB/sec
+[info]                  gc.alloc.rate.norm: 161178,566 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info]                  p0.00:              0,016 s/op
+[info]                  p0.50:              0,017 s/op
+[info]                  p0.90:              0,022 s/op
+[info]                  p0.95:              0,023 s/op
+[info]                  p0.99:              0,023 s/op
+[info]                  p0.999:             0,023 s/op
+[info]                  p0.9999:            0,023 s/op
+[info]                  p1.00:              0,023 s/op
+[info] Iteration   4: 0,017 ±(99.9%) 0,001 s/op
+[info]                  gc.alloc.rate:      8,992 MB/sec
+[info]                  gc.alloc.rate.norm: 160849,763 B/op
+[info]                  gc.count:           1,000 counts
+[info]                  gc.time:            1,000 ms
+[info]                  p0.00:              0,016 s/op
+[info]                  p0.50:              0,017 s/op
+[info]                  p0.90:              0,017 s/op
+[info]                  p0.95:              0,018 s/op
+[info]                  p0.99:              0,018 s/op
+[info]                  p0.999:             0,018 s/op
+[info]                  p0.9999:            0,018 s/op
+[info]                  p1.00:              0,018 s/op
+[info] Iteration   5: 0,017 ±(99.9%) 0,001 s/op
+[info]                  gc.alloc.rate:      6,763 MB/sec
+[info]                  gc.alloc.rate.norm: 159836,746 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info]                  p0.00:              0,016 s/op
+[info]                  p0.50:              0,017 s/op
+[info]                  p0.90:              0,018 s/op
+[info]                  p0.95:              0,018 s/op
+[info]                  p0.99:              0,018 s/op
+[info]                  p0.999:             0,018 s/op
+[info]                  p0.9999:            0,018 s/op
+[info]                  p1.00:              0,018 s/op
+[info] # Run progress: 83,33% complete, ETA 00:00:31
+[info] # Fork: 2 of 3
+[info] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/Users/stas/projects/scala-effect-bench/target/bg-jobs/sbt_cdaa28d5/target/ec0caa91/1296d6b9/jmh-core-1.37.jar)
+[info] WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] # Warmup Iteration   1: 0,027 ±(99.9%) 0,014 s/op
+[info] # Warmup Iteration   2: 0,022 ±(99.9%) 0,001 s/op
+[info] # Warmup Iteration   3: 0,022 ±(99.9%) 0,001 s/op
+[info] # Warmup Iteration   4: 0,022 ±(99.9%) 0,001 s/op
+[info] # Warmup Iteration   5: 0,022 ±(99.9%) 0,001 s/op
+[info] Iteration   1: 0,022 ±(99.9%) 0,001 s/op
+[info]                  gc.alloc.rate:      7,094 MB/sec
+[info]                  gc.alloc.rate.norm: 164990,783 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info]                  p0.00:              0,021 s/op
+[info]                  p0.50:              0,022 s/op
+[info]                  p0.90:              0,023 s/op
+[info]                  p0.95:              0,023 s/op
+[info]                  p0.99:              0,023 s/op
+[info]                  p0.999:             0,023 s/op
+[info]                  p0.9999:            0,023 s/op
+[info]                  p1.00:              0,023 s/op
+[info] Iteration   2: 0,022 ±(99.9%) 0,001 s/op
+[info]                  gc.alloc.rate:      7,082 MB/sec
+[info]                  gc.alloc.rate.norm: 163764,000 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info]                  p0.00:              0,021 s/op
+[info]                  p0.50:              0,022 s/op
+[info]                  p0.90:              0,022 s/op
+[info]                  p0.95:              0,023 s/op
+[info]                  p0.99:              0,023 s/op
+[info]                  p0.999:             0,023 s/op
+[info]                  p0.9999:            0,023 s/op
+[info]                  p1.00:              0,023 s/op
+[info] Iteration   3: 0,019 ±(99.9%) 0,001 s/op
+[info]                  gc.alloc.rate:      8,164 MB/sec
+[info]                  gc.alloc.rate.norm: 163545,962 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info]                  p0.00:              0,016 s/op
+[info]                  p0.50:              0,017 s/op
+[info]                  p0.90:              0,022 s/op
+[info]                  p0.95:              0,023 s/op
+[info]                  p0.99:              0,023 s/op
+[info]                  p0.999:             0,023 s/op
+[info]                  p0.9999:            0,023 s/op
+[info]                  p1.00:              0,023 s/op
+[info] Iteration   4: 0,017 ±(99.9%) 0,001 s/op
+[info]                  gc.alloc.rate:      9,088 MB/sec
+[info]                  gc.alloc.rate.norm: 162922,169 B/op
+[info]                  gc.count:           1,000 counts
+[info]                  gc.time:            2,000 ms
+[info]                  p0.00:              0,016 s/op
+[info]                  p0.50:              0,017 s/op
+[info]                  p0.90:              0,017 s/op
+[info]                  p0.95:              0,017 s/op
+[info]                  p0.99:              0,020 s/op
+[info]                  p0.999:             0,020 s/op
+[info]                  p0.9999:            0,020 s/op
+[info]                  p1.00:              0,020 s/op
+[info] Iteration   5: 0,017 ±(99.9%) 0,001 s/op
+[info]                  gc.alloc.rate:      6,926 MB/sec
+[info]                  gc.alloc.rate.norm: 163561,356 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info]                  p0.00:              0,016 s/op
+[info]                  p0.50:              0,017 s/op
+[info]                  p0.90:              0,017 s/op
+[info]                  p0.95:              0,018 s/op
+[info]                  p0.99:              0,018 s/op
+[info]                  p0.999:             0,018 s/op
+[info]                  p0.9999:            0,018 s/op
+[info]                  p1.00:              0,018 s/op
+[info] # Run progress: 91,67% complete, ETA 00:00:15
+[info] # Fork: 3 of 3
+[info] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/Users/stas/projects/scala-effect-bench/target/bg-jobs/sbt_cdaa28d5/target/ec0caa91/1296d6b9/jmh-core-1.37.jar)
+[info] WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+[info] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] # Warmup Iteration   1: 0,030 ±(99.9%) 0,025 s/op
+[info] # Warmup Iteration   2: 0,022 ±(99.9%) 0,001 s/op
+[info] # Warmup Iteration   3: 0,022 ±(99.9%) 0,001 s/op
+[info] # Warmup Iteration   4: 0,022 ±(99.9%) 0,001 s/op
+[info] # Warmup Iteration   5: 0,020 ±(99.9%) 0,001 s/op
+[info] Iteration   1: 0,017 ±(99.9%) 0,001 s/op
+[info]                  gc.alloc.rate:      9,065 MB/sec
+[info]                  gc.alloc.rate.norm: 162166,780 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info]                  p0.00:              0,016 s/op
+[info]                  p0.50:              0,017 s/op
+[info]                  p0.90:              0,017 s/op
+[info]                  p0.95:              0,017 s/op
+[info]                  p0.99:              0,018 s/op
+[info]                  p0.999:             0,018 s/op
+[info]                  p0.9999:            0,018 s/op
+[info]                  p1.00:              0,018 s/op
+[info] Iteration   2: 0,017 ±(99.9%) 0,001 s/op
+[info]                  gc.alloc.rate:      9,141 MB/sec
+[info]                  gc.alloc.rate.norm: 162677,867 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info]                  p0.00:              0,016 s/op
+[info]                  p0.50:              0,017 s/op
+[info]                  p0.90:              0,017 s/op
+[info]                  p0.95:              0,017 s/op
+[info]                  p0.99:              0,018 s/op
+[info]                  p0.999:             0,018 s/op
+[info]                  p0.9999:            0,018 s/op
+[info]                  p1.00:              0,018 s/op
+[info] Iteration   3: 0,014 ±(99.9%) 0,001 s/op
+[info]                  gc.alloc.rate:      10,903 MB/sec
+[info]                  gc.alloc.rate.norm: 159868,667 B/op
+[info]                  gc.count:           1,000 counts
+[info]                  gc.time:            1,000 ms
+[info]                  p0.00:              0,011 s/op
+[info]                  p0.50:              0,012 s/op
+[info]                  p0.90:              0,017 s/op
+[info]                  p0.95:              0,017 s/op
+[info]                  p0.99:              0,018 s/op
+[info]                  p0.999:             0,018 s/op
+[info]                  p0.9999:            0,018 s/op
+[info]                  p1.00:              0,018 s/op
+[info] Iteration   4: 0,012 ±(99.9%) 0,001 s/op
+[info]                  gc.alloc.rate:      12,770 MB/sec
+[info]                  gc.alloc.rate.norm: 157369,209 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info]                  p0.00:              0,010 s/op
+[info]                  p0.50:              0,012 s/op
+[info]                  p0.90:              0,012 s/op
+[info]                  p0.95:              0,012 s/op
+[info]                  p0.99:              0,014 s/op
+[info]                  p0.999:             0,014 s/op
+[info]                  p0.9999:            0,014 s/op
+[info]                  p1.00:              0,014 s/op
+[info] Iteration   5: 0,011 ±(99.9%) 0,001 s/op
+[info]                  gc.alloc.rate:      9,994 MB/sec
+[info]                  gc.alloc.rate.norm: 157573,636 B/op
+[info]                  gc.count:           ≈ 0 counts
+[info]                  p0.00:              0,010 s/op
+[info]                  p0.50:              0,011 s/op
+[info]                  p0.90:              0,012 s/op
+[info]                  p0.95:              0,013 s/op
+[info]                  p0.99:              0,013 s/op
+[info]                  p0.999:             0,013 s/op
+[info]                  p0.9999:            0,013 s/op
+[info]                  p1.00:              0,013 s/op
+[info] Result "bench.blocking.BlockingHintBench.requests":
+[info]   N = 891
+[info]   mean =      0,017 ±(99.9%) 0,001 s/op
+[info]   Histogram, s/op:
+[info]     [0,010, 0,011) = 59 
+[info]     [0,011, 0,013) = 144 
+[info]     [0,013, 0,014) = 13 
+[info]     [0,014, 0,015) = 0 
+[info]     [0,015, 0,016) = 9 
+[info]     [0,016, 0,018) = 417 
+[info]     [0,018, 0,019) = 22 
+[info]     [0,019, 0,020) = 0 
+[info]     [0,020, 0,021) = 2 
+[info]     [0,021, 0,023) = 193 
+[info]     [0,023, 0,024) = 31 
+[info]     [0,024, 0,025) = 1 
+[info]     [0,025, 0,026) = 0 
+[info]     [0,026, 0,028) = 0 
+[info]     [0,028, 0,029) = 0 
+[info]   Percentiles, s/op:
+[info]       p(0,0000) =      0,010 s/op
+[info]      p(50,0000) =      0,017 s/op
+[info]      p(90,0000) =      0,022 s/op
+[info]      p(95,0000) =      0,022 s/op
+[info]      p(99,0000) =      0,023 s/op
+[info]      p(99,9000) =      0,024 s/op
+[info]      p(99,9900) =      0,024 s/op
+[info]      p(99,9990) =      0,024 s/op
+[info]      p(99,9999) =      0,024 s/op
+[info]     p(100,0000) =      0,024 s/op
+[info] Secondary result "bench.blocking.BlockingHintBench.requests:gc.alloc.rate":
+[info]   8,534 ±(99.9%) 1,851 MB/sec [Average]
+[info]   (min, avg, max) = (6,763, 8,534, 12,770), stdev = 1,731
+[info]   CI (99.9%): [6,683, 10,384] (assumes normal distribution)
+[info] Secondary result "bench.blocking.BlockingHintBench.requests:gc.alloc.rate.norm":
+[info]   161640,007 ±(99.9%) 2388,668 B/op [Average]
+[info]   (min, avg, max) = (157369,209, 161640,007, 164990,783), stdev = 2234,362
+[info]   CI (99.9%): [159251,339, 164028,676] (assumes normal distribution)
+[info] Secondary result "bench.blocking.BlockingHintBench.requests:gc.count":
+[info]   3,000 ±(99.9%) 0,001 counts [Sum]
+[info]   (min, avg, max) = (≈ 0, 0,200, 1,000), stdev = 0,414
+[info]   CI (99.9%): [3,000, 3,000] (assumes normal distribution)
+[info] Secondary result "bench.blocking.BlockingHintBench.requests:gc.time":
+[info]   4,000 ±(99.9%) 0,001 ms [Sum]
+[info]   (min, avg, max) = (≈ 0, 0,267, 2,000), stdev = 0,594
+[info]   CI (99.9%): [4,000, 4,000] (assumes normal distribution)
+[info] # Run complete. Total time: 00:03:10
+[info] REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+[info] why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+[info] experiments, perform baseline and negative tests that provide experimental control, make sure
+[info] the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+[info] Do not assume the numbers tell you what you want them to tell.
+[info] NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+[info] extra caution when trusting the results, look into the generated code to check the benchmark still
+[info] works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+[info] different JVMs are already problematic, the performance difference caused by different Blackhole
+[info] modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+[info] Benchmark                                      (delayMicros)  (parallelism)  (runtime)  (size)    Mode   Cnt       Score      Error   Units
+[info] BlockingHintBench.requests                              1000             64         ce     256   thrpt    15     150,769 ±    3,833   ops/s
+[info] BlockingHintBench.requests:gc.alloc.rate                1000             64         ce     256   thrpt    15      22,586 ±    2,628  MB/sec
+[info] BlockingHintBench.requests:gc.alloc.rate.norm           1000             64         ce     256   thrpt    15  165036,572 ±  864,717    B/op
+[info] BlockingHintBench.requests:gc.count                     1000             64         ce     256   thrpt    15         ≈ 0             counts
+[info] BlockingHintBench.requests                              1000             64   kyoFlush     256   thrpt    15      54,719 ±   15,165   ops/s
+[info] BlockingHintBench.requests:gc.alloc.rate                1000             64   kyoFlush     256   thrpt    15       8,006 ±    1,959  MB/sec
+[info] BlockingHintBench.requests:gc.alloc.rate.norm           1000             64   kyoFlush     256   thrpt    15  162932,779 ± 3196,681    B/op
+[info] BlockingHintBench.requests:gc.count                     1000             64   kyoFlush     256   thrpt    15       3,000             counts
+[info] BlockingHintBench.requests:gc.time                      1000             64   kyoFlush     256   thrpt    15       5,000                 ms
+[info] BlockingHintBench.requests                              1000             64         ce     256  sample  2275       0,007 ±    0,001    s/op
+[info] BlockingHintBench.requests:gc.alloc.rate                1000             64         ce     256  sample    15      22,632 ±    2,635  MB/sec
+[info] BlockingHintBench.requests:gc.alloc.rate.norm           1000             64         ce     256  sample    15  165362,549 ±  908,236    B/op
+[info] BlockingHintBench.requests:gc.count                     1000             64         ce     256  sample    15         ≈ 0             counts
+[info] BlockingHintBench.requests:p0.00                        1000             64         ce     256  sample             0,006               s/op
+[info] BlockingHintBench.requests:p0.50                        1000             64         ce     256  sample             0,007               s/op
+[info] BlockingHintBench.requests:p0.90                        1000             64         ce     256  sample             0,007               s/op
+[info] BlockingHintBench.requests:p0.95                        1000             64         ce     256  sample             0,007               s/op
+[info] BlockingHintBench.requests:p0.99                        1000             64         ce     256  sample             0,008               s/op
+[info] BlockingHintBench.requests:p0.999                       1000             64         ce     256  sample             0,008               s/op
+[info] BlockingHintBench.requests:p0.9999                      1000             64         ce     256  sample             0,011               s/op
+[info] BlockingHintBench.requests:p1.00                        1000             64         ce     256  sample             0,011               s/op
+[info] BlockingHintBench.requests                              1000             64   kyoFlush     256  sample   891       0,017 ±    0,001    s/op
+[info] BlockingHintBench.requests:gc.alloc.rate                1000             64   kyoFlush     256  sample    15       8,534 ±    1,851  MB/sec
+[info] BlockingHintBench.requests:gc.alloc.rate.norm           1000             64   kyoFlush     256  sample    15  161640,007 ± 2388,668    B/op
+[info] BlockingHintBench.requests:gc.count                     1000             64   kyoFlush     256  sample    15       3,000             counts
+[info] BlockingHintBench.requests:gc.time                      1000             64   kyoFlush     256  sample    15       4,000                 ms
+[info] BlockingHintBench.requests:p0.00                        1000             64   kyoFlush     256  sample             0,010               s/op
+[info] BlockingHintBench.requests:p0.50                        1000             64   kyoFlush     256  sample             0,017               s/op
+[info] BlockingHintBench.requests:p0.90                        1000             64   kyoFlush     256  sample             0,022               s/op
+[info] BlockingHintBench.requests:p0.95                        1000             64   kyoFlush     256  sample             0,022               s/op
+[info] BlockingHintBench.requests:p0.99                        1000             64   kyoFlush     256  sample             0,023               s/op
+[info] BlockingHintBench.requests:p0.999                       1000             64   kyoFlush     256  sample             0,024               s/op
+[info] BlockingHintBench.requests:p0.9999                      1000             64   kyoFlush     256  sample             0,024               s/op
+[info] BlockingHintBench.requests:p1.00                        1000             64   kyoFlush     256  sample             0,024               s/op
+[info] Benchmark result is saved to /Users/stas/projects/scala-effect-bench/results/blocking-hint/current.json
+[success] Total time: 191 s (0:03:11.0), completed 6 Sept 2026, 15:19:28

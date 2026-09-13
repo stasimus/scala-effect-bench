@@ -1,0 +1,46 @@
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::arrayBaseOffset has been called by net.openhft.hashing.UnsafeAccess (file:/Users/stas/.sbt/boot/scala-2.12.21/org.scala-sbt/sbt/1.13.0/zero-allocation-hashing-0.16.jar)
+WARNING: Please consider reporting this to the maintainers of class net.openhft.hashing.UnsafeAccess
+WARNING: sun.misc.Unsafe::arrayBaseOffset will be removed in a future release
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.scalasbt.ipcsocket.NativeLoader in an unnamed module (file:/Users/stas/.sbt/boot/scala-2.12.21/org.scala-sbt/sbt/1.13.0/ipcsocket-1.8.0.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+[info] welcome to sbt 1.13.0 (Oracle Corporation Java 25.0.3)
+[info] loading global plugins from /Users/stas/.sbt/1.0/plugins
+[info] loading settings for project scala-effect-bench-build from plugins.sbt...
+[info] loading project definition from /Users/stas/projects/scala-effect-bench/project
+[info] loading settings for project root from build.sbt...
+[info] set current project to scala-effect-bench (in build file:/Users/stas/projects/scala-effect-bench/)
+[info] Defining ioBench / Test / fork
+[info] The new value will be used by ioBench / Jmh / testGrouping, ioBench / Test / run / runner and 1 others.
+[info] 	Run `last` for details.
+[info] Reapplying settings...
+[info] set current project to scala-effect-bench (in build file:/Users/stas/projects/scala-effect-bench/)
+[info] Defining ioBench / Test / javaOptions
+[info] The new value will be used by ioBench / Jmh / bspBuildTargetJvmEnvironmentItem, ioBench / Jmh / bspBuildTargetRun and 15 others.
+[info] 	Run `last` for details.
+[info] Reapplying settings...
+[info] set current project to scala-effect-bench (in build file:/Users/stas/projects/scala-effect-bench/)
+[info] compiling 2 Scala sources to /Users/stas/projects/scala-effect-bench/io-bench/target/scala-3.8.4/test-classes ...
+[info] done compiling
+[info] running (fork) bench.io.MeasuredIoValidation 
+[error] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[error] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by scala.runtime.LazyVals$ (file:/Users/stas/projects/scala-effect-bench/target/bg-jobs/sbt_b3e33829/target/d0b0f281/97ac0ce1/scala-library-3.8.4.jar)
+[error] WARNING: Please consider reporting this to the maintainers of class scala.runtime.LazyVals$
+[error] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] PASS 30 measured-concurrency checks (ce,kyo,gears,ox,ceVirtual,kyoFlush)
+[success] Total time: 9 s, completed 6 Sept 2026, 19:01:11
+[info] Defining ioBench / Test / javaOptions
+[info] The new value will be used by ioBench / Jmh / bspBuildTargetJvmEnvironmentItem, ioBench / Jmh / bspBuildTargetRun and 15 others.
+[info] 	Run `last` for details.
+[info] Reapplying settings...
+[info] set current project to scala-effect-bench (in build file:/Users/stas/projects/scala-effect-bench/)
+[info] running (fork) bench.io.MeasuredIoValidation kyoTuned
+[error] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[error] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by scala.runtime.LazyVals$ (file:/Users/stas/projects/scala-effect-bench/target/bg-jobs/sbt_b3e33829/target/d0b0f281/97ac0ce1/scala-library-3.8.4.jar)
+[error] WARNING: Please consider reporting this to the maintainers of class scala.runtime.LazyVals$
+[error] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] PASS 3 measured-concurrency checks (kyoTuned)
+[success] Total time: 1 s, completed 6 Sept 2026, 19:01:12

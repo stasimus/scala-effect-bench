@@ -1,0 +1,23 @@
+{
+  "started_at": "2026-09-06T17:00:53.993455+00:00",
+  "command": [
+    "sbt",
+    "set ioBench / Test / fork := true",
+    "set ioBench / Test / javaOptions := Seq(\"--add-opens=java.base/java.lang=ALL-UNNAMED\",\"-Xms2g\",\"-Xmx2g\",\"-XX:+UseG1GC\")",
+    "ioBench/Test/runMain bench.io.MeasuredIoValidation",
+    "set ioBench / Test / javaOptions := Seq(\"--add-opens=java.base/java.lang=ALL-UNNAMED\",\"-Xms2g\",\"-Xmx2g\",\"-XX:+UseG1GC\",\"-Dkyo.scheduler.coreWorkers=64\",\"-Dkyo.scheduler.maxWorkers=64\",\"-Dkyo.scheduler.minWorkers=64\",\"-Dkyo.scheduler.scheduleStride=64\")",
+    "ioBench/Test/runMain bench.io.MeasuredIoValidation kyoTuned"
+  ],
+  "exit_code": 0,
+  "passed": true,
+  "default_checks": 30,
+  "tuned_checks": 3,
+  "source_sha256": {
+    "io-bench/src/test/scala/bench/io/MeasuredIoValidation.scala": "073653d61ed04fa5cf6ef9a461520218cee00be3fbe43cadb4471c40b9402e7a",
+    "io-bench/src/test/scala/bench/io/Validation.scala": "e67b86769eeba89fc10c75151a5a3eeceaa9e5a4d539f815675d712396b74742"
+  },
+  "source_changed_during_validation": false,
+  "measured_sources_unchanged": true,
+  "run_log_sha256": "350940fa3d107fd722c16e6249f9fd413d21acb3be4a4f0f9daa184cfe796a0b",
+  "note": "Additional test sources were added after performance measurement. Measured main sources and build settings are unchanged."
+}

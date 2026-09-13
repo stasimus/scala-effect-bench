@@ -1,0 +1,12 @@
+{
+  "html_structure": "passed",
+  "local_links_checked": 11,
+  "tables_checked": 2,
+  "source_verification": "9 release source files matched source JARs",
+  "historical_measured_scala_sources": "unchanged",
+  "report_tests": "12 passed",
+  "visual_review": "unavailable; structural QA only",
+  "html_sha256": "1408ed9a856e29150e478267fe13373e667447f6fd047a956835770431105f25",
+  "diagnostic_fresh_jvms": 28,
+  "diagnostic_measured_batches": 266
+}

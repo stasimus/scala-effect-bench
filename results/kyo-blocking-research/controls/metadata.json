@@ -1,0 +1,242 @@
+{
+  "started_at": "2026-09-06T13:41:00.090191+00:00",
+  "command": [
+    "sbt",
+    "set bench / Test / fork := true",
+    "set bench / Test / javaOptions := Seq(\"--add-opens=java.base/java.lang=ALL-UNNAMED\",\"-Xms2g\",\"-Xmx2g\",\"-XX:+UseG1GC\")",
+    "bench/Test/runMain bench.blocking.SchedulerResearchProbe ce 256 64 1000 6 10 ce",
+    "set bench / Test / javaOptions := Seq(\"--add-opens=java.base/java.lang=ALL-UNNAMED\",\"-Xms2g\",\"-Xmx2g\",\"-XX:+UseG1GC\")",
+    "bench/Test/runMain bench.blocking.SchedulerResearchProbe kyo 256 64 1000 6 10 plain",
+    "set bench / Test / javaOptions := Seq(\"--add-opens=java.base/java.lang=ALL-UNNAMED\",\"-Xms2g\",\"-Xmx2g\",\"-XX:+UseG1GC\")",
+    "bench/Test/runMain bench.blocking.SchedulerResearchProbe kyoFlush 256 64 1000 6 10 flush",
+    "set bench / Test / javaOptions := Seq(\"--add-opens=java.base/java.lang=ALL-UNNAMED\",\"-Xms2g\",\"-Xmx2g\",\"-XX:+UseG1GC\",\"-Dkyo.scheduler.coreWorkers=16\",\"-Dkyo.scheduler.minWorkers=16\",\"-Dkyo.scheduler.maxWorkers=16\")",
+    "bench/Test/runMain bench.blocking.SchedulerResearchProbe kyoFlush 256 64 1000 6 10 flush16",
+    "set bench / Test / javaOptions := Seq(\"--add-opens=java.base/java.lang=ALL-UNNAMED\",\"-Xms2g\",\"-Xmx2g\",\"-XX:+UseG1GC\",\"-Dkyo.scheduler.coreWorkers=64\",\"-Dkyo.scheduler.minWorkers=64\",\"-Dkyo.scheduler.maxWorkers=64\")",
+    "bench/Test/runMain bench.blocking.SchedulerResearchProbe kyoFlush 256 64 1000 6 10 flush64",
+    "set bench / Test / javaOptions := Seq(\"--add-opens=java.base/java.lang=ALL-UNNAMED\",\"-Xms2g\",\"-Xmx2g\",\"-XX:+UseG1GC\",\"-Dkyo.scheduler.coreWorkers=64\",\"-Dkyo.scheduler.minWorkers=64\",\"-Dkyo.scheduler.maxWorkers=64\")",
+    "bench/Test/runMain bench.blocking.SchedulerResearchProbe kyo 256 64 1000 6 10 plain64",
+    "set bench / Test / javaOptions := Seq(\"--add-opens=java.base/java.lang=ALL-UNNAMED\",\"-Xms2g\",\"-Xmx2g\",\"-XX:+UseG1GC\",\"-Dkyo.scheduler.regulator.admissionCollectIntervalMs=1\")",
+    "bench/Test/runMain bench.blocking.SchedulerResearchProbe kyo 256 64 1000 6 10 admission1",
+    "set bench / Test / javaOptions := Seq(\"--add-opens=java.base/java.lang=ALL-UNNAMED\",\"-Xms2g\",\"-Xmx2g\",\"-XX:+UseG1GC\",\"-Dkyo.scheduler.regulator.admissionCollectIntervalMs=1000\")",
+    "bench/Test/runMain bench.blocking.SchedulerResearchProbe kyo 256 64 1000 6 10 admission1000",
+    "set bench / Test / javaOptions := Seq(\"--add-opens=java.base/java.lang=ALL-UNNAMED\",\"-Xms2g\",\"-Xmx2g\",\"-XX:+UseG1GC\",\"-Dkyo.scheduler.timeSliceMs=1\")",
+    "bench/Test/runMain bench.blocking.SchedulerResearchProbe kyo 256 64 1000 6 10 slice1",
+    "set bench / Test / javaOptions := Seq(\"--add-opens=java.base/java.lang=ALL-UNNAMED\",\"-Xms2g\",\"-Xmx2g\",\"-XX:+UseG1GC\")",
+    "bench/Test/runMain bench.blocking.SchedulerResearchProbe kyoFlush 256 64 1000 30 10 flushWarm30",
+    "set bench / Test / javaOptions := Seq(\"--add-opens=java.base/java.lang=ALL-UNNAMED\",\"-Xms2g\",\"-Xmx2g\",\"-XX:+UseG1GC\",\"-Dkyo.scheduler.virtualizeWorkers=true\")",
+    "bench/Test/runMain bench.blocking.SchedulerResearchProbe kyoFlush 256 64 1000 6 10 flushVirtual",
+    "set bench / Test / javaOptions := Seq(\"--add-opens=java.base/java.lang=ALL-UNNAMED\",\"-Xms2g\",\"-Xmx2g\",\"-XX:+UseG1GC\",\"-Dkyo.scheduler.virtualizeWorkers=true\")",
+    "bench/Test/runMain bench.blocking.SchedulerResearchProbe kyo 256 64 1000 6 10 plainVirtual",
+    "set bench / Test / javaOptions := Seq(\"--add-opens=java.base/java.lang=ALL-UNNAMED\",\"-Xms2g\",\"-Xmx2g\",\"-XX:+UseG1GC\")",
+    "bench/Test/runMain bench.blocking.SchedulerResearchProbe kyo 4096 64 1000 6 3 longLane",
+    "set bench / Test / javaOptions := Seq(\"--add-opens=java.base/java.lang=ALL-UNNAMED\",\"-Xms2g\",\"-Xmx2g\",\"-XX:+UseG1GC\")",
+    "bench/Test/runMain bench.blocking.SchedulerResearchProbe kyo 256 64 50000 6 3 longWait",
+    "set bench / Test / javaOptions := Seq(\"--add-opens=java.base/java.lang=ALL-UNNAMED\",\"-Xms2g\",\"-Xmx2g\",\"-XX:+UseG1GC\")",
+    "bench/Test/runMain bench.blocking.SchedulerResearchProbe ce 256 64 0 6 10 ceZero",
+    "set bench / Test / javaOptions := Seq(\"--add-opens=java.base/java.lang=ALL-UNNAMED\",\"-Xms2g\",\"-Xmx2g\",\"-XX:+UseG1GC\",\"-Dkyo.scheduler.coreWorkers=64\",\"-Dkyo.scheduler.minWorkers=64\",\"-Dkyo.scheduler.maxWorkers=64\")",
+    "bench/Test/runMain bench.blocking.SchedulerResearchProbe kyoFlush 256 64 0 6 10 flush64Zero"
+  ],
+  "cases": [
+    {
+      "label": "ce",
+      "runtime": "ce",
+      "props": {},
+      "size": 256,
+      "parallelism": 64,
+      "delay": 1000,
+      "warmup": 6,
+      "samples": 10
+    },
+    {
+      "label": "plain",
+      "runtime": "kyo",
+      "props": {},
+      "size": 256,
+      "parallelism": 64,
+      "delay": 1000,
+      "warmup": 6,
+      "samples": 10
+    },
+    {
+      "label": "flush",
+      "runtime": "kyoFlush",
+      "props": {},
+      "size": 256,
+      "parallelism": 64,
+      "delay": 1000,
+      "warmup": 6,
+      "samples": 10
+    },
+    {
+      "label": "flush16",
+      "runtime": "kyoFlush",
+      "props": {
+        "kyo.scheduler.coreWorkers": 16,
+        "kyo.scheduler.minWorkers": 16,
+        "kyo.scheduler.maxWorkers": 16
+      },
+      "size": 256,
+      "parallelism": 64,
+      "delay": 1000,
+      "warmup": 6,
+      "samples": 10
+    },
+    {
+      "label": "flush64",
+      "runtime": "kyoFlush",
+      "props": {
+        "kyo.scheduler.coreWorkers": 64,
+        "kyo.scheduler.minWorkers": 64,
+        "kyo.scheduler.maxWorkers": 64
+      },
+      "size": 256,
+      "parallelism": 64,
+      "delay": 1000,
+      "warmup": 6,
+      "samples": 10
+    },
+    {
+      "label": "plain64",
+      "runtime": "kyo",
+      "props": {
+        "kyo.scheduler.coreWorkers": 64,
+        "kyo.scheduler.minWorkers": 64,
+        "kyo.scheduler.maxWorkers": 64
+      },
+      "size": 256,
+      "parallelism": 64,
+      "delay": 1000,
+      "warmup": 6,
+      "samples": 10
+    },
+    {
+      "label": "admission1",
+      "runtime": "kyo",
+      "props": {
+        "kyo.scheduler.regulator.admissionCollectIntervalMs": 1
+      },
+      "size": 256,
+      "parallelism": 64,
+      "delay": 1000,
+      "warmup": 6,
+      "samples": 10
+    },
+    {
+      "label": "admission1000",
+      "runtime": "kyo",
+      "props": {
+        "kyo.scheduler.regulator.admissionCollectIntervalMs": 1000
+      },
+      "size": 256,
+      "parallelism": 64,
+      "delay": 1000,
+      "warmup": 6,
+      "samples": 10
+    },
+    {
+      "label": "slice1",
+      "runtime": "kyo",
+      "props": {
+        "kyo.scheduler.timeSliceMs": 1
+      },
+      "size": 256,
+      "parallelism": 64,
+      "delay": 1000,
+      "warmup": 6,
+      "samples": 10
+    },
+    {
+      "label": "flushWarm30",
+      "runtime": "kyoFlush",
+      "props": {},
+      "size": 256,
+      "parallelism": 64,
+      "delay": 1000,
+      "warmup": 30,
+      "samples": 10
+    },
+    {
+      "label": "flushVirtual",
+      "runtime": "kyoFlush",
+      "props": {
+        "kyo.scheduler.virtualizeWorkers": "true"
+      },
+      "size": 256,
+      "parallelism": 64,
+      "delay": 1000,
+      "warmup": 6,
+      "samples": 10
+    },
+    {
+      "label": "plainVirtual",
+      "runtime": "kyo",
+      "props": {
+        "kyo.scheduler.virtualizeWorkers": "true"
+      },
+      "size": 256,
+      "parallelism": 64,
+      "delay": 1000,
+      "warmup": 6,
+      "samples": 10
+    },
+    {
+      "label": "longLane",
+      "runtime": "kyo",
+      "props": {},
+      "size": 4096,
+      "parallelism": 64,
+      "delay": 1000,
+      "warmup": 6,
+      "samples": 3
+    },
+    {
+      "label": "longWait",
+      "runtime": "kyo",
+      "props": {},
+      "size": 256,
+      "parallelism": 64,
+      "delay": 50000,
+      "warmup": 6,
+      "samples": 3
+    },
+    {
+      "label": "ceZero",
+      "runtime": "ce",
+      "props": {},
+      "size": 256,
+      "parallelism": 64,
+      "delay": 0,
+      "warmup": 6,
+      "samples": 10
+    },
+    {
+      "label": "flush64Zero",
+      "runtime": "kyoFlush",
+      "props": {
+        "kyo.scheduler.coreWorkers": 64,
+        "kyo.scheduler.minWorkers": 64,
+        "kyo.scheduler.maxWorkers": 64
+      },
+      "size": 256,
+      "parallelism": 64,
+      "delay": 0,
+      "warmup": 6,
+      "samples": 10
+    }
+  ],
+  "source_sha256": {
+    "build.sbt": "97a92fba60cacf9e372bd17413c462171114078bb0a45d8dae0da394ed1836c2",
+    "bench/src/main/scala/bench/BaseBench.scala": "b15786c9ba294b0083d264cdd7f8b7dbf9415b3e575c7ba8c2ab1169e867dc19",
+    "bench/src/main/scala/bench/matched/MatchedBase.scala": "97caf4e93e6902850ab3a18b502f624a2158803b08b90bf79d619e2dbd8ceca2",
+    "scripts/research_kyo_blocking.py": "df1eea285e5088cc8c13862bc386cee5bb2aeb56655ea6f0b607eed427134d36",
+    "bench/src/main/scala/bench/blocking/BlockingBench.scala": "2ee926b8a578ad33fac056e0af864b21a4c476044b41f792da8dab04aebaf254",
+    "bench/src/main/scala/bench/blocking/BlockingHintBench.scala": "d7dd03fdeb5d9f701dc10e68447fbfa843abe5729a2826373521407aafc575e1",
+    "bench/src/main/scala/bench/blocking/SocketFixture.scala": "5e020f4765162633946403594974c205330968b72b8efb522b86425bc38c3d6f",
+    "bench/src/test/scala/bench/blocking/SchedulerResearchProbe.scala": "29db84ecb7a5c9fbe2fe639a38c04efb51426fc85fdb612c5cb059451e9ede7b"
+  },
+  "kind": "instrumented diagnostic, not JMH",
+  "exit_code": 0,
+  "source_changed_during_run": false,
+  "completed_at": "2026-09-06T13:43:40.584346+00:00",
+  "run_log_sha256": "6a80d3a76d2595c87d1ea81a588a7ffad9eff90b723d6592dad32ed92cb937c2"
+}

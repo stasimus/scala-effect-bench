@@ -100,6 +100,9 @@ def render(rows, result_file, meta):
     lines = [
         "# Scala effect benchmarks", "",
         "JMH benchmarks comparing equivalent cats-effect and Kyo constructions. Only benchmark code is adjusted; libraries remain unchanged.", "",
+        "[Blocking TCP and virtual-thread experiment](docs/blocking-io.md).", "",
+        "[CE, Kyo, Gears and Ox: blocking/nonblocking TCP results](results/four-io-measured/report.md).", "",
+        "[Blog: Kyo's blocking gap and manual flush](docs/blog/kyo-blocking.md).", "",
         "cats-effect **3.7.1**, Kyo **1.0.0-RC6**, fs2 **3.13.0**, cats-core **2.13.0**, Scala **3.8.4**.", "",
         "These pairs use the same application-level construction. The streaming rows compare fs2 on IO",
         "with Kyo Stream. Native API diagnostics and withdrawn cancellation comparisons are excluded.",
@@ -141,7 +144,7 @@ def render(rows, result_file, meta):
                       "| --- | --- | ---: | ---: | --- | ---: | ---: |"]
             previous = cls
         p = dict(params)
-        detail = ", ".join(f"{name}={p[name]}" for name in ("depth", "work") if name in p) or "—"
+        detail = ", ".join(f"{name}={p[name]}" for name in ("depth", "work") if name in p) or "n/a"
         av, bv = a["primaryMetric"]["score"], b["primaryMetric"]["score"]
         ce_label = "fs2" if cls == "StreamBench" else "CE"
         ratio = f"{ce_label if av > bv else 'Kyo'} ~{max(av,bv)/min(av,bv):.2f}×"

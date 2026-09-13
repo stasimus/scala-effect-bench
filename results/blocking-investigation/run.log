@@ -1,0 +1,87 @@
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::arrayBaseOffset has been called by net.openhft.hashing.UnsafeAccess (file:/Users/stas/.sbt/boot/scala-2.12.21/org.scala-sbt/sbt/1.13.0/zero-allocation-hashing-0.16.jar)
+WARNING: Please consider reporting this to the maintainers of class net.openhft.hashing.UnsafeAccess
+WARNING: sun.misc.Unsafe::arrayBaseOffset will be removed in a future release
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.scalasbt.ipcsocket.NativeLoader in an unnamed module (file:/Users/stas/.sbt/boot/scala-2.12.21/org.scala-sbt/sbt/1.13.0/ipcsocket-1.8.0.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+[info] welcome to sbt 1.13.0 (Oracle Corporation Java 25.0.3)
+[info] loading global plugins from /Users/stas/.sbt/1.0/plugins
+[info] loading settings for project scala-effect-bench-build from plugins.sbt...
+[info] loading project definition from /Users/stas/projects/scala-effect-bench/project
+[info] loading settings for project root from build.sbt...
+[info] set current project to scala-effect-bench (in build file:/Users/stas/projects/scala-effect-bench/)
+[info] Defining bench / Test / fork
+[info] The new value will be used by bench / Jmh / testGrouping, bench / Test / run / runner and 1 others.
+[info] 	Run `last` for details.
+[info] Reapplying settings...
+[info] set current project to scala-effect-bench (in build file:/Users/stas/projects/scala-effect-bench/)
+[info] Defining bench / Test / javaOptions
+[info] The new value will be used by bench / Jmh / bspBuildTargetJvmEnvironmentItem, bench / Jmh / bspBuildTargetRun and 15 others.
+[info] 	Run `last` for details.
+[info] Reapplying settings...
+[info] set current project to scala-effect-bench (in build file:/Users/stas/projects/scala-effect-bench/)
+[info] compiling 1 Scala source to /Users/stas/projects/scala-effect-bench/bench/target/scala-3.8.4/test-classes ...
+[info] done compiling
+[info] running (fork) bench.blocking.BlockingTimingProbe kyo 64 plain
+[error] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[error] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by scala.runtime.LazyVals$ (file:/Users/stas/projects/scala-effect-bench/target/bg-jobs/sbt_cfdbe51/target/d0b0f281/97ac0ce1/scala-library-3.8.4.jar)
+[error] WARNING: Please consider reporting this to the maintainers of class scala.runtime.LazyVals$
+[error] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] scheduler workers=19, executor threads=16
+[info] kyo/plain limit=64 batch=201,289 ms socketP50=1,335 ms socketMax=1,435 ms lastStart=200,102 ms afterLastReply=0,092 ms peak=3
+[info] kyo/plain limit=64 batch=195,740 ms socketP50=1,343 ms socketMax=1,447 ms lastStart=194,307 ms afterLastReply=0,087 ms peak=3
+[info] kyo/plain limit=64 batch=198,824 ms socketP50=1,334 ms socketMax=1,526 ms lastStart=197,373 ms afterLastReply=0,124 ms peak=3
+[success] Total time: 10 s, completed 6 Sept 2026, 15:08:36
+[info] running (fork) bench.blocking.BlockingTimingProbe kyo 64 scalaBlocking
+[error] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[error] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by scala.runtime.LazyVals$ (file:/Users/stas/projects/scala-effect-bench/target/bg-jobs/sbt_cfdbe51/target/d0b0f281/97ac0ce1/scala-library-3.8.4.jar)
+[error] WARNING: Please consider reporting this to the maintainers of class scala.runtime.LazyVals$
+[error] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] scheduler workers=27, executor threads=3
+[info] kyo/scalaBlocking limit=64 batch=200,152 ms socketP50=1,340 ms socketMax=1,525 ms lastStart=198,706 ms afterLastReply=0,088 ms peak=3
+[info] kyo/scalaBlocking limit=64 batch=191,750 ms socketP50=1,253 ms socketMax=1,501 ms lastStart=190,278 ms afterLastReply=0,130 ms peak=3
+[info] kyo/scalaBlocking limit=64 batch=199,103 ms socketP50=1,329 ms socketMax=1,389 ms lastStart=197,704 ms afterLastReply=0,115 ms peak=3
+[success] Total time: 7 s, completed 6 Sept 2026, 15:08:43
+[info] running (fork) bench.blocking.BlockingTimingProbe kyo 64 flush
+[error] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[error] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by scala.runtime.LazyVals$ (file:/Users/stas/projects/scala-effect-bench/target/bg-jobs/sbt_cfdbe51/target/d0b0f281/97ac0ce1/scala-library-3.8.4.jar)
+[error] WARNING: Please consider reporting this to the maintainers of class scala.runtime.LazyVals$
+[error] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] scheduler workers=22, executor threads=23
+[info] kyo/flush limit=64 batch=18,840 ms socketP50=1,456 ms socketMax=1,878 ms lastStart=17,386 ms afterLastReply=0,046 ms peak=22
+[info] kyo/flush limit=64 batch=16,902 ms socketP50=1,426 ms socketMax=1,599 ms lastStart=15,540 ms afterLastReply=0,046 ms peak=22
+[info] kyo/flush limit=64 batch=17,604 ms socketP50=1,452 ms socketMax=1,606 ms lastStart=16,166 ms afterLastReply=0,044 ms peak=22
+[success] Total time: 7 s, completed 6 Sept 2026, 15:08:50
+[info] running (fork) bench.blocking.BlockingTimingProbe kyo 64 native
+[error] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[error] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by scala.runtime.LazyVals$ (file:/Users/stas/projects/scala-effect-bench/target/bg-jobs/sbt_cfdbe51/target/d0b0f281/97ac0ce1/scala-library-3.8.4.jar)
+[error] WARNING: Please consider reporting this to the maintainers of class scala.runtime.LazyVals$
+[error] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] scheduler workers=22, executor threads=3
+[info] kyo/native limit=64 batch=200,903 ms socketP50=1,338 ms socketMax=1,559 ms lastStart=199,462 ms afterLastReply=0,114 ms peak=3
+[info] kyo/native limit=64 batch=193,450 ms socketP50=1,332 ms socketMax=1,413 ms lastStart=191,981 ms afterLastReply=0,125 ms peak=3
+[info] kyo/native limit=64 batch=199,743 ms socketP50=1,335 ms socketMax=1,393 ms lastStart=198,273 ms afterLastReply=0,167 ms peak=3
+[success] Total time: 7 s, completed 6 Sept 2026, 15:08:57
+[info] running (fork) bench.blocking.BlockingTimingProbe kyo 64 external
+[error] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[error] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by scala.runtime.LazyVals$ (file:/Users/stas/projects/scala-effect-bench/target/bg-jobs/sbt_cfdbe51/target/d0b0f281/97ac0ce1/scala-library-3.8.4.jar)
+[error] WARNING: Please consider reporting this to the maintainers of class scala.runtime.LazyVals$
+[error] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] scheduler workers=22, executor threads=22
+[info] kyo/external limit=64 batch=18,602 ms socketP50=1,439 ms socketMax=2,094 ms lastStart=17,189 ms afterLastReply=0,029 ms peak=22
+[info] kyo/external limit=64 batch=16,915 ms socketP50=1,413 ms socketMax=1,568 ms lastStart=15,507 ms afterLastReply=0,027 ms peak=22
+[info] kyo/external limit=64 batch=17,127 ms socketP50=1,431 ms socketMax=1,554 ms lastStart=15,653 ms afterLastReply=0,020 ms peak=22
+[success] Total time: 7 s, completed 6 Sept 2026, 15:09:04
+[info] running (fork) bench.blocking.BlockingTimingProbe kyo 64 nested
+[error] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[error] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by scala.runtime.LazyVals$ (file:/Users/stas/projects/scala-effect-bench/target/bg-jobs/sbt_cfdbe51/target/d0b0f281/97ac0ce1/scala-library-3.8.4.jar)
+[error] WARNING: Please consider reporting this to the maintainers of class scala.runtime.LazyVals$
+[error] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] scheduler workers=27, executor threads=3
+[info] kyo/nested limit=64 batch=201,117 ms socketP50=1,294 ms socketMax=1,592 ms lastStart=199,942 ms afterLastReply=0,061 ms peak=3
+[info] kyo/nested limit=64 batch=196,287 ms socketP50=1,341 ms socketMax=1,443 ms lastStart=195,085 ms afterLastReply=0,059 ms peak=3
+[info] kyo/nested limit=64 batch=201,608 ms socketP50=1,346 ms socketMax=1,898 ms lastStart=200,186 ms afterLastReply=0,073 ms peak=3
+[success] Total time: 7 s, completed 6 Sept 2026, 15:09:12

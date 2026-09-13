@@ -1,0 +1,27 @@
+{
+  "recorded_after_run": "2026-09-06T13:18:16.410737+00:00",
+  "type": "diagnostic, not JMH",
+  "modes": [
+    "plain",
+    "scalaBlocking",
+    "flush",
+    "native",
+    "external",
+    "nested"
+  ],
+  "java_options": [
+    "--add-opens=java.base/java.lang=ALL-UNNAMED",
+    "-Xms2g",
+    "-Xmx2g",
+    "-XX:+UseG1GC"
+  ],
+  "source_sha256": {
+    "build.sbt": "97a92fba60cacf9e372bd17413c462171114078bb0a45d8dae0da394ed1836c2",
+    "bench/src/main/scala/bench/BaseBench.scala": "b15786c9ba294b0083d264cdd7f8b7dbf9415b3e575c7ba8c2ab1169e867dc19",
+    "bench/src/main/scala/bench/matched/MatchedBase.scala": "97caf4e93e6902850ab3a18b502f624a2158803b08b90bf79d619e2dbd8ceca2",
+    "bench/src/main/scala/bench/blocking/BlockingBench.scala": "2ee926b8a578ad33fac056e0af864b21a4c476044b41f792da8dab04aebaf254",
+    "bench/src/main/scala/bench/blocking/SocketFixture.scala": "5e020f4765162633946403594974c205330968b72b8efb522b86425bc38c3d6f",
+    "bench/src/test/scala/bench/blocking/BlockingTimingProbe.scala": "d312a87618273f00144be7e719929cb99eef2c5b6d379c599d221003a4424526"
+  },
+  "run_log_sha256": "522c02dc60805f4f3605ec644a12e32aa825ee414fa994efba97269f5e14184c"
+}
