@@ -9,4 +9,4 @@ Nonblocking results were much closer: Kyo led CE by about 12% at concurrency 8 a
 Kyo still interests me. How much scheduler knowledge should application code need?
 
 One workload, one machine, Kyo RC6. Full experiment:
-[PASTE THE PUBLISHED BLOG POST URL HERE]
+https://sgektor.blogspot.com/2026/09/blocking-io-made-kyo-30x-slower-then-i.html

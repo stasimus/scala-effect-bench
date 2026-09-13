@@ -5,8 +5,9 @@ This is a separate suite; the earlier synthetic and blocking results remain hist
 
 [Measured results](../results/four-io-measured/report.md), including confidence intervals, latency, allocation and CPU.
 
-[Blog draft](blog/kyo-blocking.md), [Blogger HTML](blog/kyo-blocking-blogger.html),
-and [LinkedIn draft](blog/kyo-blocking-linkedin.txt). Replace the LinkedIn URL placeholder after publishing the blog.
+[Published blog](https://sgektor.blogspot.com/2026/09/blocking-io-made-kyo-30x-slower-then-i.html),
+[article source](blog/kyo-blocking.md), [Blogger HTML](blog/kyo-blocking-blogger.html),
+and [LinkedIn draft](blog/kyo-blocking-linkedin.txt).
 
 Each batch completes 256 integer request/response exchanges through 8 or 64 persistent TCP connections.
 Lane `n` processes indices `n, n + parallelism, ...`, with one outstanding request per connection.
