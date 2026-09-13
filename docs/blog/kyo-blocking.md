@@ -1,6 +1,8 @@
 # Blocking I/O made Kyo 30x slower. Then I tried flush().
 
-Kyo still has my attention. After the [first synthetic comparison](https://sgektor.blogspot.com/2026/09/kyo-vs-cats-effect-promising-numbers.html), I wanted to see what happened when the programs had to wait for actual socket I/O.
+I spent a week giving Kyo a chance in a real service. AI coding tools handled most of the effect-system migration.
+
+After the [first synthetic comparison](https://sgektor.blogspot.com/2026/09/kyo-vs-cats-effect-promising-numbers.html), I also wanted to see what happened when the programs had to wait for actual socket I/O. The numbers below come from a separate TCP benchmark.
 
 I added Gears and Ox too. Same TCP exchanges, connection limits and ordered results. The nonblocking numbers were close. Blocking exposed a much bigger difference.
 
@@ -42,6 +44,6 @@ Putting flush in every `Sync.defer` would also affect cheap side effects. My rea
 
 Gears and Ox landed around 139 blocking batches/s at concurrency 64 and allocated much less than CE. Their direct style is interesting even without a throughput win: ordinary loops, conditions and local helpers around I/O, with fewer effect combinators. That may matter more in everyday code than a small benchmark lead.
 
-I still want to try Kyo in an application. I also want to know how much scheduler knowledge that application will need.
+Kyo still has my attention. I also want to know how much scheduler knowledge an application will need.
 
 [Full tables, allocation, CPU and raw measurements](https://github.com/stasimus/scala-effect-bench/blob/main/results/four-io-measured/report.md), plus [methods and reproduction](https://github.com/stasimus/scala-effect-bench/blob/main/docs/four-library-io.md). The suite passed 438 correctness checks. This is one loopback workload; it does not establish production performance or equivalent cancellation guarantees.
