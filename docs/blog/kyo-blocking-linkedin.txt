@@ -6,7 +6,7 @@ The interesting catch: the flush was manual. Kyo's Finagle integration already d
 
 Nonblocking results were much closer: Kyo led CE by about 12% at concurrency 8 and trailed by about 3% at 64.
 
-Kyo still interests me. How much scheduler knowledge should application code need?
+I still like Kyo. How much scheduler knowledge should application code need?
 
 One workload, one machine, Kyo RC6. Full experiment:
 https://sgektor.blogspot.com/2026/09/blocking-io-made-kyo-30x-slower-then-i.html
