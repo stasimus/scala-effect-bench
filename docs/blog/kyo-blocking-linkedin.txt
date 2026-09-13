@@ -1,4 +1,6 @@
-Kyo was about 30x slower than cats-effect in my blocking TCP benchmark. Calling flush() before each blocking exchange changed that dramatically.
+Kyo's strong results against CE3 in several synthetic benchmarks convinced me to try it in a real service. Then I noticed what my benchmark had left out: blocking operations.
+
+In a separate blocking TCP benchmark, Kyo was about 30x slower than cats-effect. Calling flush() before each blocking exchange changed that dramatically.
 
 Kyo went from 5 to 82 batches/s. With worker and placement tuning too, it reached 145, close to CE's default 149, with overlapping confidence intervals.
 
