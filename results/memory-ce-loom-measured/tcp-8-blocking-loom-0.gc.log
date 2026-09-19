@@ -1,0 +1,7 @@
+[0.008s][info][gc] Using G1
+[1.818s][info][gc] GC(0) Pause Full (System.gc()) 27M->3M(64M) 5.495ms
+[1.976s][info][gc] GC(1) Pause Full (System.gc()) 4M->3M(64M) 2.977ms
+[2.133s][info][gc] GC(2) Pause Full (System.gc()) 4M->3M(64M) 2.426ms
+[8.017s][info][gc] GC(3) Pause Full (System.gc()) 13M->3M(64M) 8.062ms
+[8.183s][info][gc] GC(4) Pause Full (System.gc()) 4M->3M(64M) 10.197ms
+[8.343s][info][gc] GC(5) Pause Full (System.gc()) 4M->3M(64M) 8.455ms

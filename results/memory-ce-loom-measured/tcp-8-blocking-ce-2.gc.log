@@ -1,0 +1,8 @@
+[0.005s][info][gc] Using G1
+[0.368s][info][gc] GC(0) Pause Young (Normal) (G1 Evacuation Pause) 35M->5M(66M) 1.870ms
+[1.930s][info][gc] GC(1) Pause Full (System.gc()) 27M->5M(64M) 7.967ms
+[2.090s][info][gc] GC(2) Pause Full (System.gc()) 5M->5M(64M) 8.556ms
+[2.248s][info][gc] GC(3) Pause Full (System.gc()) 5M->5M(64M) 5.973ms
+[8.105s][info][gc] GC(4) Pause Full (System.gc()) 18M->5M(64M) 6.002ms
+[8.266s][info][gc] GC(5) Pause Full (System.gc()) 5M->5M(64M) 5.903ms
+[8.429s][info][gc] GC(6) Pause Full (System.gc()) 5M->5M(64M) 8.001ms

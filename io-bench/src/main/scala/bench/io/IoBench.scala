@@ -4,7 +4,7 @@ import bench.matched.MatchedBase
 import cats.effect.IO
 import cats.effect.std.Supervisor
 import cats.syntax.all.*
-import java.util.concurrent.{Executors, TimeUnit}
+import java.util.concurrent.{CompletableFuture, Executors, TimeUnit}
 import kyo.{<, Abort, Async, Fiber, Frame, Kyo, Result, Scope, Sync}
 import kyo.AllowUnsafe.embrace.danger
 import org.openjdk.jmh.annotations.{Scope as JmhScope, *}
@@ -13,22 +13,23 @@ import scala.util.Try
 
 @BenchmarkMode(Array(Mode.Throughput, Mode.SampleTime))
 class IoBench extends MatchedBase:
-    @Param(Array("ce", "kyo", "gears", "ox")) var runtime: String = ""
+    @Param(Array("ce", "kyo", "loom", "gears", "ox")) var runtime: String = ""
     @Param(Array("blocking", "nonblocking")) var transport: String = ""
     @Param(Array("256")) var size: Int = 0
     @Param(Array("8", "64")) var parallelism: Int = 0
     @Param(Array("1000")) var delayMicros: Int = 0
     private var fixture: TcpFixture = null
     private var virtual: ExecutionContextExecutorService = null
+    private var loom: bench.direct.Backend.Loom = null
 
     private[io] def exchange: Exchange = fixture
 
     @Setup(Level.Trial) def setup(): Unit =
         require(Runtime.version().feature() >= 21)
-        require(Set("ce", "kyo", "gears", "ox", "ceVirtual", "kyoFlush", "kyoTuned").contains(runtime))
+        require(Set("ce", "kyo", "loom", "gears", "ox", "ceVirtual", "kyoFlush", "kyoTuned").contains(runtime))
         require(size >= 0 && parallelism > 0 && delayMicros >= 0)
         require(Set("blocking", "nonblocking").contains(transport))
-        require(runtime == "ce" || runtime == "kyo" || runtime == "gears" || runtime == "ox" || transport == "blocking")
+        require(Set("ce", "kyo", "loom", "gears", "ox")(runtime) || transport == "blocking")
         if runtime.startsWith("kyo") then
             require(!java.lang.Boolean.getBoolean("kyo.scheduler.virtualizeWorkers"))
             val keys = Vector("coreWorkers", "minWorkers", "maxWorkers", "scheduleStride")
@@ -37,6 +38,7 @@ class IoBench extends MatchedBase:
             else keys.foreach(key => require(System.getProperty(s"kyo.scheduler.$key") == null, s"Unexpected tuning: $key"))
         if runtime == "ceVirtual" then
             virtual = scala.concurrent.ExecutionContext.fromExecutorService(Executors.newVirtualThreadPerTaskExecutor())
+        if runtime == "loom" then loom = new bench.direct.Backend.Loom
         try fixture = new TcpFixture(transport, parallelism, delayMicros)
         catch
             case error: Throwable =>
@@ -45,9 +47,11 @@ class IoBench extends MatchedBase:
 
     @TearDown(Level.Trial) def teardown(): Unit =
         try if fixture != null then fixture.close()
-        finally if virtual != null then
-            virtual.shutdownNow()
-            require(virtual.awaitTermination(10, TimeUnit.SECONDS))
+        finally
+            if loom != null then loom.close()
+            if virtual != null then
+                virtual.shutdownNow()
+                require(virtual.awaitTermination(10, TimeUnit.SECONDS))
 
     private def ceCall(io: Exchange, lane: Int, index: Int): IO[Int] =
         if transport == "blocking" then IO.blocking(io.blocking(lane, index))
@@ -155,10 +159,33 @@ class IoBench extends MatchedBase:
         }.join()
     }
 
+    private def loomBatch(io: Exchange): Vector[Int] =
+        val b = loom
+        b.run {
+            val output = new Array[Int](size)
+            val workers = Vector.range(0, math.min(size, parallelism)).map { lane =>
+                b.fork { Try {
+                    var index = lane
+                    while index < size do
+                        output(index) = if transport == "blocking" then io.blocking(lane, index)
+                        else
+                            val result = new CompletableFuture[Either[Throwable, Int]]()
+                            val cancel = io.async(lane, index)(value => { result.complete(value); () })
+                            try bench.direct.Backend.get(result).fold(throw _, identity)
+                            finally cancel()
+                        index += parallelism
+                } }
+            }
+            val results = workers.map(b.join(_))
+            results.foreach(_.get)
+            output.toVector
+        }
+
     def batch(io: Exchange): Vector[Int] = runtime match
         case "ce" | "ceVirtual" => ce(ceBatch(io))
         case "kyo" | "kyoFlush" | "kyoTuned" => ky(kyoBatch(io))
         case "gears" => gearsBatch(io)
         case "ox" => oxBatch(io)
+        case "loom" => loomBatch(io)
 
     @Benchmark def requests(): Vector[Int] = batch(fixture)

@@ -23,7 +23,7 @@ This explanation combines source inspection with the submission controls. It doe
 The benchmark used a supported default construction, but omitted a documented blocking optimization. The 31x figure should not be presented as Kyo's general blocking performance.
 A separate [JMH control](../blocking-hint/report.md) measures CE and Kyo with the hint using the original worker loops and socket fixture. Libraries remain unchanged.
 
-The [deeper source investigation](../../docs/kyo-blocking-research.html) explains the remaining gap
+The [deeper source investigation](../kyo-blocking-research/report-source.md) explains the remaining gap
 through worker capacity and placement, with repeated diagnostic controls. Flush is a queue optimization,
 not a blocking declaration equivalent to IO.blocking.
 

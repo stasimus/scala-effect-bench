@@ -1,0 +1,283 @@
+{
+  "id": "parked-1000-0-ce-0",
+  "runtime": "ce",
+  "mode": "parked",
+  "count": 1000,
+  "setting": "0",
+  "fork": 0,
+  "jvm_args": [
+    "--add-opens=java.base/java.lang=ALL-UNNAMED",
+    "-Xms64m",
+    "-Xmx2g",
+    "-XX:+UseG1GC"
+  ],
+  "command": [
+    "/Users/stas/.sdkman/candidates/java/current/bin/java",
+    "--add-opens=java.base/java.lang=ALL-UNNAMED",
+    "-Xms64m",
+    "-Xmx2g",
+    "-XX:+UseG1GC",
+    "-Xlog:gc=info:file=/Users/stas/projects/scala-effect-bench/results/memory-ce-loom-measured/parked-1000-0-ce-0.gc.log",
+    "-cp",
+    "/Users/stas/projects/scala-effect-bench/io-bench/target/scala-3.8.4/classes:/Users/stas/projects/scala-effect-bench/bench/target/scala-3.8.4/classes:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.8.4/scala3-library_3-3.8.4.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjdk/jmh/jmh-generator-bytecode/1.37/jmh-generator-bytecode-1.37.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjdk/jmh/jmh-generator-reflection/1.37/jmh-generator-reflection-1.37.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/epfl/lamp/gears_3/0.3.1/gears_3-0.3.1.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/softwaremill/ox/core_3/1.0.6/core_3-1.0.6.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/getkyo/kyo-core_3/1.0.0-RC6/kyo-core_3-1.0.0-RC6.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-effect_3/3.7.1/cats-effect_3-3.7.1.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-core_3/2.13.0/cats-core_3-2.13.0.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/co/fs2/fs2-core_3/3.13.0/fs2-core_3-3.13.0.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/3.8.4/scala-library-3.8.4.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjdk/jmh/jmh-generator-asm/1.37/jmh-generator-asm-1.37.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/softwaremill/jox/channels/1.1.2/channels-1.1.2.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/getkyo/kyo-scheduler_3/1.0.0-RC6/kyo-scheduler_3-1.0.0-RC6.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/getkyo/kyo-prelude_3/1.0.0-RC6/kyo-prelude_3-1.0.0-RC6.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-effect-kernel_3/3.7.1/cats-effect-kernel_3-3.7.1.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-effect-std_3/3.7.1/cats-effect-std_3-3.7.1.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-mtl_3/1.6.0/cats-mtl_3-1.6.0.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-kernel_3/2.13.0/cats-kernel_3-2.13.0.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scodec/scodec-bits_3/1.2.4/scodec-bits_3-1.2.4.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/ow2/asm/asm/9.0/asm-9.0.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/getkyo/kyo-stats-registry_3/1.0.0-RC6/kyo-stats-registry_3-1.0.0-RC6.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/getkyo/kyo-kernel_3/1.0.0-RC6/kyo-kernel_3-1.0.0-RC6.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/getkyo/kyo-config_3/1.0.0-RC6/kyo-config_3-1.0.0-RC6.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/getkyo/kyo-data_3/1.0.0-RC6/kyo-data_3-1.0.0-RC6.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/pprint_3/0.9.6/pprint_3-0.9.6.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/fansi_3/0.5.1/fansi_3-0.5.1.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/sourcecode_3/0.4.3-M5/sourcecode_3-0.4.3-M5.jar",
+    "bench.memory.MemoryProbe",
+    "ce",
+    "parked",
+    "1000",
+    "0"
+  ],
+  "events": [
+    {
+      "stage": "hello",
+      "pid": 85714,
+      "runtime": "ce",
+      "mode": "parked",
+      "count": 1000,
+      "setting": "0",
+      "jdk": "25.0.3",
+      "input_args": [
+        "--add-opens=java.base/java.lang=ALL-UNNAMED",
+        "-Xms64m",
+        "-Xmx2g",
+        "-XX:+UseG1GC",
+        "-Xlog:gc=info:file=/Users/stas/projects/scala-effect-bench/results/memory-ce-loom-measured/parked-1000-0-ce-0.gc.log"
+      ]
+    },
+    {
+      "stage": "baseline",
+      "heap_used": 5058312,
+      "heap_committed": 67108864,
+      "nonheap_used": 23563016,
+      "nonheap_committed": 26804224,
+      "gc_count": 4,
+      "platform_threads": 22
+    },
+    {
+      "stage": "held",
+      "heap_used": 8204040,
+      "heap_committed": 67108864,
+      "nonheap_used": 21894288,
+      "nonheap_committed": 26804224,
+      "gc_count": 4,
+      "platform_threads": 22,
+      "waiting": 1000,
+      "completed": 0
+    },
+    {
+      "stage": "live",
+      "heap_used": 5960112,
+      "heap_committed": 67108864,
+      "nonheap_used": 21848080,
+      "nonheap_committed": 26804224,
+      "gc_count": 7,
+      "platform_threads": 22,
+      "waiting": 1000,
+      "completed": 0
+    },
+    {
+      "stage": "released",
+      "heap_used": 5083672,
+      "heap_committed": 67108864,
+      "nonheap_used": 21847056,
+      "nonheap_committed": 26804224,
+      "gc_count": 10,
+      "platform_threads": 22,
+      "completed": 1000
+    },
+    {
+      "stage": "complete",
+      "heap_used": 5083672,
+      "heap_committed": 67108864,
+      "nonheap_used": 21847568,
+      "nonheap_committed": 26804224,
+      "gc_count": 10,
+      "platform_threads": 22
+    }
+  ],
+  "samples": [
+    {
+      "stage": "baseline",
+      "monotonic": 58459.6807715,
+      "rss": 146849792,
+      "footprint": 122504080,
+      "peak_footprint": 122602384
+    },
+    {
+      "stage": "baseline",
+      "monotonic": 58459.785247791,
+      "rss": 146866176,
+      "footprint": 122520464,
+      "peak_footprint": 122602384
+    },
+    {
+      "stage": "baseline",
+      "monotonic": 58459.890344208,
+      "rss": 146866176,
+      "footprint": 122520464,
+      "peak_footprint": 122602384
+    },
+    {
+      "stage": "baseline",
+      "monotonic": 58459.995411916,
+      "rss": 146866176,
+      "footprint": 122520464,
+      "peak_footprint": 122602384
+    },
+    {
+      "stage": "baseline",
+      "monotonic": 58460.10037775,
+      "rss": 146866176,
+      "footprint": 122520464,
+      "peak_footprint": 122602384
+    },
+    {
+      "stage": "held",
+      "monotonic": 58460.210553583,
+      "rss": 146866176,
+      "footprint": 122520464,
+      "peak_footprint": 122602384
+    },
+    {
+      "stage": "held",
+      "monotonic": 58460.310993416,
+      "rss": 146915328,
+      "footprint": 122569616,
+      "peak_footprint": 122602384
+    },
+    {
+      "stage": "held",
+      "monotonic": 58460.416076375,
+      "rss": 146915328,
+      "footprint": 122569616,
+      "peak_footprint": 122602384
+    },
+    {
+      "stage": "held",
+      "monotonic": 58460.521142625,
+      "rss": 146915328,
+      "footprint": 122569616,
+      "peak_footprint": 122602384
+    },
+    {
+      "stage": "held",
+      "monotonic": 58460.626220416,
+      "rss": 146915328,
+      "footprint": 122569616,
+      "peak_footprint": 122602384
+    },
+    {
+      "stage": "held",
+      "monotonic": 58460.729453458,
+      "rss": 146915328,
+      "footprint": 122569616,
+      "peak_footprint": 122602384
+    },
+    {
+      "stage": "held",
+      "monotonic": 58460.834590166,
+      "rss": 146915328,
+      "footprint": 122569616,
+      "peak_footprint": 122602384
+    },
+    {
+      "stage": "held",
+      "monotonic": 58460.939081958,
+      "rss": 146915328,
+      "footprint": 122569616,
+      "peak_footprint": 122602384
+    },
+    {
+      "stage": "held",
+      "monotonic": 58461.041487333,
+      "rss": 146915328,
+      "footprint": 122569616,
+      "peak_footprint": 122602384
+    },
+    {
+      "stage": "held",
+      "monotonic": 58461.146631125,
+      "rss": 146915328,
+      "footprint": 122569616,
+      "peak_footprint": 122602384
+    },
+    {
+      "stage": "live",
+      "monotonic": 58461.740305083,
+      "rss": 147849216,
+      "footprint": 123503504,
+      "peak_footprint": 123569040
+    },
+    {
+      "stage": "live",
+      "monotonic": 58461.843360916,
+      "rss": 147849216,
+      "footprint": 123503504,
+      "peak_footprint": 123569040
+    },
+    {
+      "stage": "live",
+      "monotonic": 58461.947390833,
+      "rss": 147849216,
+      "footprint": 123503504,
+      "peak_footprint": 123569040
+    },
+    {
+      "stage": "live",
+      "monotonic": 58462.051366583,
+      "rss": 147849216,
+      "footprint": 123503504,
+      "peak_footprint": 123569040
+    },
+    {
+      "stage": "live",
+      "monotonic": 58462.151902791,
+      "rss": 147849216,
+      "footprint": 123503504,
+      "peak_footprint": 123569040
+    },
+    {
+      "stage": "released",
+      "monotonic": 58462.752216583,
+      "rss": 147881984,
+      "footprint": 123536272,
+      "peak_footprint": 123569040
+    },
+    {
+      "stage": "released",
+      "monotonic": 58462.852627916,
+      "rss": 147881984,
+      "footprint": 123536272,
+      "peak_footprint": 123569040
+    },
+    {
+      "stage": "released",
+      "monotonic": 58462.955804958,
+      "rss": 147881984,
+      "footprint": 123536272,
+      "peak_footprint": 123569040
+    },
+    {
+      "stage": "released",
+      "monotonic": 58463.0605805,
+      "rss": 147881984,
+      "footprint": 123536272,
+      "peak_footprint": 123569040
+    },
+    {
+      "stage": "released",
+      "monotonic": 58463.165747333,
+      "rss": 147881984,
+      "footprint": 123536272,
+      "peak_footprint": 123569040
+    }
+  ],
+  "final_process_memory": {
+    "rss": 147881984,
+    "footprint": 123536272,
+    "peak_footprint": 123569040
+  },
+  "peak_footprint_before_exit": 123569040,
+  "exit_code": 0,
+  "gc_log_sha256": "fd0a6320c2fd25202fb957e7faa74b84aee0079cde94ec7e6cacc865e825ed2e",
+  "stderr_sha256": "d0a84039bc4205ac26bbd5b922db4337917f3f64f1d6ba3b9f017e186cefb593"
+}

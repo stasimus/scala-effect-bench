@@ -1,0 +1,30 @@
+[0.005s][info][gc] Using G1
+[0.265s][info][gc] GC(0) Pause Young (Normal) (G1 Evacuation Pause) 35M->5M(66M) 2.156ms
+[0.350s][info][gc] GC(1) Pause Full (System.gc()) 24M->4M(64M) 5.618ms
+[0.510s][info][gc] GC(2) Pause Full (System.gc()) 5M->4M(64M) 4.648ms
+[0.671s][info][gc] GC(3) Pause Full (System.gc()) 5M->4M(64M) 5.776ms
+[1.399s][info][gc] GC(4) Pause Young (Normal) (G1 Evacuation Pause) 31M->22M(64M) 11.652ms
+[1.431s][info][gc] GC(5) Pause Young (Normal) (G1 Evacuation Pause) 38M->33M(64M) 9.703ms
+[1.451s][info][gc] GC(6) Pause Young (Concurrent Start) (G1 Evacuation Pause) 45M->41M(64M) 5.224ms
+[1.451s][info][gc] GC(7) Concurrent Mark Cycle
+[1.461s][info][gc] GC(7) Pause Remark 48M->48M(72M) 1.017ms
+[1.469s][info][gc] GC(8) Pause Young (Normal) (G1 Evacuation Pause) 50M->47M(144M) 5.302ms
+[1.471s][info][gc] GC(7) Pause Cleanup 49M->49M(144M) 0.008ms
+[1.471s][info][gc] GC(7) Concurrent Mark Cycle 20.380ms
+[1.506s][info][gc] GC(9) Pause Young (Prepare Mixed) (G1 Evacuation Pause) 88M->74M(144M) 11.332ms
+[1.553s][info][gc] GC(10) Pause Young (Mixed) (G1 Evacuation Pause) 102M->92M(144M) 13.372ms
+[1.585s][info][gc] GC(11) Pause Young (Concurrent Start) (G1 Evacuation Pause) 112M->106M(144M) 7.417ms
+[1.585s][info][gc] GC(12) Concurrent Mark Cycle
+[1.615s][info][gc] GC(12) Pause Remark 120M->114M(169M) 0.804ms
+[1.627s][info][gc] GC(12) Pause Cleanup 114M->114M(169M) 0.012ms
+[1.627s][info][gc] GC(12) Concurrent Mark Cycle 42.315ms
+[2.697s][info][gc] GC(13) Pause Full (System.gc()) 114M->92M(169M) 47.600ms
+[2.895s][info][gc] GC(14) Pause Full (System.gc()) 92M->92M(169M) 43.024ms
+[3.096s][info][gc] GC(15) Pause Full (System.gc()) 92M->92M(169M) 45.149ms
+[3.847s][info][gc] GC(16) Pause Young (Concurrent Start) (G1 Evacuation Pause) 122M->100M(169M) 9.992ms
+[3.847s][info][gc] GC(17) Concurrent Mark Cycle
+[3.856s][info][gc] GC(17) Pause Remark 112M->112M(170M) 0.593ms
+[3.861s][info][gc] GC(18) Pause Full (System.gc()) 114M->8M(64M) 3.811ms
+[3.862s][info][gc] GC(17) Concurrent Mark Cycle 14.772ms
+[4.020s][info][gc] GC(19) Pause Full (System.gc()) 8M->8M(64M) 5.929ms
+[4.187s][info][gc] GC(20) Pause Full (System.gc()) 8M->8M(64M) 12.508ms

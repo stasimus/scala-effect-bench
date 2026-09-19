@@ -1,0 +1,1410 @@
+[
+  {
+    "mode": "parked",
+    "count": 1000,
+    "setting": "0",
+    "runtime": "ce",
+    "forks": [
+      {
+        "footprint": 123503504,
+        "rss": 147849216,
+        "peak_footprint": 123569040,
+        "baseline_heap": 5058312,
+        "post_heap": 5083672,
+        "live_heap": 5960112,
+        "heap_per_task": 901.8,
+        "pre_gc_footprint": 122569616.0
+      },
+      {
+        "footprint": 120800144,
+        "rss": 145145856,
+        "peak_footprint": 120832912,
+        "baseline_heap": 5054384,
+        "post_heap": 5081792,
+        "live_heap": 5958232,
+        "heap_per_task": 903.848,
+        "pre_gc_footprint": 119833488.0
+      },
+      {
+        "footprint": 123650936,
+        "rss": 148013056,
+        "peak_footprint": 123700088,
+        "baseline_heap": 5028704,
+        "post_heap": 5065608,
+        "live_heap": 5941192,
+        "heap_per_task": 912.488,
+        "pre_gc_footprint": 122700664.0
+      }
+    ],
+    "metrics": {
+      "footprint": {
+        "median": 123503504,
+        "minimum": 120800144,
+        "maximum": 123650936
+      },
+      "rss": {
+        "median": 147849216,
+        "minimum": 145145856,
+        "maximum": 148013056
+      },
+      "peak_footprint": {
+        "median": 123569040,
+        "minimum": 120832912,
+        "maximum": 123700088
+      },
+      "baseline_heap": {
+        "median": 5054384,
+        "minimum": 5028704,
+        "maximum": 5058312
+      },
+      "post_heap": {
+        "median": 5081792,
+        "minimum": 5065608,
+        "maximum": 5083672
+      },
+      "live_heap": {
+        "median": 5958232,
+        "minimum": 5941192,
+        "maximum": 5960112
+      },
+      "heap_per_task": {
+        "median": 903.848,
+        "minimum": 901.8,
+        "maximum": 912.488
+      },
+      "pre_gc_footprint": {
+        "median": 122569616.0,
+        "minimum": 119833488.0,
+        "maximum": 122700664.0
+      }
+    }
+  },
+  {
+    "mode": "parked",
+    "count": 1000,
+    "setting": "0",
+    "runtime": "loom",
+    "forks": [
+      {
+        "footprint": 79561568,
+        "rss": 103645184,
+        "peak_footprint": 79659872,
+        "baseline_heap": 3362112,
+        "post_heap": 3384208,
+        "live_heap": 5788008,
+        "heap_per_task": 2425.896,
+        "pre_gc_footprint": 77906784.0
+      },
+      {
+        "footprint": 79889224,
+        "rss": 104005632,
+        "peak_footprint": 80003912,
+        "baseline_heap": 3361600,
+        "post_heap": 3383752,
+        "live_heap": 5788064,
+        "heap_per_task": 2426.464,
+        "pre_gc_footprint": 77480776.0
+      },
+      {
+        "footprint": 80708472,
+        "rss": 104775680,
+        "peak_footprint": 80774008,
+        "baseline_heap": 3361744,
+        "post_heap": 3384152,
+        "live_heap": 5756656,
+        "heap_per_task": 2394.912,
+        "pre_gc_footprint": 78087032.0
+      }
+    ],
+    "metrics": {
+      "footprint": {
+        "median": 79889224,
+        "minimum": 79561568,
+        "maximum": 80708472
+      },
+      "rss": {
+        "median": 104005632,
+        "minimum": 103645184,
+        "maximum": 104775680
+      },
+      "peak_footprint": {
+        "median": 80003912,
+        "minimum": 79659872,
+        "maximum": 80774008
+      },
+      "baseline_heap": {
+        "median": 3361744,
+        "minimum": 3361600,
+        "maximum": 3362112
+      },
+      "post_heap": {
+        "median": 3384152,
+        "minimum": 3383752,
+        "maximum": 3384208
+      },
+      "live_heap": {
+        "median": 5788008,
+        "minimum": 5756656,
+        "maximum": 5788064
+      },
+      "heap_per_task": {
+        "median": 2425.896,
+        "minimum": 2394.912,
+        "maximum": 2426.464
+      },
+      "pre_gc_footprint": {
+        "median": 77906784.0,
+        "minimum": 77480776.0,
+        "maximum": 78087032.0
+      }
+    }
+  },
+  {
+    "mode": "parked",
+    "count": 1000,
+    "setting": "1024",
+    "runtime": "ce",
+    "forks": [
+      {
+        "footprint": 131646304,
+        "rss": 156073984,
+        "peak_footprint": 131695456,
+        "baseline_heap": 4987384,
+        "post_heap": 5037392,
+        "live_heap": 6937400,
+        "heap_per_task": 1950.016,
+        "pre_gc_footprint": 129696608.0
+      },
+      {
+        "footprint": 126714720,
+        "rss": 151142400,
+        "peak_footprint": 126813024,
+        "baseline_heap": 4990192,
+        "post_heap": 5036608,
+        "live_heap": 6937048,
+        "heap_per_task": 1946.856,
+        "pre_gc_footprint": 124896096.0
+      },
+      {
+        "footprint": 130204536,
+        "rss": 154615808,
+        "peak_footprint": 130270072,
+        "baseline_heap": 5004480,
+        "post_heap": 5033496,
+        "live_heap": 6933504,
+        "heap_per_task": 1929.024,
+        "pre_gc_footprint": 128336760.0
+      }
+    ],
+    "metrics": {
+      "footprint": {
+        "median": 130204536,
+        "minimum": 126714720,
+        "maximum": 131646304
+      },
+      "rss": {
+        "median": 154615808,
+        "minimum": 151142400,
+        "maximum": 156073984
+      },
+      "peak_footprint": {
+        "median": 130270072,
+        "minimum": 126813024,
+        "maximum": 131695456
+      },
+      "baseline_heap": {
+        "median": 4990192,
+        "minimum": 4987384,
+        "maximum": 5004480
+      },
+      "post_heap": {
+        "median": 5036608,
+        "minimum": 5033496,
+        "maximum": 5037392
+      },
+      "live_heap": {
+        "median": 6937048,
+        "minimum": 6933504,
+        "maximum": 6937400
+      },
+      "heap_per_task": {
+        "median": 1946.856,
+        "minimum": 1929.024,
+        "maximum": 1950.016
+      },
+      "pre_gc_footprint": {
+        "median": 128336760.0,
+        "minimum": 124896096.0,
+        "maximum": 129696608.0
+      }
+    }
+  },
+  {
+    "mode": "parked",
+    "count": 1000,
+    "setting": "1024",
+    "runtime": "loom",
+    "forks": [
+      {
+        "footprint": 84394872,
+        "rss": 108527616,
+        "peak_footprint": 84476792,
+        "baseline_heap": 3371392,
+        "post_heap": 3389248,
+        "live_heap": 6828376,
+        "heap_per_task": 3456.984,
+        "pre_gc_footprint": 81986424.0
+      },
+      {
+        "footprint": 86918008,
+        "rss": 111083520,
+        "peak_footprint": 86983544,
+        "baseline_heap": 3370192,
+        "post_heap": 3392736,
+        "live_heap": 6830688,
+        "heap_per_task": 3460.496,
+        "pre_gc_footprint": 84247416.0
+      },
+      {
+        "footprint": 89686904,
+        "rss": 113868800,
+        "peak_footprint": 89801592,
+        "baseline_heap": 3374072,
+        "post_heap": 3394136,
+        "live_heap": 6822640,
+        "heap_per_task": 3448.568,
+        "pre_gc_footprint": 86606712.0
+      }
+    ],
+    "metrics": {
+      "footprint": {
+        "median": 86918008,
+        "minimum": 84394872,
+        "maximum": 89686904
+      },
+      "rss": {
+        "median": 111083520,
+        "minimum": 108527616,
+        "maximum": 113868800
+      },
+      "peak_footprint": {
+        "median": 86983544,
+        "minimum": 84476792,
+        "maximum": 89801592
+      },
+      "baseline_heap": {
+        "median": 3371392,
+        "minimum": 3370192,
+        "maximum": 3374072
+      },
+      "post_heap": {
+        "median": 3392736,
+        "minimum": 3389248,
+        "maximum": 3394136
+      },
+      "live_heap": {
+        "median": 6828376,
+        "minimum": 6822640,
+        "maximum": 6830688
+      },
+      "heap_per_task": {
+        "median": 3456.984,
+        "minimum": 3448.568,
+        "maximum": 3460.496
+      },
+      "pre_gc_footprint": {
+        "median": 84247416.0,
+        "minimum": 81986424.0,
+        "maximum": 86606712.0
+      }
+    }
+  },
+  {
+    "mode": "parked",
+    "count": 10000,
+    "setting": "0",
+    "runtime": "ce",
+    "forks": [
+      {
+        "footprint": 130712440,
+        "rss": 155074560,
+        "peak_footprint": 131138424,
+        "baseline_heap": 5058920,
+        "post_heap": 5450328,
+        "live_heap": 14212448,
+        "heap_per_task": 915.3528,
+        "pre_gc_footprint": 120800120.0
+      },
+      {
+        "footprint": 132268968,
+        "rss": 156598272,
+        "peak_footprint": 134087592,
+        "baseline_heap": 5034616,
+        "post_heap": 5419176,
+        "live_heap": 14180872,
+        "heap_per_task": 914.6256,
+        "pre_gc_footprint": 122880936.0
+      },
+      {
+        "footprint": 134284152,
+        "rss": 158646272,
+        "peak_footprint": 134710136,
+        "baseline_heap": 5025888,
+        "post_heap": 5409928,
+        "live_heap": 14172224,
+        "heap_per_task": 914.6336,
+        "pre_gc_footprint": 124732280.0
+      }
+    ],
+    "metrics": {
+      "footprint": {
+        "median": 132268968,
+        "minimum": 130712440,
+        "maximum": 134284152
+      },
+      "rss": {
+        "median": 156598272,
+        "minimum": 155074560,
+        "maximum": 158646272
+      },
+      "peak_footprint": {
+        "median": 134087592,
+        "minimum": 131138424,
+        "maximum": 134710136
+      },
+      "baseline_heap": {
+        "median": 5034616,
+        "minimum": 5025888,
+        "maximum": 5058920
+      },
+      "post_heap": {
+        "median": 5419176,
+        "minimum": 5409928,
+        "maximum": 5450328
+      },
+      "live_heap": {
+        "median": 14180872,
+        "minimum": 14172224,
+        "maximum": 14212448
+      },
+      "heap_per_task": {
+        "median": 914.6336,
+        "minimum": 914.6256,
+        "maximum": 915.3528
+      },
+      "pre_gc_footprint": {
+        "median": 122880936.0,
+        "minimum": 120800120.0,
+        "maximum": 124732280.0
+      }
+    }
+  },
+  {
+    "mode": "parked",
+    "count": 10000,
+    "setting": "0",
+    "runtime": "loom",
+    "forks": [
+      {
+        "footprint": 111952760,
+        "rss": 136036352,
+        "peak_footprint": 112509816,
+        "baseline_heap": 3362216,
+        "post_heap": 3425912,
+        "live_heap": 27784344,
+        "heap_per_task": 2442.2128,
+        "pre_gc_footprint": 104203128.0
+      },
+      {
+        "footprint": 85230456,
+        "rss": 109314048,
+        "peak_footprint": 85820280,
+        "baseline_heap": 3361744,
+        "post_heap": 3423968,
+        "live_heap": 27877736,
+        "heap_per_task": 2451.5992,
+        "pre_gc_footprint": 80364408.0
+      },
+      {
+        "footprint": 94257992,
+        "rss": 118374400,
+        "peak_footprint": 94815048,
+        "baseline_heap": 3362120,
+        "post_heap": 3432096,
+        "live_heap": 27893016,
+        "heap_per_task": 2453.0896,
+        "pre_gc_footprint": 89195336.0
+      }
+    ],
+    "metrics": {
+      "footprint": {
+        "median": 94257992,
+        "minimum": 85230456,
+        "maximum": 111952760
+      },
+      "rss": {
+        "median": 118374400,
+        "minimum": 109314048,
+        "maximum": 136036352
+      },
+      "peak_footprint": {
+        "median": 94815048,
+        "minimum": 85820280,
+        "maximum": 112509816
+      },
+      "baseline_heap": {
+        "median": 3362120,
+        "minimum": 3361744,
+        "maximum": 3362216
+      },
+      "post_heap": {
+        "median": 3425912,
+        "minimum": 3423968,
+        "maximum": 3432096
+      },
+      "live_heap": {
+        "median": 27877736,
+        "minimum": 27784344,
+        "maximum": 27893016
+      },
+      "heap_per_task": {
+        "median": 2451.5992,
+        "minimum": 2442.2128,
+        "maximum": 2453.0896
+      },
+      "pre_gc_footprint": {
+        "median": 89195336.0,
+        "minimum": 80364408.0,
+        "maximum": 104203128.0
+      }
+    }
+  },
+  {
+    "mode": "parked",
+    "count": 10000,
+    "setting": "1024",
+    "runtime": "ce",
+    "forks": [
+      {
+        "footprint": 148603768,
+        "rss": 173015040,
+        "peak_footprint": 148865912,
+        "baseline_heap": 4991224,
+        "post_heap": 5400648,
+        "live_heap": 24402936,
+        "heap_per_task": 1941.1712,
+        "pre_gc_footprint": 128746360.0
+      },
+      {
+        "footprint": 149996384,
+        "rss": 174424064,
+        "peak_footprint": 150389600,
+        "baseline_heap": 5035776,
+        "post_heap": 5423072,
+        "live_heap": 24423832,
+        "heap_per_task": 1938.8056,
+        "pre_gc_footprint": 130646880.0
+      },
+      {
+        "footprint": 148472720,
+        "rss": 172867584,
+        "peak_footprint": 151258000,
+        "baseline_heap": 4988576,
+        "post_heap": 5367472,
+        "live_heap": 24370840,
+        "heap_per_task": 1938.2264,
+        "pre_gc_footprint": 128664464.0
+      }
+    ],
+    "metrics": {
+      "footprint": {
+        "median": 148603768,
+        "minimum": 148472720,
+        "maximum": 149996384
+      },
+      "rss": {
+        "median": 173015040,
+        "minimum": 172867584,
+        "maximum": 174424064
+      },
+      "peak_footprint": {
+        "median": 150389600,
+        "minimum": 148865912,
+        "maximum": 151258000
+      },
+      "baseline_heap": {
+        "median": 4991224,
+        "minimum": 4988576,
+        "maximum": 5035776
+      },
+      "post_heap": {
+        "median": 5400648,
+        "minimum": 5367472,
+        "maximum": 5423072
+      },
+      "live_heap": {
+        "median": 24402936,
+        "minimum": 24370840,
+        "maximum": 24423832
+      },
+      "heap_per_task": {
+        "median": 1938.8056,
+        "minimum": 1938.2264,
+        "maximum": 1941.1712
+      },
+      "pre_gc_footprint": {
+        "median": 128746360.0,
+        "minimum": 128664464.0,
+        "maximum": 130646880.0
+      }
+    }
+  },
+  {
+    "mode": "parked",
+    "count": 10000,
+    "setting": "1024",
+    "runtime": "loom",
+    "forks": [
+      {
+        "footprint": 127812496,
+        "rss": 151961600,
+        "peak_footprint": 128287632,
+        "baseline_heap": 3411888,
+        "post_heap": 3475440,
+        "live_heap": 38050816,
+        "heap_per_task": 3463.8928,
+        "pre_gc_footprint": 125862800.0
+      },
+      {
+        "footprint": 129647480,
+        "rss": 153812992,
+        "peak_footprint": 130319224,
+        "baseline_heap": 3368152,
+        "post_heap": 3427640,
+        "live_heap": 37870456,
+        "heap_per_task": 3450.2304,
+        "pre_gc_footprint": 127075192.0
+      },
+      {
+        "footprint": 133497696,
+        "rss": 157679616,
+        "peak_footprint": 133694304,
+        "baseline_heap": 3371528,
+        "post_heap": 3433632,
+        "live_heap": 37891336,
+        "heap_per_task": 3451.9808,
+        "pre_gc_footprint": 132023136.0
+      }
+    ],
+    "metrics": {
+      "footprint": {
+        "median": 129647480,
+        "minimum": 127812496,
+        "maximum": 133497696
+      },
+      "rss": {
+        "median": 153812992,
+        "minimum": 151961600,
+        "maximum": 157679616
+      },
+      "peak_footprint": {
+        "median": 130319224,
+        "minimum": 128287632,
+        "maximum": 133694304
+      },
+      "baseline_heap": {
+        "median": 3371528,
+        "minimum": 3368152,
+        "maximum": 3411888
+      },
+      "post_heap": {
+        "median": 3433632,
+        "minimum": 3427640,
+        "maximum": 3475440
+      },
+      "live_heap": {
+        "median": 37891336,
+        "minimum": 37870456,
+        "maximum": 38050816
+      },
+      "heap_per_task": {
+        "median": 3451.9808,
+        "minimum": 3450.2304,
+        "maximum": 3463.8928
+      },
+      "pre_gc_footprint": {
+        "median": 127075192.0,
+        "minimum": 125862800.0,
+        "maximum": 132023136.0
+      }
+    }
+  },
+  {
+    "mode": "parked",
+    "count": 100000,
+    "setting": "0",
+    "runtime": "ce",
+    "forks": [
+      {
+        "footprint": 248382448,
+        "rss": 272662528,
+        "peak_footprint": 307807264,
+        "baseline_heap": 5019184,
+        "post_heap": 8769416,
+        "live_heap": 97332256,
+        "heap_per_task": 923.13072,
+        "pre_gc_footprint": 238158808.0
+      },
+      {
+        "footprint": 252068800,
+        "rss": 276381696,
+        "peak_footprint": 310756360,
+        "baseline_heap": 5026704,
+        "post_heap": 8779792,
+        "live_heap": 97334288,
+        "heap_per_task": 923.07584,
+        "pre_gc_footprint": 243811240.0
+      },
+      {
+        "footprint": 248415192,
+        "rss": 272711680,
+        "peak_footprint": 277644248,
+        "baseline_heap": 5048560,
+        "post_heap": 8772440,
+        "live_heap": 97308576,
+        "heap_per_task": 922.60016,
+        "pre_gc_footprint": 245433280.0
+      }
+    ],
+    "metrics": {
+      "footprint": {
+        "median": 248415192,
+        "minimum": 248382448,
+        "maximum": 252068800
+      },
+      "rss": {
+        "median": 272711680,
+        "minimum": 272662528,
+        "maximum": 276381696
+      },
+      "peak_footprint": {
+        "median": 307807264,
+        "minimum": 277644248,
+        "maximum": 310756360
+      },
+      "baseline_heap": {
+        "median": 5026704,
+        "minimum": 5019184,
+        "maximum": 5048560
+      },
+      "post_heap": {
+        "median": 8772440,
+        "minimum": 8769416,
+        "maximum": 8779792
+      },
+      "live_heap": {
+        "median": 97332256,
+        "minimum": 97308576,
+        "maximum": 97334288
+      },
+      "heap_per_task": {
+        "median": 923.07584,
+        "minimum": 922.60016,
+        "maximum": 923.13072
+      },
+      "pre_gc_footprint": {
+        "median": 243811240.0,
+        "minimum": 238158808.0,
+        "maximum": 245433280.0
+      }
+    }
+  },
+  {
+    "mode": "parked",
+    "count": 100000,
+    "setting": "0",
+    "runtime": "loom",
+    "forks": [
+      {
+        "footprint": 272221192,
+        "rss": 296222720,
+        "peak_footprint": 287704072,
+        "baseline_heap": 3361568,
+        "post_heap": 4694640,
+        "live_heap": 153681288,
+        "heap_per_task": 1503.1972,
+        "pre_gc_footprint": 265126920.0
+      },
+      {
+        "footprint": 262210640,
+        "rss": 286195712,
+        "peak_footprint": 265454720,
+        "baseline_heap": 3364320,
+        "post_heap": 4565752,
+        "live_heap": 162402664,
+        "heap_per_task": 1590.38344,
+        "pre_gc_footprint": 256246840.0
+      },
+      {
+        "footprint": 251249672,
+        "rss": 275283968,
+        "peak_footprint": 265421880,
+        "baseline_heap": 3361896,
+        "post_heap": 4497984,
+        "live_heap": 143700600,
+        "heap_per_task": 1403.38704,
+        "pre_gc_footprint": 246563824.0
+      }
+    ],
+    "metrics": {
+      "footprint": {
+        "median": 262210640,
+        "minimum": 251249672,
+        "maximum": 272221192
+      },
+      "rss": {
+        "median": 286195712,
+        "minimum": 275283968,
+        "maximum": 296222720
+      },
+      "peak_footprint": {
+        "median": 265454720,
+        "minimum": 265421880,
+        "maximum": 287704072
+      },
+      "baseline_heap": {
+        "median": 3361896,
+        "minimum": 3361568,
+        "maximum": 3364320
+      },
+      "post_heap": {
+        "median": 4565752,
+        "minimum": 4497984,
+        "maximum": 4694640
+      },
+      "live_heap": {
+        "median": 153681288,
+        "minimum": 143700600,
+        "maximum": 162402664
+      },
+      "heap_per_task": {
+        "median": 1503.1972,
+        "minimum": 1403.38704,
+        "maximum": 1590.38344
+      },
+      "pre_gc_footprint": {
+        "median": 256246840.0,
+        "minimum": 246563824.0,
+        "maximum": 265126920.0
+      }
+    }
+  },
+  {
+    "mode": "parked",
+    "count": 100000,
+    "setting": "1024",
+    "runtime": "ce",
+    "forks": [
+      {
+        "footprint": 440484968,
+        "rss": 464732160,
+        "peak_footprint": 443532440,
+        "baseline_heap": 4996880,
+        "post_heap": 8730088,
+        "live_heap": 200453680,
+        "heap_per_task": 1954.568,
+        "pre_gc_footprint": 433194088.0
+      },
+      {
+        "footprint": 438781032,
+        "rss": 463028224,
+        "peak_footprint": 443417728,
+        "baseline_heap": 5024568,
+        "post_heap": 8766736,
+        "live_heap": 200235384,
+        "heap_per_task": 1952.10816,
+        "pre_gc_footprint": 432112720.0
+      },
+      {
+        "footprint": 419021952,
+        "rss": 443252736,
+        "peak_footprint": 421201024,
+        "baseline_heap": 5014024,
+        "post_heap": 8743728,
+        "live_heap": 199870864,
+        "heap_per_task": 1948.5684,
+        "pre_gc_footprint": 395084880.0
+      }
+    ],
+    "metrics": {
+      "footprint": {
+        "median": 438781032,
+        "minimum": 419021952,
+        "maximum": 440484968
+      },
+      "rss": {
+        "median": 463028224,
+        "minimum": 443252736,
+        "maximum": 464732160
+      },
+      "peak_footprint": {
+        "median": 443417728,
+        "minimum": 421201024,
+        "maximum": 443532440
+      },
+      "baseline_heap": {
+        "median": 5014024,
+        "minimum": 4996880,
+        "maximum": 5024568
+      },
+      "post_heap": {
+        "median": 8743728,
+        "minimum": 8730088,
+        "maximum": 8766736
+      },
+      "live_heap": {
+        "median": 200235384,
+        "minimum": 199870864,
+        "maximum": 200453680
+      },
+      "heap_per_task": {
+        "median": 1952.10816,
+        "minimum": 1948.5684,
+        "maximum": 1954.568
+      },
+      "pre_gc_footprint": {
+        "median": 432112720.0,
+        "minimum": 395084880.0,
+        "maximum": 433194088.0
+      }
+    }
+  },
+  {
+    "mode": "parked",
+    "count": 100000,
+    "setting": "1024",
+    "runtime": "loom",
+    "forks": [
+      {
+        "footprint": 405603432,
+        "rss": 429621248,
+        "peak_footprint": 410961048,
+        "baseline_heap": 3367080,
+        "post_heap": 4569760,
+        "live_heap": 239808704,
+        "heap_per_task": 2364.41624,
+        "pre_gc_footprint": 359826440.0
+      },
+      {
+        "footprint": 408929432,
+        "rss": 432898048,
+        "peak_footprint": 412386480,
+        "baseline_heap": 3372344,
+        "post_heap": 4572784,
+        "live_heap": 238571504,
+        "heap_per_task": 2351.9916,
+        "pre_gc_footprint": 340870224.0
+      },
+      {
+        "footprint": 417399936,
+        "rss": 441401344,
+        "peak_footprint": 421315712,
+        "baseline_heap": 3367784,
+        "post_heap": 4568624,
+        "live_heap": 259420976,
+        "heap_per_task": 2560.53192,
+        "pre_gc_footprint": 383747104.0
+      }
+    ],
+    "metrics": {
+      "footprint": {
+        "median": 408929432,
+        "minimum": 405603432,
+        "maximum": 417399936
+      },
+      "rss": {
+        "median": 432898048,
+        "minimum": 429621248,
+        "maximum": 441401344
+      },
+      "peak_footprint": {
+        "median": 412386480,
+        "minimum": 410961048,
+        "maximum": 421315712
+      },
+      "baseline_heap": {
+        "median": 3367784,
+        "minimum": 3367080,
+        "maximum": 3372344
+      },
+      "post_heap": {
+        "median": 4569760,
+        "minimum": 4568624,
+        "maximum": 4572784
+      },
+      "live_heap": {
+        "median": 239808704,
+        "minimum": 238571504,
+        "maximum": 259420976
+      },
+      "heap_per_task": {
+        "median": 2364.41624,
+        "minimum": 2351.9916,
+        "maximum": 2560.53192
+      },
+      "pre_gc_footprint": {
+        "median": 359826440.0,
+        "minimum": 340870224.0,
+        "maximum": 383747104.0
+      }
+    }
+  },
+  {
+    "mode": "tcp",
+    "count": 8,
+    "setting": "blocking",
+    "runtime": "ce",
+    "forks": [
+      {
+        "footprint": 120587128.0,
+        "rss": 145031168.0,
+        "peak_footprint": 120718200,
+        "baseline_heap": 5444808,
+        "post_heap": 5467184
+      },
+      {
+        "footprint": 119276408.0,
+        "rss": 143720448.0,
+        "peak_footprint": 119358328,
+        "baseline_heap": 5424600,
+        "post_heap": 5448768
+      },
+      {
+        "footprint": 117244768.0,
+        "rss": 141705216.0,
+        "peak_footprint": 117392224,
+        "baseline_heap": 5397328,
+        "post_heap": 5421168
+      }
+    ],
+    "metrics": {
+      "footprint": {
+        "median": 119276408.0,
+        "minimum": 117244768.0,
+        "maximum": 120587128.0
+      },
+      "rss": {
+        "median": 143720448.0,
+        "minimum": 141705216.0,
+        "maximum": 145031168.0
+      },
+      "peak_footprint": {
+        "median": 119358328,
+        "minimum": 117392224,
+        "maximum": 120718200
+      },
+      "baseline_heap": {
+        "median": 5424600,
+        "minimum": 5397328,
+        "maximum": 5444808
+      },
+      "post_heap": {
+        "median": 5448768,
+        "minimum": 5421168,
+        "maximum": 5467184
+      }
+    }
+  },
+  {
+    "mode": "tcp",
+    "count": 8,
+    "setting": "blocking",
+    "runtime": "loom",
+    "forks": [
+      {
+        "footprint": 80233336.0,
+        "rss": 104431616.0,
+        "peak_footprint": 80364408,
+        "baseline_heap": 3948488,
+        "post_heap": 3984960
+      },
+      {
+        "footprint": 80364432.0,
+        "rss": 104546304.0,
+        "peak_footprint": 81232784,
+        "baseline_heap": 3950296,
+        "post_heap": 3971488
+      },
+      {
+        "footprint": 79119272.0,
+        "rss": 103284736.0,
+        "peak_footprint": 79168424,
+        "baseline_heap": 3948384,
+        "post_heap": 3978816
+      }
+    ],
+    "metrics": {
+      "footprint": {
+        "median": 80233336.0,
+        "minimum": 79119272.0,
+        "maximum": 80364432.0
+      },
+      "rss": {
+        "median": 104431616.0,
+        "minimum": 103284736.0,
+        "maximum": 104546304.0
+      },
+      "peak_footprint": {
+        "median": 80364408,
+        "minimum": 79168424,
+        "maximum": 81232784
+      },
+      "baseline_heap": {
+        "median": 3948488,
+        "minimum": 3948384,
+        "maximum": 3950296
+      },
+      "post_heap": {
+        "median": 3978816,
+        "minimum": 3971488,
+        "maximum": 3984960
+      }
+    }
+  },
+  {
+    "mode": "tcp",
+    "count": 8,
+    "setting": "nonblocking",
+    "runtime": "ce",
+    "forks": [
+      {
+        "footprint": 127648632.0,
+        "rss": 152059904.0,
+        "peak_footprint": 130696056,
+        "baseline_heap": 5299616,
+        "post_heap": 5326552
+      },
+      {
+        "footprint": 131179408.0,
+        "rss": 155574272.0,
+        "peak_footprint": 133858192,
+        "baseline_heap": 5282224,
+        "post_heap": 5309168
+      },
+      {
+        "footprint": 131859320.0,
+        "rss": 156270592.0,
+        "peak_footprint": 134873976,
+        "baseline_heap": 5294640,
+        "post_heap": 5320616
+      }
+    ],
+    "metrics": {
+      "footprint": {
+        "median": 131179408.0,
+        "minimum": 127648632.0,
+        "maximum": 131859320.0
+      },
+      "rss": {
+        "median": 155574272.0,
+        "minimum": 152059904.0,
+        "maximum": 156270592.0
+      },
+      "peak_footprint": {
+        "median": 133858192,
+        "minimum": 130696056,
+        "maximum": 134873976
+      },
+      "baseline_heap": {
+        "median": 5294640,
+        "minimum": 5282224,
+        "maximum": 5299616
+      },
+      "post_heap": {
+        "median": 5320616,
+        "minimum": 5309168,
+        "maximum": 5326552
+      }
+    }
+  },
+  {
+    "mode": "tcp",
+    "count": 8,
+    "setting": "nonblocking",
+    "runtime": "loom",
+    "forks": [
+      {
+        "footprint": 82740088.0,
+        "rss": 106905600.0,
+        "peak_footprint": 83624824,
+        "baseline_heap": 3894880,
+        "post_heap": 3923032
+      },
+      {
+        "footprint": 98943864.0,
+        "rss": 123109376.0,
+        "peak_footprint": 100041592,
+        "baseline_heap": 3895936,
+        "post_heap": 3921008
+      },
+      {
+        "footprint": 93471608.0,
+        "rss": 117620736.0,
+        "peak_footprint": 94618488,
+        "baseline_heap": 3899912,
+        "post_heap": 3924816
+      }
+    ],
+    "metrics": {
+      "footprint": {
+        "median": 93471608.0,
+        "minimum": 82740088.0,
+        "maximum": 98943864.0
+      },
+      "rss": {
+        "median": 117620736.0,
+        "minimum": 106905600.0,
+        "maximum": 123109376.0
+      },
+      "peak_footprint": {
+        "median": 94618488,
+        "minimum": 83624824,
+        "maximum": 100041592
+      },
+      "baseline_heap": {
+        "median": 3895936,
+        "minimum": 3894880,
+        "maximum": 3899912
+      },
+      "post_heap": {
+        "median": 3923032,
+        "minimum": 3921008,
+        "maximum": 3924816
+      }
+    }
+  },
+  {
+    "mode": "tcp",
+    "count": 64,
+    "setting": "blocking",
+    "runtime": "ce",
+    "forks": [
+      {
+        "footprint": 146375664.0,
+        "rss": 170737664.0,
+        "peak_footprint": 147162096,
+        "baseline_heap": 5691992,
+        "post_heap": 5745080
+      },
+      {
+        "footprint": 160007152.0,
+        "rss": 184369152.0,
+        "peak_footprint": 160760816,
+        "baseline_heap": 5685960,
+        "post_heap": 5739176
+      },
+      {
+        "footprint": 159900584.0,
+        "rss": 184311808.0,
+        "peak_footprint": 160351144,
+        "baseline_heap": 5679152,
+        "post_heap": 5732016
+      }
+    ],
+    "metrics": {
+      "footprint": {
+        "median": 159900584.0,
+        "minimum": 146375664.0,
+        "maximum": 160007152.0
+      },
+      "rss": {
+        "median": 184311808.0,
+        "minimum": 170737664.0,
+        "maximum": 184369152.0
+      },
+      "peak_footprint": {
+        "median": 160351144,
+        "minimum": 147162096,
+        "maximum": 160760816
+      },
+      "baseline_heap": {
+        "median": 5685960,
+        "minimum": 5679152,
+        "maximum": 5691992
+      },
+      "post_heap": {
+        "median": 5739176,
+        "minimum": 5732016,
+        "maximum": 5745080
+      }
+    }
+  },
+  {
+    "mode": "tcp",
+    "count": 64,
+    "setting": "blocking",
+    "runtime": "loom",
+    "forks": [
+      {
+        "footprint": 94708576.0,
+        "rss": 118972416.0,
+        "peak_footprint": 101401440,
+        "baseline_heap": 4064248,
+        "post_heap": 4091368
+      },
+      {
+        "footprint": 92210040.0,
+        "rss": 116457472.0,
+        "peak_footprint": 97878904,
+        "baseline_heap": 4003536,
+        "post_heap": 4030136
+      },
+      {
+        "footprint": 105988984.0,
+        "rss": 130220032.0,
+        "peak_footprint": 111952760,
+        "baseline_heap": 4034936,
+        "post_heap": 4065424
+      }
+    ],
+    "metrics": {
+      "footprint": {
+        "median": 94708576.0,
+        "minimum": 92210040.0,
+        "maximum": 105988984.0
+      },
+      "rss": {
+        "median": 118972416.0,
+        "minimum": 116457472.0,
+        "maximum": 130220032.0
+      },
+      "peak_footprint": {
+        "median": 101401440,
+        "minimum": 97878904,
+        "maximum": 111952760
+      },
+      "baseline_heap": {
+        "median": 4034936,
+        "minimum": 4003536,
+        "maximum": 4064248
+      },
+      "post_heap": {
+        "median": 4065424,
+        "minimum": 4030136,
+        "maximum": 4091368
+      }
+    }
+  },
+  {
+    "mode": "tcp",
+    "count": 64,
+    "setting": "nonblocking",
+    "runtime": "ce",
+    "forks": [
+      {
+        "footprint": 140403576.0,
+        "rss": 164814848.0,
+        "peak_footprint": 140919672,
+        "baseline_heap": 5352968,
+        "post_heap": 5431296
+      },
+      {
+        "footprint": 145818512.0,
+        "rss": 170213376.0,
+        "peak_footprint": 146359184,
+        "baseline_heap": 5352136,
+        "post_heap": 5436088
+      },
+      {
+        "footprint": 142304144.0,
+        "rss": 166699008.0,
+        "peak_footprint": 142771088,
+        "baseline_heap": 5341232,
+        "post_heap": 5428064
+      }
+    ],
+    "metrics": {
+      "footprint": {
+        "median": 142304144.0,
+        "minimum": 140403576.0,
+        "maximum": 145818512.0
+      },
+      "rss": {
+        "median": 166699008.0,
+        "minimum": 164814848.0,
+        "maximum": 170213376.0
+      },
+      "peak_footprint": {
+        "median": 142771088,
+        "minimum": 140919672,
+        "maximum": 146359184
+      },
+      "baseline_heap": {
+        "median": 5352136,
+        "minimum": 5341232,
+        "maximum": 5352968
+      },
+      "post_heap": {
+        "median": 5431296,
+        "minimum": 5428064,
+        "maximum": 5436088
+      }
+    }
+  },
+  {
+    "mode": "tcp",
+    "count": 64,
+    "setting": "nonblocking",
+    "runtime": "loom",
+    "forks": [
+      {
+        "footprint": 116589432.0,
+        "rss": 140787712.0,
+        "peak_footprint": 120456056,
+        "baseline_heap": 3980720,
+        "post_heap": 4015464
+      },
+      {
+        "footprint": 104448888.0,
+        "rss": 128647168.0,
+        "peak_footprint": 106496888,
+        "baseline_heap": 3954024,
+        "post_heap": 3985832
+      },
+      {
+        "footprint": 111035280.0,
+        "rss": 135217152.0,
+        "peak_footprint": 112870288,
+        "baseline_heap": 3957776,
+        "post_heap": 3998104
+      }
+    ],
+    "metrics": {
+      "footprint": {
+        "median": 111035280.0,
+        "minimum": 104448888.0,
+        "maximum": 116589432.0
+      },
+      "rss": {
+        "median": 135217152.0,
+        "minimum": 128647168.0,
+        "maximum": 140787712.0
+      },
+      "peak_footprint": {
+        "median": 112870288,
+        "minimum": 106496888,
+        "maximum": 120456056
+      },
+      "baseline_heap": {
+        "median": 3957776,
+        "minimum": 3954024,
+        "maximum": 3980720
+      },
+      "post_heap": {
+        "median": 3998104,
+        "minimum": 3985832,
+        "maximum": 4015464
+      }
+    }
+  }
+]

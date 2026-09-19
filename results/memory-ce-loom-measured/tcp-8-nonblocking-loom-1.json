@@ -1,0 +1,515 @@
+{
+  "id": "tcp-8-nonblocking-loom-1",
+  "runtime": "loom",
+  "mode": "tcp",
+  "count": 8,
+  "setting": "nonblocking",
+  "fork": 1,
+  "jvm_args": [
+    "--add-opens=java.base/java.lang=ALL-UNNAMED",
+    "-Xms64m",
+    "-Xmx2g",
+    "-XX:+UseG1GC"
+  ],
+  "command": [
+    "/Users/stas/.sdkman/candidates/java/current/bin/java",
+    "--add-opens=java.base/java.lang=ALL-UNNAMED",
+    "-Xms64m",
+    "-Xmx2g",
+    "-XX:+UseG1GC",
+    "-Xlog:gc=info:file=/Users/stas/projects/scala-effect-bench/results/memory-ce-loom-measured/tcp-8-nonblocking-loom-1.gc.log",
+    "-cp",
+    "/Users/stas/projects/scala-effect-bench/io-bench/target/scala-3.8.4/classes:/Users/stas/projects/scala-effect-bench/bench/target/scala-3.8.4/classes:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.8.4/scala3-library_3-3.8.4.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjdk/jmh/jmh-generator-bytecode/1.37/jmh-generator-bytecode-1.37.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjdk/jmh/jmh-generator-reflection/1.37/jmh-generator-reflection-1.37.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/epfl/lamp/gears_3/0.3.1/gears_3-0.3.1.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/softwaremill/ox/core_3/1.0.6/core_3-1.0.6.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/getkyo/kyo-core_3/1.0.0-RC6/kyo-core_3-1.0.0-RC6.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-effect_3/3.7.1/cats-effect_3-3.7.1.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-core_3/2.13.0/cats-core_3-2.13.0.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/co/fs2/fs2-core_3/3.13.0/fs2-core_3-3.13.0.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/3.8.4/scala-library-3.8.4.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjdk/jmh/jmh-generator-asm/1.37/jmh-generator-asm-1.37.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/softwaremill/jox/channels/1.1.2/channels-1.1.2.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/getkyo/kyo-scheduler_3/1.0.0-RC6/kyo-scheduler_3-1.0.0-RC6.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/getkyo/kyo-prelude_3/1.0.0-RC6/kyo-prelude_3-1.0.0-RC6.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-effect-kernel_3/3.7.1/cats-effect-kernel_3-3.7.1.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-effect-std_3/3.7.1/cats-effect-std_3-3.7.1.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-mtl_3/1.6.0/cats-mtl_3-1.6.0.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-kernel_3/2.13.0/cats-kernel_3-2.13.0.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scodec/scodec-bits_3/1.2.4/scodec-bits_3-1.2.4.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/ow2/asm/asm/9.0/asm-9.0.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/getkyo/kyo-stats-registry_3/1.0.0-RC6/kyo-stats-registry_3-1.0.0-RC6.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/getkyo/kyo-kernel_3/1.0.0-RC6/kyo-kernel_3-1.0.0-RC6.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/getkyo/kyo-config_3/1.0.0-RC6/kyo-config_3-1.0.0-RC6.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/getkyo/kyo-data_3/1.0.0-RC6/kyo-data_3-1.0.0-RC6.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/pprint_3/0.9.6/pprint_3-0.9.6.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/fansi_3/0.5.1/fansi_3-0.5.1.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/sourcecode_3/0.4.3-M5/sourcecode_3-0.4.3-M5.jar",
+    "bench.memory.MemoryProbe",
+    "loom",
+    "tcp",
+    "8",
+    "nonblocking"
+  ],
+  "events": [
+    {
+      "stage": "hello",
+      "pid": 86467,
+      "runtime": "loom",
+      "mode": "tcp",
+      "count": 8,
+      "setting": "nonblocking",
+      "jdk": "25.0.3",
+      "input_args": [
+        "--add-opens=java.base/java.lang=ALL-UNNAMED",
+        "-Xms64m",
+        "-Xmx2g",
+        "-XX:+UseG1GC",
+        "-Xlog:gc=info:file=/Users/stas/projects/scala-effect-bench/results/memory-ce-loom-measured/tcp-8-nonblocking-loom-1.gc.log"
+      ]
+    },
+    {
+      "stage": "baseline",
+      "heap_used": 3895936,
+      "heap_committed": 67108864,
+      "nonheap_used": 15178760,
+      "nonheap_committed": 18546688,
+      "gc_count": 3,
+      "platform_threads": 25
+    },
+    {
+      "stage": "active",
+      "heap_used": 3895936,
+      "heap_committed": 67108864,
+      "nonheap_used": 15262888,
+      "nonheap_committed": 18677760,
+      "gc_count": 3,
+      "platform_threads": 26
+    },
+    {
+      "stage": "idle",
+      "heap_used": 3921008,
+      "heap_committed": 67108864,
+      "nonheap_used": 13780704,
+      "nonheap_committed": 18677760,
+      "gc_count": 6,
+      "platform_threads": 27,
+      "checked_batches": 100
+    },
+    {
+      "stage": "complete",
+      "heap_used": 3921008,
+      "heap_committed": 67108864,
+      "nonheap_used": 13815976,
+      "nonheap_committed": 18677760,
+      "gc_count": 6,
+      "platform_threads": 24
+    }
+  ],
+  "samples": [
+    {
+      "stage": "baseline",
+      "monotonic": 58661.64298,
+      "rss": 120225792,
+      "footprint": 96060280,
+      "peak_footprint": 97256360
+    },
+    {
+      "stage": "baseline",
+      "monotonic": 58661.748078458,
+      "rss": 120225792,
+      "footprint": 96060280,
+      "peak_footprint": 97256360
+    },
+    {
+      "stage": "baseline",
+      "monotonic": 58661.85302925,
+      "rss": 120225792,
+      "footprint": 96060280,
+      "peak_footprint": 97256360
+    },
+    {
+      "stage": "baseline",
+      "monotonic": 58661.953956958,
+      "rss": 120225792,
+      "footprint": 96060280,
+      "peak_footprint": 97256360
+    },
+    {
+      "stage": "baseline",
+      "monotonic": 58662.058896375,
+      "rss": 120225792,
+      "footprint": 96060280,
+      "peak_footprint": 97256360
+    },
+    {
+      "stage": "active",
+      "monotonic": 58662.16720075,
+      "rss": 120422400,
+      "footprint": 96256888,
+      "peak_footprint": 97256360
+    },
+    {
+      "stage": "active",
+      "monotonic": 58662.268959375,
+      "rss": 120569856,
+      "footprint": 96404344,
+      "peak_footprint": 97256360
+    },
+    {
+      "stage": "active",
+      "monotonic": 58662.373848,
+      "rss": 121028608,
+      "footprint": 96863096,
+      "peak_footprint": 97256360
+    },
+    {
+      "stage": "active",
+      "monotonic": 58662.478931458,
+      "rss": 121159680,
+      "footprint": 96994168,
+      "peak_footprint": 97256360
+    },
+    {
+      "stage": "active",
+      "monotonic": 58662.579256666,
+      "rss": 121241600,
+      "footprint": 97076088,
+      "peak_footprint": 97256360
+    },
+    {
+      "stage": "active",
+      "monotonic": 58662.68255075,
+      "rss": 121339904,
+      "footprint": 97174392,
+      "peak_footprint": 97256360
+    },
+    {
+      "stage": "active",
+      "monotonic": 58662.786522333,
+      "rss": 121389056,
+      "footprint": 97223544,
+      "peak_footprint": 97256360
+    },
+    {
+      "stage": "active",
+      "monotonic": 58662.887987291,
+      "rss": 121438208,
+      "footprint": 97272696,
+      "peak_footprint": 97272696
+    },
+    {
+      "stage": "active",
+      "monotonic": 58662.989420791,
+      "rss": 121454592,
+      "footprint": 97289080,
+      "peak_footprint": 97289080
+    },
+    {
+      "stage": "active",
+      "monotonic": 58663.0936675,
+      "rss": 121487360,
+      "footprint": 97321848,
+      "peak_footprint": 97321848
+    },
+    {
+      "stage": "active",
+      "monotonic": 58663.196537166,
+      "rss": 121520128,
+      "footprint": 97354616,
+      "peak_footprint": 97354616
+    },
+    {
+      "stage": "active",
+      "monotonic": 58663.298974041,
+      "rss": 121782272,
+      "footprint": 97616760,
+      "peak_footprint": 97616760
+    },
+    {
+      "stage": "active",
+      "monotonic": 58663.40402525,
+      "rss": 121782272,
+      "footprint": 97616760,
+      "peak_footprint": 97616760
+    },
+    {
+      "stage": "active",
+      "monotonic": 58663.509089,
+      "rss": 121798656,
+      "footprint": 97633144,
+      "peak_footprint": 97633144
+    },
+    {
+      "stage": "active",
+      "monotonic": 58663.613352291,
+      "rss": 121798656,
+      "footprint": 97633144,
+      "peak_footprint": 97633144
+    },
+    {
+      "stage": "active",
+      "monotonic": 58663.715388083,
+      "rss": 121798656,
+      "footprint": 97633144,
+      "peak_footprint": 97633144
+    },
+    {
+      "stage": "active",
+      "monotonic": 58663.816710291,
+      "rss": 121798656,
+      "footprint": 97633144,
+      "peak_footprint": 97633144
+    },
+    {
+      "stage": "active",
+      "monotonic": 58663.916915041,
+      "rss": 121798656,
+      "footprint": 97633144,
+      "peak_footprint": 97633144
+    },
+    {
+      "stage": "active",
+      "monotonic": 58664.02005775,
+      "rss": 121798656,
+      "footprint": 97633144,
+      "peak_footprint": 97633144
+    },
+    {
+      "stage": "active",
+      "monotonic": 58664.123729666,
+      "rss": 121798656,
+      "footprint": 97633144,
+      "peak_footprint": 97633144
+    },
+    {
+      "stage": "active",
+      "monotonic": 58664.227450958,
+      "rss": 121815040,
+      "footprint": 97649528,
+      "peak_footprint": 97649528
+    },
+    {
+      "stage": "active",
+      "monotonic": 58664.328248083,
+      "rss": 121815040,
+      "footprint": 97649528,
+      "peak_footprint": 97649528
+    },
+    {
+      "stage": "active",
+      "monotonic": 58664.433315458,
+      "rss": 122011648,
+      "footprint": 97846136,
+      "peak_footprint": 97878904
+    },
+    {
+      "stage": "active",
+      "monotonic": 58664.534376583,
+      "rss": 123158528,
+      "footprint": 98993016,
+      "peak_footprint": 98993016
+    },
+    {
+      "stage": "active",
+      "monotonic": 58664.639455125,
+      "rss": 123125760,
+      "footprint": 98960248,
+      "peak_footprint": 98993016
+    },
+    {
+      "stage": "active",
+      "monotonic": 58664.74343425,
+      "rss": 123109376,
+      "footprint": 98943864,
+      "peak_footprint": 98993016
+    },
+    {
+      "stage": "active",
+      "monotonic": 58664.845594791,
+      "rss": 123092992,
+      "footprint": 98927480,
+      "peak_footprint": 98993016
+    },
+    {
+      "stage": "active",
+      "monotonic": 58664.950472333,
+      "rss": 123109376,
+      "footprint": 98943864,
+      "peak_footprint": 98993016
+    },
+    {
+      "stage": "active",
+      "monotonic": 58665.054009625,
+      "rss": 123109376,
+      "footprint": 98943864,
+      "peak_footprint": 98993016
+    },
+    {
+      "stage": "active",
+      "monotonic": 58665.157906833,
+      "rss": 123305984,
+      "footprint": 99140472,
+      "peak_footprint": 99140472
+    },
+    {
+      "stage": "active",
+      "monotonic": 58665.262904958,
+      "rss": 123305984,
+      "footprint": 99140472,
+      "peak_footprint": 99140472
+    },
+    {
+      "stage": "active",
+      "monotonic": 58665.364339458,
+      "rss": 123305984,
+      "footprint": 99140472,
+      "peak_footprint": 99140472
+    },
+    {
+      "stage": "active",
+      "monotonic": 58665.467566041,
+      "rss": 123338752,
+      "footprint": 99173240,
+      "peak_footprint": 99173240
+    },
+    {
+      "stage": "active",
+      "monotonic": 58665.571475625,
+      "rss": 123420672,
+      "footprint": 99255160,
+      "peak_footprint": 99255160
+    },
+    {
+      "stage": "active",
+      "monotonic": 58665.67202075,
+      "rss": 123486208,
+      "footprint": 99320696,
+      "peak_footprint": 99320696
+    },
+    {
+      "stage": "active",
+      "monotonic": 58665.773134208,
+      "rss": 123535360,
+      "footprint": 99369848,
+      "peak_footprint": 99369848
+    },
+    {
+      "stage": "active",
+      "monotonic": 58665.876498291,
+      "rss": 123600896,
+      "footprint": 99435384,
+      "peak_footprint": 99435384
+    },
+    {
+      "stage": "active",
+      "monotonic": 58665.977710916,
+      "rss": 123617280,
+      "footprint": 99451768,
+      "peak_footprint": 99451768
+    },
+    {
+      "stage": "active",
+      "monotonic": 58666.082404916,
+      "rss": 123633664,
+      "footprint": 99468152,
+      "peak_footprint": 99468152
+    },
+    {
+      "stage": "active",
+      "monotonic": 58666.187384875,
+      "rss": 123682816,
+      "footprint": 99517304,
+      "peak_footprint": 99517304
+    },
+    {
+      "stage": "active",
+      "monotonic": 58666.288588791,
+      "rss": 123699200,
+      "footprint": 99533688,
+      "peak_footprint": 99533688
+    },
+    {
+      "stage": "active",
+      "monotonic": 58666.392463,
+      "rss": 123715584,
+      "footprint": 99550072,
+      "peak_footprint": 99550072
+    },
+    {
+      "stage": "active",
+      "monotonic": 58666.492682666,
+      "rss": 123731968,
+      "footprint": 99566456,
+      "peak_footprint": 99566456
+    },
+    {
+      "stage": "active",
+      "monotonic": 58666.595293625,
+      "rss": 123748352,
+      "footprint": 99582840,
+      "peak_footprint": 99582840
+    },
+    {
+      "stage": "active",
+      "monotonic": 58666.700107916,
+      "rss": 123797504,
+      "footprint": 99631992,
+      "peak_footprint": 99631992
+    },
+    {
+      "stage": "active",
+      "monotonic": 58666.804147583,
+      "rss": 123797504,
+      "footprint": 99631992,
+      "peak_footprint": 99631992
+    },
+    {
+      "stage": "active",
+      "monotonic": 58666.905315791,
+      "rss": 123830272,
+      "footprint": 99664760,
+      "peak_footprint": 99664760
+    },
+    {
+      "stage": "active",
+      "monotonic": 58667.0104055,
+      "rss": 123944960,
+      "footprint": 99779448,
+      "peak_footprint": 99779448
+    },
+    {
+      "stage": "active",
+      "monotonic": 58667.113732208,
+      "rss": 124059648,
+      "footprint": 99894136,
+      "peak_footprint": 99894136
+    },
+    {
+      "stage": "active",
+      "monotonic": 58667.218597458,
+      "rss": 124141568,
+      "footprint": 99976056,
+      "peak_footprint": 99976056
+    },
+    {
+      "stage": "idle",
+      "monotonic": 58667.807464041,
+      "rss": 124207104,
+      "footprint": 100041592,
+      "peak_footprint": 100041592
+    },
+    {
+      "stage": "idle",
+      "monotonic": 58667.910632791,
+      "rss": 124207104,
+      "footprint": 100041592,
+      "peak_footprint": 100041592
+    },
+    {
+      "stage": "idle",
+      "monotonic": 58668.014100583,
+      "rss": 124207104,
+      "footprint": 100041592,
+      "peak_footprint": 100041592
+    },
+    {
+      "stage": "idle",
+      "monotonic": 58668.118530125,
+      "rss": 124207104,
+      "footprint": 100041592,
+      "peak_footprint": 100041592
+    },
+    {
+      "stage": "idle",
+      "monotonic": 58668.222176916,
+      "rss": 124207104,
+      "footprint": 100041592,
+      "peak_footprint": 100041592
+    }
+  ],
+  "final_process_memory": {
+    "rss": 124207104,
+    "footprint": 100041592,
+    "peak_footprint": 100041592
+  },
+  "peak_footprint_before_exit": 100041592,
+  "exit_code": 0,
+  "gc_log_sha256": "53f3be2bc571766daf5f7ae90e680fbfc791180f12e93140cfd0913641b2e62b",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

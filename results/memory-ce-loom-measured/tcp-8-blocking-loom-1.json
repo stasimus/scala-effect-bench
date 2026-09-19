@@ -1,0 +1,515 @@
+{
+  "id": "tcp-8-blocking-loom-1",
+  "runtime": "loom",
+  "mode": "tcp",
+  "count": 8,
+  "setting": "blocking",
+  "fork": 1,
+  "jvm_args": [
+    "--add-opens=java.base/java.lang=ALL-UNNAMED",
+    "-Xms64m",
+    "-Xmx2g",
+    "-XX:+UseG1GC"
+  ],
+  "command": [
+    "/Users/stas/.sdkman/candidates/java/current/bin/java",
+    "--add-opens=java.base/java.lang=ALL-UNNAMED",
+    "-Xms64m",
+    "-Xmx2g",
+    "-XX:+UseG1GC",
+    "-Xlog:gc=info:file=/Users/stas/projects/scala-effect-bench/results/memory-ce-loom-measured/tcp-8-blocking-loom-1.gc.log",
+    "-cp",
+    "/Users/stas/projects/scala-effect-bench/io-bench/target/scala-3.8.4/classes:/Users/stas/projects/scala-effect-bench/bench/target/scala-3.8.4/classes:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.8.4/scala3-library_3-3.8.4.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjdk/jmh/jmh-generator-bytecode/1.37/jmh-generator-bytecode-1.37.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjdk/jmh/jmh-generator-reflection/1.37/jmh-generator-reflection-1.37.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/epfl/lamp/gears_3/0.3.1/gears_3-0.3.1.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/softwaremill/ox/core_3/1.0.6/core_3-1.0.6.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/getkyo/kyo-core_3/1.0.0-RC6/kyo-core_3-1.0.0-RC6.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-effect_3/3.7.1/cats-effect_3-3.7.1.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-core_3/2.13.0/cats-core_3-2.13.0.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/co/fs2/fs2-core_3/3.13.0/fs2-core_3-3.13.0.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/3.8.4/scala-library-3.8.4.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjdk/jmh/jmh-generator-asm/1.37/jmh-generator-asm-1.37.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/softwaremill/jox/channels/1.1.2/channels-1.1.2.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/getkyo/kyo-scheduler_3/1.0.0-RC6/kyo-scheduler_3-1.0.0-RC6.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/getkyo/kyo-prelude_3/1.0.0-RC6/kyo-prelude_3-1.0.0-RC6.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-effect-kernel_3/3.7.1/cats-effect-kernel_3-3.7.1.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-effect-std_3/3.7.1/cats-effect-std_3-3.7.1.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-mtl_3/1.6.0/cats-mtl_3-1.6.0.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-kernel_3/2.13.0/cats-kernel_3-2.13.0.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scodec/scodec-bits_3/1.2.4/scodec-bits_3-1.2.4.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/ow2/asm/asm/9.0/asm-9.0.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/getkyo/kyo-stats-registry_3/1.0.0-RC6/kyo-stats-registry_3-1.0.0-RC6.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/getkyo/kyo-kernel_3/1.0.0-RC6/kyo-kernel_3-1.0.0-RC6.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/getkyo/kyo-config_3/1.0.0-RC6/kyo-config_3-1.0.0-RC6.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/getkyo/kyo-data_3/1.0.0-RC6/kyo-data_3-1.0.0-RC6.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/pprint_3/0.9.6/pprint_3-0.9.6.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/fansi_3/0.5.1/fansi_3-0.5.1.jar:/Users/stas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/sourcecode_3/0.4.3-M5/sourcecode_3-0.4.3-M5.jar",
+    "bench.memory.MemoryProbe",
+    "loom",
+    "tcp",
+    "8",
+    "blocking"
+  ],
+  "events": [
+    {
+      "stage": "hello",
+      "pid": 86397,
+      "runtime": "loom",
+      "mode": "tcp",
+      "count": 8,
+      "setting": "blocking",
+      "jdk": "25.0.3",
+      "input_args": [
+        "--add-opens=java.base/java.lang=ALL-UNNAMED",
+        "-Xms64m",
+        "-Xmx2g",
+        "-XX:+UseG1GC",
+        "-Xlog:gc=info:file=/Users/stas/projects/scala-effect-bench/results/memory-ce-loom-measured/tcp-8-blocking-loom-1.gc.log"
+      ]
+    },
+    {
+      "stage": "baseline",
+      "heap_used": 3950296,
+      "heap_committed": 67108864,
+      "nonheap_used": 14035976,
+      "nonheap_committed": 17694720,
+      "gc_count": 3,
+      "platform_threads": 25
+    },
+    {
+      "stage": "active",
+      "heap_used": 3950296,
+      "heap_committed": 67108864,
+      "nonheap_used": 14188208,
+      "nonheap_committed": 17694720,
+      "gc_count": 3,
+      "platform_threads": 26
+    },
+    {
+      "stage": "idle",
+      "heap_used": 3971488,
+      "heap_committed": 67108864,
+      "nonheap_used": 13312288,
+      "nonheap_committed": 18350080,
+      "gc_count": 6,
+      "platform_threads": 25,
+      "checked_batches": 96
+    },
+    {
+      "stage": "complete",
+      "heap_used": 3971488,
+      "heap_committed": 67108864,
+      "nonheap_used": 13346888,
+      "nonheap_committed": 18350080,
+      "gc_count": 6,
+      "platform_threads": 25
+    }
+  ],
+  "samples": [
+    {
+      "stage": "baseline",
+      "monotonic": 58642.551975625,
+      "rss": 103366656,
+      "footprint": 79184784,
+      "peak_footprint": 80004032
+    },
+    {
+      "stage": "baseline",
+      "monotonic": 58642.657226291,
+      "rss": 103366656,
+      "footprint": 79184784,
+      "peak_footprint": 80004032
+    },
+    {
+      "stage": "baseline",
+      "monotonic": 58642.759613416,
+      "rss": 103366656,
+      "footprint": 79184784,
+      "peak_footprint": 80004032
+    },
+    {
+      "stage": "baseline",
+      "monotonic": 58642.86050525,
+      "rss": 103366656,
+      "footprint": 79184784,
+      "peak_footprint": 80004032
+    },
+    {
+      "stage": "baseline",
+      "monotonic": 58642.965305375,
+      "rss": 103366656,
+      "footprint": 79184784,
+      "peak_footprint": 80004032
+    },
+    {
+      "stage": "active",
+      "monotonic": 58643.078292583,
+      "rss": 103514112,
+      "footprint": 79332240,
+      "peak_footprint": 80004032
+    },
+    {
+      "stage": "active",
+      "monotonic": 58643.179505708,
+      "rss": 103694336,
+      "footprint": 79512464,
+      "peak_footprint": 80004032
+    },
+    {
+      "stage": "active",
+      "monotonic": 58643.2808465,
+      "rss": 103727104,
+      "footprint": 79545232,
+      "peak_footprint": 80004032
+    },
+    {
+      "stage": "active",
+      "monotonic": 58643.382418,
+      "rss": 103727104,
+      "footprint": 79545232,
+      "peak_footprint": 80004032
+    },
+    {
+      "stage": "active",
+      "monotonic": 58643.483221875,
+      "rss": 103776256,
+      "footprint": 79594384,
+      "peak_footprint": 80004032
+    },
+    {
+      "stage": "active",
+      "monotonic": 58643.583433166,
+      "rss": 103825408,
+      "footprint": 79643536,
+      "peak_footprint": 80004032
+    },
+    {
+      "stage": "active",
+      "monotonic": 58643.686171708,
+      "rss": 103907328,
+      "footprint": 79725456,
+      "peak_footprint": 80004032
+    },
+    {
+      "stage": "active",
+      "monotonic": 58643.791416541,
+      "rss": 103972864,
+      "footprint": 79790992,
+      "peak_footprint": 80004032
+    },
+    {
+      "stage": "active",
+      "monotonic": 58643.893198875,
+      "rss": 104022016,
+      "footprint": 79840144,
+      "peak_footprint": 80004032
+    },
+    {
+      "stage": "active",
+      "monotonic": 58643.995020208,
+      "rss": 104087552,
+      "footprint": 79905680,
+      "peak_footprint": 80004032
+    },
+    {
+      "stage": "active",
+      "monotonic": 58644.0993655,
+      "rss": 104087552,
+      "footprint": 79905680,
+      "peak_footprint": 80004032
+    },
+    {
+      "stage": "active",
+      "monotonic": 58644.19981125,
+      "rss": 104103936,
+      "footprint": 79922064,
+      "peak_footprint": 80004032
+    },
+    {
+      "stage": "active",
+      "monotonic": 58644.303798333,
+      "rss": 104136704,
+      "footprint": 79954832,
+      "peak_footprint": 80004032
+    },
+    {
+      "stage": "active",
+      "monotonic": 58644.408478083,
+      "rss": 104333312,
+      "footprint": 80151440,
+      "peak_footprint": 80151440
+    },
+    {
+      "stage": "active",
+      "monotonic": 58644.51302575,
+      "rss": 104366080,
+      "footprint": 80184208,
+      "peak_footprint": 80184208
+    },
+    {
+      "stage": "active",
+      "monotonic": 58644.618133375,
+      "rss": 104382464,
+      "footprint": 80200592,
+      "peak_footprint": 80200592
+    },
+    {
+      "stage": "active",
+      "monotonic": 58644.719755416,
+      "rss": 104398848,
+      "footprint": 80216976,
+      "peak_footprint": 80216976
+    },
+    {
+      "stage": "active",
+      "monotonic": 58644.822586541,
+      "rss": 104431616,
+      "footprint": 80249744,
+      "peak_footprint": 80249744
+    },
+    {
+      "stage": "active",
+      "monotonic": 58644.923694333,
+      "rss": 104480768,
+      "footprint": 80298896,
+      "peak_footprint": 80315280
+    },
+    {
+      "stage": "active",
+      "monotonic": 58645.026259458,
+      "rss": 104513536,
+      "footprint": 80331664,
+      "peak_footprint": 80331664
+    },
+    {
+      "stage": "active",
+      "monotonic": 58645.129967833,
+      "rss": 104513536,
+      "footprint": 80331664,
+      "peak_footprint": 80331664
+    },
+    {
+      "stage": "active",
+      "monotonic": 58645.230304041,
+      "rss": 104546304,
+      "footprint": 80364432,
+      "peak_footprint": 80364432
+    },
+    {
+      "stage": "active",
+      "monotonic": 58645.331483375,
+      "rss": 104546304,
+      "footprint": 80364432,
+      "peak_footprint": 80364432
+    },
+    {
+      "stage": "active",
+      "monotonic": 58645.432093,
+      "rss": 104546304,
+      "footprint": 80364432,
+      "peak_footprint": 80397200
+    },
+    {
+      "stage": "active",
+      "monotonic": 58645.535399875,
+      "rss": 104546304,
+      "footprint": 80364432,
+      "peak_footprint": 80397200
+    },
+    {
+      "stage": "active",
+      "monotonic": 58645.640283166,
+      "rss": 104546304,
+      "footprint": 80364432,
+      "peak_footprint": 80397200
+    },
+    {
+      "stage": "active",
+      "monotonic": 58645.741440375,
+      "rss": 104562688,
+      "footprint": 80380816,
+      "peak_footprint": 80397200
+    },
+    {
+      "stage": "active",
+      "monotonic": 58645.846066708,
+      "rss": 104579072,
+      "footprint": 80397200,
+      "peak_footprint": 80397200
+    },
+    {
+      "stage": "active",
+      "monotonic": 58645.951124875,
+      "rss": 104611840,
+      "footprint": 80429968,
+      "peak_footprint": 80429968
+    },
+    {
+      "stage": "active",
+      "monotonic": 58646.055768666,
+      "rss": 104628224,
+      "footprint": 80446352,
+      "peak_footprint": 80446352
+    },
+    {
+      "stage": "active",
+      "monotonic": 58646.156962416,
+      "rss": 104628224,
+      "footprint": 80446352,
+      "peak_footprint": 80446352
+    },
+    {
+      "stage": "active",
+      "monotonic": 58646.262059916,
+      "rss": 104660992,
+      "footprint": 80479120,
+      "peak_footprint": 80479120
+    },
+    {
+      "stage": "active",
+      "monotonic": 58646.36715025,
+      "rss": 104677376,
+      "footprint": 80495504,
+      "peak_footprint": 80495504
+    },
+    {
+      "stage": "active",
+      "monotonic": 58646.467892291,
+      "rss": 104726528,
+      "footprint": 80544656,
+      "peak_footprint": 80544656
+    },
+    {
+      "stage": "active",
+      "monotonic": 58646.568153458,
+      "rss": 104759296,
+      "footprint": 80577424,
+      "peak_footprint": 80577424
+    },
+    {
+      "stage": "active",
+      "monotonic": 58646.671094041,
+      "rss": 104775680,
+      "footprint": 80593808,
+      "peak_footprint": 80593808
+    },
+    {
+      "stage": "active",
+      "monotonic": 58646.776218958,
+      "rss": 104775680,
+      "footprint": 80593808,
+      "peak_footprint": 80593808
+    },
+    {
+      "stage": "active",
+      "monotonic": 58646.878325125,
+      "rss": 104775680,
+      "footprint": 80593808,
+      "peak_footprint": 80593808
+    },
+    {
+      "stage": "active",
+      "monotonic": 58646.9789465,
+      "rss": 104775680,
+      "footprint": 80593808,
+      "peak_footprint": 80593808
+    },
+    {
+      "stage": "active",
+      "monotonic": 58647.082699958,
+      "rss": 104792064,
+      "footprint": 80610192,
+      "peak_footprint": 80610192
+    },
+    {
+      "stage": "active",
+      "monotonic": 58647.186674166,
+      "rss": 105250816,
+      "footprint": 81068944,
+      "peak_footprint": 81068944
+    },
+    {
+      "stage": "active",
+      "monotonic": 58647.287428333,
+      "rss": 105267200,
+      "footprint": 81085328,
+      "peak_footprint": 81085328
+    },
+    {
+      "stage": "active",
+      "monotonic": 58647.3929825,
+      "rss": 105299968,
+      "footprint": 81118096,
+      "peak_footprint": 81118096
+    },
+    {
+      "stage": "active",
+      "monotonic": 58647.496202291,
+      "rss": 105299968,
+      "footprint": 81118096,
+      "peak_footprint": 81118096
+    },
+    {
+      "stage": "active",
+      "monotonic": 58647.600344833,
+      "rss": 105299968,
+      "footprint": 81118096,
+      "peak_footprint": 81118096
+    },
+    {
+      "stage": "active",
+      "monotonic": 58647.701518625,
+      "rss": 105299968,
+      "footprint": 81118096,
+      "peak_footprint": 81118096
+    },
+    {
+      "stage": "active",
+      "monotonic": 58647.801849041,
+      "rss": 105365504,
+      "footprint": 81200016,
+      "peak_footprint": 81200016
+    },
+    {
+      "stage": "active",
+      "monotonic": 58647.904558541,
+      "rss": 105365504,
+      "footprint": 81200016,
+      "peak_footprint": 81200016
+    },
+    {
+      "stage": "active",
+      "monotonic": 58648.0096775,
+      "rss": 105381888,
+      "footprint": 81216400,
+      "peak_footprint": 81216400
+    },
+    {
+      "stage": "active",
+      "monotonic": 58648.112679625,
+      "rss": 105381888,
+      "footprint": 81216400,
+      "peak_footprint": 81216400
+    },
+    {
+      "stage": "idle",
+      "monotonic": 58648.71298675,
+      "rss": 105349120,
+      "footprint": 81183632,
+      "peak_footprint": 81232784
+    },
+    {
+      "stage": "idle",
+      "monotonic": 58648.818328708,
+      "rss": 105365504,
+      "footprint": 81200016,
+      "peak_footprint": 81232784
+    },
+    {
+      "stage": "idle",
+      "monotonic": 58648.91856075,
+      "rss": 105365504,
+      "footprint": 81200016,
+      "peak_footprint": 81232784
+    },
+    {
+      "stage": "idle",
+      "monotonic": 58649.020684833,
+      "rss": 105365504,
+      "footprint": 81200016,
+      "peak_footprint": 81232784
+    },
+    {
+      "stage": "idle",
+      "monotonic": 58649.125729166,
+      "rss": 105365504,
+      "footprint": 81200016,
+      "peak_footprint": 81232784
+    }
+  ],
+  "final_process_memory": {
+    "rss": 105365504,
+    "footprint": 81200016,
+    "peak_footprint": 81232784
+  },
+  "peak_footprint_before_exit": 81232784,
+  "exit_code": 0,
+  "gc_log_sha256": "6c117af81702dcfbdc350ccfc04da79274b0edb2cb9cde3a76bc8b9e8cbecbd0",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

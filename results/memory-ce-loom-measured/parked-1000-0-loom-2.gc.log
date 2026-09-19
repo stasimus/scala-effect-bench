@@ -1,0 +1,10 @@
+[0.006s][info][gc] Using G1
+[0.178s][info][gc] GC(0) Pause Full (System.gc()) 27M->3M(64M) 3.028ms
+[0.335s][info][gc] GC(1) Pause Full (System.gc()) 3M->3M(64M) 3.302ms
+[0.499s][info][gc] GC(2) Pause Full (System.gc()) 3M->3M(64M) 8.616ms
+[2.234s][info][gc] GC(3) Pause Full (System.gc()) 6M->5M(64M) 11.988ms
+[2.400s][info][gc] GC(4) Pause Full (System.gc()) 5M->5M(64M) 10.477ms
+[2.565s][info][gc] GC(5) Pause Full (System.gc()) 5M->5M(64M) 10.398ms
+[3.258s][info][gc] GC(6) Pause Full (System.gc()) 9M->3M(64M) 4.171ms
+[3.420s][info][gc] GC(7) Pause Full (System.gc()) 3M->3M(64M) 7.228ms
+[3.584s][info][gc] GC(8) Pause Full (System.gc()) 3M->3M(64M) 8.375ms

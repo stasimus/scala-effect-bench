@@ -6,6 +6,11 @@ JMH benchmarks comparing equivalent cats-effect and Kyo constructions. Only benc
 
 [CE, Kyo, Gears and Ox: blocking/nonblocking TCP results](results/four-io-measured/report.md).
 
+[CE, Kyo, Loom, Ox and Gears: 130 measured configurations](results/five-way-measured/report.md).
+[Charts and raw results](results/five-way-measured/); [results and run instructions](docs/five-way.md).
+
+[CE versus Loom: memory consumption, live heap and process footprint](results/memory-ce-loom-measured/analysis.md).
+
 [Blog: Kyo's blocking gap and manual flush](https://sgektor.blogspot.com/2026/09/blocking-io-made-kyo-30x-slower-then-i.html).
 
 cats-effect **3.7.1**, Kyo **1.0.0-RC6**, fs2 **3.13.0**, cats-core **2.13.0**, Scala **3.8.4**.

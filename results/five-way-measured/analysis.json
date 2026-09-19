@@ -1,0 +1,2221 @@
+[
+  {
+    "benchmark": "bench.direct.ParallelBench.collectSuccesses",
+    "label": "Collect successes",
+    "params": {
+      "parallelism": "8",
+      "size": "4096",
+      "work": "0"
+    },
+    "runtimes": {
+      "ce": {
+        "throughput": 1040.0854907532698,
+        "error": 77.99100916136545,
+        "bytes_per_op": 5372895.96265273,
+        "cpu_ms_per_op": 1.9657307109798572,
+        "fork_means": [
+          984.0047559998008,
+          1055.1924848185024,
+          1081.0592314415069
+        ],
+        "fork_cv": 0.048322866182852725,
+        "last_vs_first_iteration": 1.0349451620457149,
+        "throughput_relative_to_ce": 1.0,
+        "ci_overlaps_ce": true,
+        "allocation_relative_to_ce": 1.0,
+        "cpu_relative_to_ce": 1.0
+      },
+      "kyo": {
+        "throughput": 904.3857447896848,
+        "error": 50.400625565594815,
+        "bytes_per_op": 4459510.668015438,
+        "cpu_ms_per_op": 1.223053508300685,
+        "fork_means": [
+          934.5655349707544,
+          903.10792512189,
+          875.4837742764097
+        ],
+        "fork_cv": 0.03268693779512792,
+        "last_vs_first_iteration": 0.968107976193912,
+        "throughput_relative_to_ce": 0.8695301999979771,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.8300013063743875,
+        "cpu_relative_to_ce": 0.622187719543248
+      },
+      "loom": {
+        "throughput": 677.079784627334,
+        "error": 95.60191016248093,
+        "bytes_per_op": 2070747.495759235,
+        "cpu_ms_per_op": 18.669196929133488,
+        "fork_means": [
+          649.355790705155,
+          668.0008708057883,
+          713.8826923710585
+        ],
+        "fork_cv": 0.04904545166686516,
+        "last_vs_first_iteration": 1.1426095869876318,
+        "throughput_relative_to_ce": 0.6509847417801846,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.38540621485193555,
+        "cpu_relative_to_ce": 9.497331869952552
+      },
+      "ox": {
+        "throughput": 884.3263810689473,
+        "error": 15.41562071734249,
+        "bytes_per_op": 2991379.198878055,
+        "cpu_ms_per_op": 14.006500490398977,
+        "fork_means": [
+          887.6142045420937,
+          881.8345006239122,
+          883.530438040836
+        ],
+        "fork_cv": 0.0033595331770053553,
+        "last_vs_first_iteration": 1.0099946388486418,
+        "throughput_relative_to_ce": 0.8502439356484861,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.5567536054431879,
+        "cpu_relative_to_ce": 7.125340420314826
+      },
+      "gears": {
+        "throughput": 200.15710990750773,
+        "error": 10.109233587025793,
+        "bytes_per_op": 5955502.24954449,
+        "cpu_ms_per_op": 23.250255325208894,
+        "fork_means": [
+          194.7549722646266,
+          199.7271349796467,
+          205.98922247824987
+        ],
+        "fork_cv": 0.02812517670517619,
+        "last_vs_first_iteration": 1.0141108373571632,
+        "throughput_relative_to_ce": 0.1924429402072961,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 1.1084343138116737,
+        "cpu_relative_to_ce": 11.827792685611218
+      }
+    },
+    "fastest_mean": "ce",
+    "fastest_interval_separated": true
+  },
+  {
+    "benchmark": "bench.direct.ParallelBench.collectSuccesses",
+    "label": "Collect successes",
+    "params": {
+      "parallelism": "8",
+      "size": "4096",
+      "work": "64"
+    },
+    "runtimes": {
+      "ce": {
+        "throughput": 935.8997595640374,
+        "error": 40.3251955961507,
+        "bytes_per_op": 5376201.07391509,
+        "cpu_ms_per_op": 2.5110451695863274,
+        "fork_means": [
+          936.8739384221165,
+          925.4851911728583,
+          945.3401490971372
+        ],
+        "fork_cv": 0.010645651696446774,
+        "last_vs_first_iteration": 1.0049594715858456,
+        "throughput_relative_to_ce": 1.0,
+        "ci_overlaps_ce": true,
+        "allocation_relative_to_ce": 1.0,
+        "cpu_relative_to_ce": 1.0
+      },
+      "kyo": {
+        "throughput": 644.4521115047261,
+        "error": 15.145452628623886,
+        "bytes_per_op": 4529162.45920256,
+        "cpu_ms_per_op": 1.6931159538457912,
+        "fork_means": [
+          638.4813398485738,
+          649.1828320023309,
+          645.6921626632736
+        ],
+        "fork_cv": 0.008468358739302203,
+        "last_vs_first_iteration": 1.0080305577075943,
+        "throughput_relative_to_ce": 0.688590957438568,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.8424466267040688,
+        "cpu_relative_to_ce": 0.6742674223278576
+      },
+      "loom": {
+        "throughput": 670.089131357952,
+        "error": 98.42239089484794,
+        "bytes_per_op": 2073487.4519771321,
+        "cpu_ms_per_op": 19.03331511648423,
+        "fork_means": [
+          704.5724765775733,
+          598.8971580909019,
+          706.7977594053809
+        ],
+        "fork_cv": 0.09202372243739036,
+        "last_vs_first_iteration": 1.0387093969460823,
+        "throughput_relative_to_ce": 0.715983869543993,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.3856789252242689,
+        "cpu_relative_to_ce": 7.57983780897888
+      },
+      "ox": {
+        "throughput": 847.6163366260431,
+        "error": 62.20298689790591,
+        "bytes_per_op": 2996339.8130667508,
+        "cpu_ms_per_op": 15.0675979863942,
+        "fork_means": [
+          866.5394187802702,
+          877.0454941649456,
+          799.264096932914
+        ],
+        "fork_cv": 0.04978959354622165,
+        "last_vs_first_iteration": 1.0053657686746944,
+        "throughput_relative_to_ce": 0.9056700014763134,
+        "ci_overlaps_ce": true,
+        "allocation_relative_to_ce": 0.5573340304559586,
+        "cpu_relative_to_ce": 6.000528452810132
+      },
+      "gears": {
+        "throughput": 186.6099992337301,
+        "error": 8.425363293053977,
+        "bytes_per_op": 6127586.645789585,
+        "cpu_ms_per_op": 24.813010588768844,
+        "fork_means": [
+          183.55314182103504,
+          185.22622054561637,
+          191.0506353345389
+        ],
+        "fork_cv": 0.021090169545846898,
+        "last_vs_first_iteration": 0.9659418394111746,
+        "throughput_relative_to_ce": 0.19939101097820255,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 1.139761434057993,
+        "cpu_relative_to_ce": 9.881546891032857
+      }
+    },
+    "fastest_mean": "ce",
+    "fastest_interval_separated": false
+  },
+  {
+    "benchmark": "bench.direct.ParallelBench.workers",
+    "label": "Bounded workers",
+    "params": {
+      "parallelism": "8",
+      "size": "4096",
+      "work": "0"
+    },
+    "runtimes": {
+      "ce": {
+        "throughput": 3917.024670018691,
+        "error": 78.29883449743765,
+        "bytes_per_op": 1386485.3720614263,
+        "cpu_ms_per_op": 1.2731351679755294,
+        "fork_means": [
+          3933.942208860449,
+          3912.087608162099,
+          3905.0441930335237
+        ],
+        "fork_cv": 0.003846883223207792,
+        "last_vs_first_iteration": 1.0215529745524539,
+        "throughput_relative_to_ce": 1.0,
+        "ci_overlaps_ce": true,
+        "allocation_relative_to_ce": 1.0,
+        "cpu_relative_to_ce": 1.0
+      },
+      "kyo": {
+        "throughput": 4495.771291646026,
+        "error": 70.91505355118248,
+        "bytes_per_op": 1580654.3013568772,
+        "cpu_ms_per_op": 0.2386724504607611,
+        "fork_means": [
+          4510.40405319262,
+          4467.038169363024,
+          4509.871652382432
+        ],
+        "fork_cv": 0.005535209879236719,
+        "last_vs_first_iteration": 0.9887398167215266,
+        "throughput_relative_to_ce": 1.1477515896331012,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 1.1400439796972113,
+        "cpu_relative_to_ce": 0.18746827239112804
+      },
+      "loom": {
+        "throughput": 4498.558739417873,
+        "error": 166.6404118970934,
+        "bytes_per_op": 104421.77311674255,
+        "cpu_ms_per_op": 1.5139749331120083,
+        "fork_means": [
+          4512.53781982304,
+          4533.490915914567,
+          4449.647482516012
+        ],
+        "fork_cv": 0.009699717585595685,
+        "last_vs_first_iteration": 1.0458474081025957,
+        "throughput_relative_to_ce": 1.1484632133798656,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.07531400995705297,
+        "cpu_relative_to_ce": 1.1891706169105745
+      },
+      "ox": {
+        "throughput": 4654.509720022187,
+        "error": 691.0417525761509,
+        "bytes_per_op": 107315.95660856413,
+        "cpu_ms_per_op": 1.4479312507026267,
+        "fork_means": [
+          4392.514382427561,
+          4374.5652426239785,
+          5196.44953501502
+        ],
+        "fork_cv": 0.1008526081358662,
+        "last_vs_first_iteration": 1.0174629374705346,
+        "throughput_relative_to_ce": 1.1882768458540185,
+        "ci_overlaps_ce": true,
+        "allocation_relative_to_ce": 0.0774014344262477,
+        "cpu_relative_to_ce": 1.137295777482173
+      },
+      "gears": {
+        "throughput": 4084.2148187013536,
+        "error": 171.9871465479048,
+        "bytes_per_op": 113227.2777594629,
+        "cpu_ms_per_op": 1.5802432912526045,
+        "fork_means": [
+          4089.27911033584,
+          4061.540959715257,
+          4101.824386052963
+        ],
+        "fork_cv": 0.005047159168713456,
+        "last_vs_first_iteration": 1.0565986527865254,
+        "throughput_relative_to_ce": 1.042682945032834,
+        "ci_overlaps_ce": true,
+        "allocation_relative_to_ce": 0.08166496382945361,
+        "cpu_relative_to_ce": 1.2412219307125274
+      }
+    },
+    "fastest_mean": "ox",
+    "fastest_interval_separated": false
+  },
+  {
+    "benchmark": "bench.direct.ParallelBench.workers",
+    "label": "Bounded workers",
+    "params": {
+      "parallelism": "8",
+      "size": "4096",
+      "work": "64"
+    },
+    "runtimes": {
+      "ce": {
+        "throughput": 3059.7556358426764,
+        "error": 92.17795156071185,
+        "bytes_per_op": 1390549.994799577,
+        "cpu_ms_per_op": 1.5151838127710655,
+        "fork_means": [
+          3100.8610844263612,
+          3015.1328203243056,
+          3063.2730027773628
+        ],
+        "fork_cv": 0.014044334603243912,
+        "last_vs_first_iteration": 0.9956773265697143,
+        "throughput_relative_to_ce": 1.0,
+        "ci_overlaps_ce": true,
+        "allocation_relative_to_ce": 1.0,
+        "cpu_relative_to_ce": 1.0
+      },
+      "kyo": {
+        "throughput": 1399.3623467104853,
+        "error": 25.939637464189833,
+        "bytes_per_op": 1582642.8427240928,
+        "cpu_ms_per_op": 0.7807457758432674,
+        "fork_means": [
+          1397.0639533885144,
+          1401.9488306433864,
+          1399.0742560995552
+        ],
+        "fork_cv": 0.0017544765243224585,
+        "last_vs_first_iteration": 1.0000928436223342,
+        "throughput_relative_to_ce": 0.45734447885904195,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 1.1381416336290753,
+        "cpu_relative_to_ce": 0.5152812281008925
+      },
+      "loom": {
+        "throughput": 3420.2690693690547,
+        "error": 71.02635383446304,
+        "bytes_per_op": 106388.40473644635,
+        "cpu_ms_per_op": 2.0467502752198414,
+        "fork_means": [
+          3455.507785697172,
+          3411.384456085913,
+          3393.9149663240783
+        ],
+        "fork_cv": 0.009280862891778131,
+        "last_vs_first_iteration": 1.002393001774295,
+        "throughput_relative_to_ce": 1.1178242567162036,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.07650814795176088,
+        "cpu_relative_to_ce": 1.3508263868504595
+      },
+      "ox": {
+        "throughput": 3579.7703048537264,
+        "error": 229.72183710795937,
+        "bytes_per_op": 109363.64738843306,
+        "cpu_ms_per_op": 1.9531569452192423,
+        "fork_means": [
+          3662.917678580688,
+          3662.250978599642,
+          3414.142257380848
+        ],
+        "fork_cv": 0.040069186519659815,
+        "last_vs_first_iteration": 1.0066635199880776,
+        "throughput_relative_to_ce": 1.1699530063510561,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.07864776368878121,
+        "cpu_relative_to_ce": 1.289056105771869
+      },
+      "gears": {
+        "throughput": 3213.946646494747,
+        "error": 49.88352214180043,
+        "bytes_per_op": 115238.5774654317,
+        "cpu_ms_per_op": 2.096945843383515,
+        "fork_means": [
+          3222.3754323755693,
+          3196.7543383385287,
+          3222.7101687701424
+        ],
+        "fork_cv": 0.004632907114162288,
+        "last_vs_first_iteration": 0.9941874339463561,
+        "throughput_relative_to_ce": 1.0503932434491963,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.08287266038359253,
+        "cpu_relative_to_ce": 1.3839547556599654
+      }
+    },
+    "fastest_mean": "ox",
+    "fastest_interval_separated": false
+  },
+  {
+    "benchmark": "bench.direct.PipelineBench.parallelChunks",
+    "label": "Parallel chunk transformation",
+    "params": {
+      "capacity": "64",
+      "chunkSize": "64",
+      "parallelism": "4",
+      "size": "10000",
+      "work": "0"
+    },
+    "runtimes": {
+      "ce": {
+        "throughput": 512.257469254188,
+        "error": 11.112218357571116,
+        "bytes_per_op": 5013690.413535038,
+        "cpu_ms_per_op": 3.7552983502794004,
+        "fork_means": [
+          508.34821584097966,
+          519.1400787455335,
+          509.2841131760508
+        ],
+        "fork_cv": 0.011671582524775258,
+        "last_vs_first_iteration": 1.0089231931712386,
+        "throughput_relative_to_ce": 1.0,
+        "ci_overlaps_ce": true,
+        "allocation_relative_to_ce": 1.0,
+        "cpu_relative_to_ce": 1.0
+      },
+      "kyo": {
+        "throughput": 1058.9799054323964,
+        "error": 14.712461580099948,
+        "bytes_per_op": 5108814.857770376,
+        "cpu_ms_per_op": 1.0451823264068683,
+        "fork_means": [
+          1055.2326361288533,
+          1054.6354898377265,
+          1067.0715903306095
+        ],
+        "fork_cv": 0.006623319684376576,
+        "last_vs_first_iteration": 1.004168637565926,
+        "throughput_relative_to_ce": 2.0672805551751137,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 1.0189729393698779,
+        "cpu_relative_to_ce": 0.2783220476554426
+      },
+      "loom": {
+        "throughput": 686.6409481235119,
+        "error": 23.3051260353335,
+        "bytes_per_op": 621575.008575385,
+        "cpu_ms_per_op": 6.158908922906147,
+        "fork_means": [
+          684.9756562570777,
+          694.461892415766,
+          680.4852956976918
+        ],
+        "fork_cv": 0.010391980965554529,
+        "last_vs_first_iteration": 0.9941392299651063,
+        "throughput_relative_to_ce": 1.3404215445081051,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.12397554641534532,
+        "cpu_relative_to_ce": 1.6400584849531101
+      },
+      "ox": {
+        "throughput": 677.3152792643679,
+        "error": 19.573391601840395,
+        "bytes_per_op": 752323.128960904,
+        "cpu_ms_per_op": 6.035461345221602,
+        "fork_means": [
+          680.6084322084128,
+          670.0208387908112,
+          681.3165667938796
+        ],
+        "fork_cv": 0.009341418423296395,
+        "last_vs_first_iteration": 1.0245701686269115,
+        "throughput_relative_to_ce": 1.3222165022805676,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.1500537661699096,
+        "cpu_relative_to_ce": 1.6071855768190972
+      },
+      "gears": {
+        "throughput": 694.8735902606799,
+        "error": 15.970052701378401,
+        "bytes_per_op": 1143048.833165747,
+        "cpu_ms_per_op": 5.1704583969266915,
+        "fork_means": [
+          696.5233743957523,
+          694.5307517542027,
+          693.5666446320844
+        ],
+        "fork_cv": 0.002170013030272974,
+        "last_vs_first_iteration": 1.0151184644002431,
+        "throughput_relative_to_ce": 1.356492841914767,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.22798552341404135,
+        "cpu_relative_to_ce": 1.3768435726397081
+      }
+    },
+    "fastest_mean": "kyo",
+    "fastest_interval_separated": true
+  },
+  {
+    "benchmark": "bench.direct.PipelineBench.parallelChunks",
+    "label": "Parallel chunk transformation",
+    "params": {
+      "capacity": "64",
+      "chunkSize": "64",
+      "parallelism": "4",
+      "size": "10000",
+      "work": "64"
+    },
+    "runtimes": {
+      "ce": {
+        "throughput": 394.69412673762366,
+        "error": 6.332403622076273,
+        "bytes_per_op": 5025687.885555436,
+        "cpu_ms_per_op": 4.85688165173687,
+        "fork_means": [
+          397.1179547364989,
+          392.4459779462496,
+          394.51844753012244
+        ],
+        "fork_cv": 0.0059310172369269375,
+        "last_vs_first_iteration": 1.003422084042087,
+        "throughput_relative_to_ce": 1.0,
+        "ci_overlaps_ce": true,
+        "allocation_relative_to_ce": 1.0,
+        "cpu_relative_to_ce": 1.0
+      },
+      "kyo": {
+        "throughput": 460.95682893240155,
+        "error": 6.258125480873722,
+        "bytes_per_op": 5111257.219347041,
+        "cpu_ms_per_op": 2.310737710755545,
+        "fork_means": [
+          458.89527191219327,
+          459.79196345534194,
+          464.18325142966955
+        ],
+        "fork_cv": 0.006139198708654745,
+        "last_vs_first_iteration": 1.0017975700839907,
+        "throughput_relative_to_ce": 1.1678836792999117,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 1.0170263923546752,
+        "cpu_relative_to_ce": 0.4757657024500899
+      },
+      "loom": {
+        "throughput": 566.2016481384528,
+        "error": 20.377656156267538,
+        "bytes_per_op": 618129.8563651941,
+        "cpu_ms_per_op": 8.207924169696737,
+        "fork_means": [
+          570.2713247315222,
+          561.9179547280253,
+          566.4156649558108
+        ],
+        "fork_cv": 0.007383933609000648,
+        "last_vs_first_iteration": 0.9658539080973025,
+        "throughput_relative_to_ce": 1.4345327426542636,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.12299407970435051,
+        "cpu_relative_to_ce": 1.6899576226572248
+      },
+      "ox": {
+        "throughput": 557.5251604082459,
+        "error": 26.49364836066454,
+        "bytes_per_op": 754909.9296040817,
+        "cpu_ms_per_op": 8.265611740828072,
+        "fork_means": [
+          556.3144343990415,
+          545.8401422141524,
+          570.420904611544
+        ],
+        "fork_cv": 0.02212460843349447,
+        "last_vs_first_iteration": 1.007174547774136,
+        "throughput_relative_to_ce": 1.4125499282609433,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.15021026908053792,
+        "cpu_relative_to_ce": 1.7018351142800043
+      },
+      "gears": {
+        "throughput": 515.2148295747462,
+        "error": 18.13932424770903,
+        "bytes_per_op": 1167355.1643502624,
+        "cpu_ms_per_op": 7.619763981517648,
+        "fork_means": [
+          514.2038278408208,
+          514.9338827367051,
+          516.506778146713
+        ],
+        "fork_cv": 0.0022842896427223,
+        "last_vs_first_iteration": 1.0032983029868363,
+        "throughput_relative_to_ce": 1.3053521567024475,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.2322776883350461,
+        "cpu_relative_to_ce": 1.5688593068337877
+      }
+    },
+    "fastest_mean": "loom",
+    "fastest_interval_separated": false
+  },
+  {
+    "benchmark": "bench.direct.PipelineBench.queueChunks",
+    "label": "Queue-backed chunk pipeline",
+    "params": {
+      "capacity": "64",
+      "chunkSize": "64",
+      "parallelism": "4",
+      "size": "10000",
+      "work": "0"
+    },
+    "runtimes": {
+      "ce": {
+        "throughput": 1381.3132477772901,
+        "error": 48.57195782896573,
+        "bytes_per_op": 1646275.2332983774,
+        "cpu_ms_per_op": 1.2580702839152642,
+        "fork_means": [
+          1349.1681801057669,
+          1397.5210425462208,
+          1397.2505206798833
+        ],
+        "fork_cv": 0.020153845519437094,
+        "last_vs_first_iteration": 1.0143806025875797,
+        "throughput_relative_to_ce": 1.0,
+        "ci_overlaps_ce": true,
+        "allocation_relative_to_ce": 1.0,
+        "cpu_relative_to_ce": 1.0
+      },
+      "kyo": {
+        "throughput": 5282.188079670103,
+        "error": 67.35252237405793,
+        "bytes_per_op": 675294.9855858919,
+        "cpu_ms_per_op": 0.20531344137171187,
+        "fork_means": [
+          5284.239340573186,
+          5253.423277054012,
+          5308.901621383112
+        ],
+        "fork_cv": 0.005262212583155575,
+        "last_vs_first_iteration": 0.990643558312313,
+        "throughput_relative_to_ce": 3.824033461034143,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.41019567805373086,
+        "cpu_relative_to_ce": 0.16319711545268523
+      },
+      "loom": {
+        "throughput": 28616.063508451865,
+        "error": 1244.3325364437662,
+        "bytes_per_op": 4994.44783807814,
+        "cpu_ms_per_op": 0.0705488016278159,
+        "fork_means": [
+          28435.08242735739,
+          28141.25968926898,
+          29271.84840872921
+        ],
+        "fork_cv": 0.02049968395142086,
+        "last_vs_first_iteration": 1.0170083706066377,
+        "throughput_relative_to_ce": 20.71656342578251,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.0030337866579402805,
+        "cpu_relative_to_ce": 0.056076995482525545
+      },
+      "ox": {
+        "throughput": 28484.97267191262,
+        "error": 1287.8089698222673,
+        "bytes_per_op": 9646.0961391417,
+        "cpu_ms_per_op": 0.07384094940236646,
+        "fork_means": [
+          28251.935397378016,
+          28311.68995010172,
+          28891.29266825812
+        ],
+        "fork_cv": 0.012397749376923934,
+        "last_vs_first_iteration": 1.0519936280066606,
+        "throughput_relative_to_ce": 20.621660378446805,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.005859345961133951,
+        "cpu_relative_to_ce": 0.05869381889584472
+      },
+      "gears": {
+        "throughput": 19631.675901499093,
+        "error": 1086.5807478401168,
+        "bytes_per_op": 39065.99189378126,
+        "cpu_ms_per_op": 0.09209139045776464,
+        "fork_means": [
+          19917.24640075357,
+          18795.75568772213,
+          20182.025616021576
+        ],
+        "fork_cv": 0.037487073316973894,
+        "last_vs_first_iteration": 1.0005734689897552,
+        "throughput_relative_to_ce": 14.212327242273954,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.0237299274772609,
+        "cpu_relative_to_ce": 0.07320051322662617
+      }
+    },
+    "fastest_mean": "loom",
+    "fastest_interval_separated": false
+  },
+  {
+    "benchmark": "bench.direct.PipelineBench.queueChunks",
+    "label": "Queue-backed chunk pipeline",
+    "params": {
+      "capacity": "64",
+      "chunkSize": "64",
+      "parallelism": "4",
+      "size": "10000",
+      "work": "64"
+    },
+    "runtimes": {
+      "ce": {
+        "throughput": 599.0687833719089,
+        "error": 16.585212503142994,
+        "bytes_per_op": 1650044.4033064023,
+        "cpu_ms_per_op": 2.3811257638508194,
+        "fork_means": [
+          596.2170556851489,
+          600.5258501896194,
+          600.4634442409583
+        ],
+        "fork_cv": 0.004122841648151332,
+        "last_vs_first_iteration": 1.0289438654084633,
+        "throughput_relative_to_ce": 1.0,
+        "ci_overlaps_ce": true,
+        "allocation_relative_to_ce": 1.0,
+        "cpu_relative_to_ce": 1.0
+      },
+      "kyo": {
+        "throughput": 1012.7667925313771,
+        "error": 20.840701695039517,
+        "bytes_per_op": 677753.5071199654,
+        "cpu_ms_per_op": 1.0639418222167534,
+        "fork_means": [
+          1017.5115972443198,
+          1007.3279697736674,
+          1013.4608105761441
+        ],
+        "fork_cv": 0.005062531921496365,
+        "last_vs_first_iteration": 1.013416943351597,
+        "throughput_relative_to_ce": 1.690568463325587,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.4107486475890377,
+        "cpu_relative_to_ce": 0.4468230273129793
+      },
+      "loom": {
+        "throughput": 1036.1787471159716,
+        "error": 24.72751465283032,
+        "bytes_per_op": 8614.455675157085,
+        "cpu_ms_per_op": 1.2382891733678238,
+        "fork_means": [
+          1042.5790089847542,
+          1035.8025856190072,
+          1030.154646744154
+        ],
+        "fork_cv": 0.006003517063848233,
+        "last_vs_first_iteration": 1.0277676537803828,
+        "throughput_relative_to_ce": 1.7296490417740558,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.005220741731492324,
+        "cpu_relative_to_ce": 0.5200435828157308
+      },
+      "ox": {
+        "throughput": 1034.9155460064217,
+        "error": 5.476710705765466,
+        "bytes_per_op": 13538.671636236257,
+        "cpu_ms_per_op": 1.2066134130227004,
+        "fork_means": [
+          1038.4245333943518,
+          1033.3681724443009,
+          1032.953932180612
+        ],
+        "fork_cv": 0.00294316032541457,
+        "last_vs_first_iteration": 0.9997329321829326,
+        "throughput_relative_to_ce": 1.7275404339737295,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.008205034730645497,
+        "cpu_relative_to_ce": 0.5067407321952342
+      },
+      "gears": {
+        "throughput": 1080.8007648662874,
+        "error": 20.715868710261187,
+        "bytes_per_op": 51300.361412094186,
+        "cpu_ms_per_op": 1.1709348680903235,
+        "fork_means": [
+          1074.258088034952,
+          1083.7695684063626,
+          1084.3746381575484
+        ],
+        "fork_cv": 0.005249991947268647,
+        "last_vs_first_iteration": 0.991906066929563,
+        "throughput_relative_to_ce": 1.8041346751251328,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.031090291454761568,
+        "cpu_relative_to_ce": 0.4917568344633157
+      }
+    },
+    "fastest_mean": "gears",
+    "fastest_interval_separated": false
+  },
+  {
+    "benchmark": "bench.direct.PipelineBench.sequentialChunks",
+    "label": "Sequential chunk transformation",
+    "params": {
+      "capacity": "64",
+      "chunkSize": "64",
+      "parallelism": "4",
+      "size": "10000",
+      "work": "0"
+    },
+    "runtimes": {
+      "ce": {
+        "throughput": 1493.9665215829732,
+        "error": 148.33638407413642,
+        "bytes_per_op": 3078667.563498212,
+        "cpu_ms_per_op": 0.7563515808376614,
+        "fork_means": [
+          1538.845442958586,
+          1380.4137679642984,
+          1562.6403538260347
+        ],
+        "fork_cv": 0.0663044658137346,
+        "last_vs_first_iteration": 1.0264301472833586,
+        "throughput_relative_to_ce": 1.0,
+        "ci_overlaps_ce": true,
+        "allocation_relative_to_ce": 1.0,
+        "cpu_relative_to_ce": 1.0
+      },
+      "kyo": {
+        "throughput": 1194.0416066720477,
+        "error": 24.141748666918442,
+        "bytes_per_op": 4602544.995094227,
+        "cpu_ms_per_op": 0.9484644961615021,
+        "fork_means": [
+          1203.982101373606,
+          1179.2366859718852,
+          1198.9060326706528
+        ],
+        "fork_cv": 0.010946208693987958,
+        "last_vs_first_iteration": 0.993628391876268,
+        "throughput_relative_to_ce": 0.7992425462164093,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 1.4949795325950916,
+        "cpu_relative_to_ce": 1.2539994893790996
+      },
+      "loom": {
+        "throughput": 23791.75501019069,
+        "error": 2119.386239094025,
+        "bytes_per_op": 211065.65185567012,
+        "cpu_ms_per_op": 0.043739251386916984,
+        "fork_means": [
+          25303.00061868612,
+          23345.989090191128,
+          22726.275321694815
+        ],
+        "fork_cv": 0.056530373030620036,
+        "last_vs_first_iteration": 0.9916824831418035,
+        "throughput_relative_to_ce": 15.92522634642541,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.06855746763896832,
+        "cpu_relative_to_ce": 0.05782925889898405
+      },
+      "ox": {
+        "throughput": 29700.434562824215,
+        "error": 830.0806935928568,
+        "bytes_per_op": 209563.02801734637,
+        "cpu_ms_per_op": 0.03514292700610403,
+        "fork_means": [
+          29284.49297389928,
+          29688.480810131503,
+          30128.329904441853
+        ],
+        "fork_cv": 0.014210076538672041,
+        "last_vs_first_iteration": 0.9779034524549398,
+        "throughput_relative_to_ce": 19.880254432578788,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.06806939161018906,
+        "cpu_relative_to_ce": 0.04646374503135585
+      },
+      "gears": {
+        "throughput": 25645.535328996004,
+        "error": 648.155528777694,
+        "bytes_per_op": 212461.61760468187,
+        "cpu_ms_per_op": 0.0405656506334362,
+        "fork_means": [
+          25766.647682968087,
+          25448.038446913775,
+          25721.919857106142
+        ],
+        "fork_cv": 0.006726052331598587,
+        "last_vs_first_iteration": 0.9779919969918793,
+        "throughput_relative_to_ce": 17.166070965112773,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.06901089943055336,
+        "cpu_relative_to_ce": 0.05363332564005437
+      }
+    },
+    "fastest_mean": "ox",
+    "fastest_interval_separated": true
+  },
+  {
+    "benchmark": "bench.direct.PipelineBench.sequentialChunks",
+    "label": "Sequential chunk transformation",
+    "params": {
+      "capacity": "64",
+      "chunkSize": "64",
+      "parallelism": "4",
+      "size": "10000",
+      "work": "64"
+    },
+    "runtimes": {
+      "ce": {
+        "throughput": 593.3571808903876,
+        "error": 31.020801958514614,
+        "bytes_per_op": 3082731.408826642,
+        "cpu_ms_per_op": 1.7653750893214677,
+        "fork_means": [
+          604.4281008763015,
+          605.3674633177931,
+          570.275978477068
+        ],
+        "fork_cv": 0.03369711464523237,
+        "last_vs_first_iteration": 1.0018179757590508,
+        "throughput_relative_to_ce": 1.0,
+        "ci_overlaps_ce": true,
+        "allocation_relative_to_ce": 1.0,
+        "cpu_relative_to_ce": 1.0
+      },
+      "kyo": {
+        "throughput": 509.95242903218997,
+        "error": 21.779943848298103,
+        "bytes_per_op": 4602543.685926044,
+        "cpu_ms_per_op": 2.1398639301613844,
+        "fork_means": [
+          517.2840076816026,
+          494.6393921743555,
+          517.9338872406117
+        ],
+        "fork_cv": 0.02601313083083747,
+        "last_vs_first_iteration": 0.9829511071273528,
+        "throughput_relative_to_ce": 0.8594358431239663,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 1.4930083343452478,
+        "cpu_relative_to_ce": 1.2121298998185444
+      },
+      "loom": {
+        "throughput": 1205.6990006424753,
+        "error": 52.88869562793119,
+        "bytes_per_op": 213128.45431060315,
+        "cpu_ms_per_op": 0.8491564980883342,
+        "fork_means": [
+          1186.6754366430766,
+          1236.1476851628736,
+          1194.2738801214755
+        ],
+        "fork_cv": 0.022096409850833457,
+        "last_vs_first_iteration": 1.0290503024802173,
+        "throughput_relative_to_ce": 2.0319952963798498,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.06913623862927608,
+        "cpu_relative_to_ce": 0.48100627635723153
+      },
+      "ox": {
+        "throughput": 1209.4487605712823,
+        "error": 51.51325985826756,
+        "bytes_per_op": 211596.82732740065,
+        "cpu_ms_per_op": 0.8546256678415879,
+        "fork_means": [
+          1208.3350493947064,
+          1240.1041132663995,
+          1179.9071190527407
+        ],
+        "fork_cv": 0.024898902535279436,
+        "last_vs_first_iteration": 1.0017762064742628,
+        "throughput_relative_to_ce": 2.038314862485345,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.06863939775017222,
+        "cpu_relative_to_ce": 0.48410429772749786
+      },
+      "gears": {
+        "throughput": 1212.053399309849,
+        "error": 38.24158544859498,
+        "bytes_per_op": 214488.96495624993,
+        "cpu_ms_per_op": 0.8505831761701841,
+        "fork_means": [
+          1240.3421229798344,
+          1199.1809300282387,
+          1196.637144921474
+        ],
+        "fork_cv": 0.020239823854902375,
+        "last_vs_first_iteration": 1.0044863012791032,
+        "throughput_relative_to_ce": 2.042704526624335,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.06957757148161323,
+        "cpu_relative_to_ce": 0.4818144208079376
+      }
+    },
+    "fastest_mean": "gears",
+    "fastest_interval_separated": false
+  },
+  {
+    "benchmark": "bench.direct.PrimitivesBench.promise",
+    "label": "Complete then read promise",
+    "params": {
+      "capacity": "64",
+      "ops": "1000"
+    },
+    "runtimes": {
+      "ce": {
+        "throughput": 12777.979276576145,
+        "error": 304.86998892083346,
+        "bytes_per_op": 503059.2350385274,
+        "cpu_ms_per_op": 0.08175915918728045,
+        "fork_means": [
+          12661.754102670178,
+          12872.245298123704,
+          12799.938428934549
+        ],
+        "fork_cv": 0.008369863116295263,
+        "last_vs_first_iteration": 0.9795098754749162,
+        "throughput_relative_to_ce": 1.0,
+        "ci_overlaps_ce": true,
+        "allocation_relative_to_ce": 1.0,
+        "cpu_relative_to_ce": 1.0
+      },
+      "kyo": {
+        "throughput": 11825.032433800785,
+        "error": 217.40227981936854,
+        "bytes_per_op": 446530.45295001636,
+        "cpu_ms_per_op": 0.0912029094412125,
+        "fork_means": [
+          11875.596475519307,
+          11841.055911671767,
+          11758.444914211275
+        ],
+        "fork_cv": 0.005090646452464014,
+        "last_vs_first_iteration": 0.9922004127554814,
+        "throughput_relative_to_ce": 0.9254227274791212,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.8876299684982789,
+        "cpu_relative_to_ce": 1.1155069395014185
+      },
+      "loom": {
+        "throughput": 127631.04771046752,
+        "error": 3394.091115477917,
+        "bytes_per_op": 38424.30759386205,
+        "cpu_ms_per_op": 0.008187032831649559,
+        "fork_means": [
+          128497.78991096187,
+          127454.72346594608,
+          126940.62975449458
+        ],
+        "fork_cv": 0.006216459745651224,
+        "last_vs_first_iteration": 1.0078261997144888,
+        "throughput_relative_to_ce": 9.988359266197387,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.07638127862004021,
+        "cpu_relative_to_ce": 0.10013597146829811
+      },
+      "ox": {
+        "throughput": 91542.30654897178,
+        "error": 25575.451131220234,
+        "bytes_per_op": 38984.091805974225,
+        "cpu_ms_per_op": 0.011593163856674327,
+        "fork_means": [
+          111790.48738421936,
+          80740.43375835291,
+          82095.99850434311
+        ],
+        "fork_cv": 0.19169861049681908,
+        "last_vs_first_iteration": 0.9852537310765052,
+        "throughput_relative_to_ce": 7.164067538971664,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.07749403865528595,
+        "cpu_relative_to_ce": 0.14179651517842315
+      },
+      "gears": {
+        "throughput": 22934.997062039667,
+        "error": 824.7329684225474,
+        "bytes_per_op": 327864.07630646654,
+        "cpu_ms_per_op": 0.045791426977377356,
+        "fork_means": [
+          22985.432493709086,
+          22965.32600569748,
+          22854.23268671244
+        ],
+        "fork_cv": 0.0030810031216223005,
+        "last_vs_first_iteration": 1.0023463100088656,
+        "throughput_relative_to_ce": 1.7948845091713979,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.6517404978786577,
+        "cpu_relative_to_ce": 0.560077029076166
+      }
+    },
+    "fastest_mean": "loom",
+    "fastest_interval_separated": true
+  },
+  {
+    "benchmark": "bench.direct.PrimitivesBench.queue",
+    "label": "Single-producer / consumer queue",
+    "params": {
+      "capacity": "64",
+      "ops": "1000"
+    },
+    "runtimes": {
+      "ce": {
+        "throughput": 6730.116578496965,
+        "error": 129.03756020839532,
+        "bytes_per_op": 385744.67659518437,
+        "cpu_ms_per_op": 0.2875084559942069,
+        "fork_means": [
+          6659.652099084948,
+          6784.722565944649,
+          6745.975070461296
+        ],
+        "fork_cv": 0.009513293594174646,
+        "last_vs_first_iteration": 1.002278683240724,
+        "throughput_relative_to_ce": 1.0,
+        "ci_overlaps_ce": true,
+        "allocation_relative_to_ce": 1.0,
+        "cpu_relative_to_ce": 1.0
+      },
+      "kyo": {
+        "throughput": 10071.563374378657,
+        "error": 211.65935329192305,
+        "bytes_per_op": 382818.9461927223,
+        "cpu_ms_per_op": 0.10728592295307177,
+        "fork_means": [
+          10077.498263413132,
+          10175.799697488277,
+          9961.392162234568
+        ],
+        "fork_cv": 0.010656429696976557,
+        "last_vs_first_iteration": 0.9907874858908408,
+        "throughput_relative_to_ce": 1.4964916665125487,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.9924153706324963,
+        "cpu_relative_to_ce": 0.3731574522984935
+      },
+      "loom": {
+        "throughput": 9361.64411483727,
+        "error": 760.5430945172957,
+        "bytes_per_op": 24729.06445999509,
+        "cpu_ms_per_op": 0.2840404250517057,
+        "fork_means": [
+          9033.094575978108,
+          9104.01480520003,
+          9947.822963333672
+        ],
+        "fork_cv": 0.0543582667837424,
+        "last_vs_first_iteration": 1.0142793502192067,
+        "throughput_relative_to_ce": 1.391007719650527,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.06410733824836873,
+        "cpu_relative_to_ce": 0.9879376384582891
+      },
+      "ox": {
+        "throughput": 9546.145985720252,
+        "error": 322.31176721414016,
+        "bytes_per_op": 24573.308061512125,
+        "cpu_ms_per_op": 0.23130307176381149,
+        "fork_means": [
+          9700.462764243466,
+          9578.631712435354,
+          9359.343480481937
+        ],
+        "fork_cv": 0.01810828679833197,
+        "last_vs_first_iteration": 1.014192123325599,
+        "throughput_relative_to_ce": 1.4184220844287647,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.06370355717779697,
+        "cpu_relative_to_ce": 0.804508761190913
+      },
+      "gears": {
+        "throughput": 5131.650644170958,
+        "error": 226.754630419121,
+        "bytes_per_op": 247096.56394581703,
+        "cpu_ms_per_op": 0.3893586380716767,
+        "fork_means": [
+          5024.127867501821,
+          5285.1656280189845,
+          5085.65843699207
+        ],
+        "fork_cv": 0.026592054114541113,
+        "last_vs_first_iteration": 0.9915174760311625,
+        "throughput_relative_to_ce": 0.7624906024015721,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.640570250059808,
+        "cpu_relative_to_ce": 1.3542510835908146
+      }
+    },
+    "fastest_mean": "kyo",
+    "fastest_interval_separated": false
+  },
+  {
+    "benchmark": "bench.direct.PrimitivesBench.ref",
+    "label": "CAS reference updates",
+    "params": {
+      "capacity": "64",
+      "ops": "1000"
+    },
+    "runtimes": {
+      "ce": {
+        "throughput": 37647.377794515276,
+        "error": 1062.2909443367764,
+        "bytes_per_op": 111208.2503661977,
+        "cpu_ms_per_op": 0.028349896547025195,
+        "fork_means": [
+          38361.308901734876,
+          37336.3327358379,
+          37244.49174597304
+        ],
+        "fork_cv": 0.01646822297978021,
+        "last_vs_first_iteration": 0.9993227135921184,
+        "throughput_relative_to_ce": 1.0,
+        "ci_overlaps_ce": true,
+        "allocation_relative_to_ce": 1.0,
+        "cpu_relative_to_ce": 1.0
+      },
+      "kyo": {
+        "throughput": 37840.78194068693,
+        "error": 640.5864113927432,
+        "bytes_per_op": 110705.07420463454,
+        "cpu_ms_per_op": 0.02899038687218099,
+        "fork_means": [
+          37772.32036824578,
+          37815.48580999126,
+          37934.539643823766
+        ],
+        "fork_cv": 0.0022202510084316134,
+        "last_vs_first_iteration": 0.9932800810691828,
+        "throughput_relative_to_ce": 1.0051372541064423,
+        "ci_overlaps_ce": true,
+        "allocation_relative_to_ce": 0.9954753702184304,
+        "cpu_relative_to_ce": 1.0225923337707208
+      },
+      "loom": {
+        "throughput": 94825.82388235912,
+        "error": 1522.170218164635,
+        "bytes_per_op": 14440.416043219258,
+        "cpu_ms_per_op": 0.010788205528124963,
+        "fork_means": [
+          95002.68650563453,
+          94392.41799153158,
+          95082.36714991125
+        ],
+        "fork_cv": 0.003980445293745522,
+        "last_vs_first_iteration": 1.0061096574303199,
+        "throughput_relative_to_ce": 2.518789606010063,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.1298502224040789,
+        "cpu_relative_to_ce": 0.3805377388319601
+      },
+      "ox": {
+        "throughput": 94607.61942744012,
+        "error": 3173.0917397110084,
+        "bytes_per_op": 15005.419602837026,
+        "cpu_ms_per_op": 0.010861708874627082,
+        "fork_means": [
+          93587.74106008896,
+          94828.32645777435,
+          95406.79076445704
+        ],
+        "fork_cv": 0.009823646591979813,
+        "last_vs_first_iteration": 1.0007532709711926,
+        "throughput_relative_to_ce": 2.5129935992839108,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.13493081271781251,
+        "cpu_relative_to_ce": 0.38313045892814096
+      },
+      "gears": {
+        "throughput": 81841.79270680394,
+        "error": 5547.625262896715,
+        "bytes_per_op": 15832.085231750509,
+        "cpu_ms_per_op": 0.012614590271365127,
+        "fork_means": [
+          79333.32161270684,
+          82971.04084022385,
+          83221.01566748114
+        ],
+        "fork_cv": 0.026587788206230523,
+        "last_vs_first_iteration": 1.0066909096469936,
+        "throughput_relative_to_ce": 2.173904200008512,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.1423643046232364,
+        "cpu_relative_to_ce": 0.44496071618606303
+      }
+    },
+    "fastest_mean": "loom",
+    "fastest_interval_separated": false
+  },
+  {
+    "benchmark": "bench.direct.PrimitivesBench.semaphore",
+    "label": "Uncontended non-reentrant permit",
+    "params": {
+      "capacity": "64",
+      "ops": "1000"
+    },
+    "runtimes": {
+      "ce": {
+        "throughput": 2459.7421430412974,
+        "error": 62.39906834670097,
+        "bytes_per_op": 1945453.8136790385,
+        "cpu_ms_per_op": 0.4281536466843502,
+        "fork_means": [
+          2456.68372179099,
+          2491.847441178201,
+          2430.695266154701
+        ],
+        "fork_cv": 0.012477159225521938,
+        "last_vs_first_iteration": 1.0161762016157097,
+        "throughput_relative_to_ce": 1.0,
+        "ci_overlaps_ce": true,
+        "allocation_relative_to_ce": 1.0,
+        "cpu_relative_to_ce": 1.0
+      },
+      "kyo": {
+        "throughput": 13662.289555467893,
+        "error": 909.4281159247793,
+        "bytes_per_op": 329642.0009295785,
+        "cpu_ms_per_op": 0.07894642262594259,
+        "fork_means": [
+          13902.380857021804,
+          12968.352562199541,
+          14116.135247182327
+        ],
+        "fork_cv": 0.04467748330013769,
+        "last_vs_first_iteration": 0.9851246984684823,
+        "throughput_relative_to_ce": 5.554358449367964,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.16944221374559085,
+        "cpu_relative_to_ce": 0.18438806544638553
+      },
+      "loom": {
+        "throughput": 60196.5159891823,
+        "error": 225.8557070729013,
+        "bytes_per_op": 496.65485647998656,
+        "cpu_ms_per_op": 0.016813803913655626,
+        "fork_means": [
+          60123.35205840963,
+          60177.064997647925,
+          60289.13091148936
+        ],
+        "fork_cv": 0.0014051272047408755,
+        "last_vs_first_iteration": 1.0018525966562786,
+        "throughput_relative_to_ce": 24.47269367623777,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.00025528997552543535,
+        "cpu_relative_to_ce": 0.039270490964780566
+      },
+      "ox": {
+        "throughput": 62244.293874903895,
+        "error": 5548.712580103157,
+        "bytes_per_op": 1066.7114827212895,
+        "cpu_ms_per_op": 0.01630830005399811,
+        "fork_means": [
+          60016.749723603025,
+          66535.10777252428,
+          60181.024128584366
+        ],
+        "fork_cv": 0.059714092227682765,
+        "last_vs_first_iteration": 1.0158671334420717,
+        "throughput_relative_to_ce": 25.30521097546559,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.000548309846895844,
+        "cpu_relative_to_ce": 0.03808983102278972
+      },
+      "gears": {
+        "throughput": 57282.18563893623,
+        "error": 1052.1970537193117,
+        "bytes_per_op": 7210.813570847977,
+        "cpu_ms_per_op": 0.017888221308535856,
+        "fork_means": [
+          56697.498224109244,
+          57558.667221554555,
+          57590.39147114491
+        ],
+        "fork_cv": 0.008843980682093829,
+        "last_vs_first_iteration": 0.9937176134243438,
+        "throughput_relative_to_ce": 23.287882350184418,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.003706494351162026,
+        "cpu_relative_to_ce": 0.04177991113018285
+      }
+    },
+    "fastest_mean": "ox",
+    "fastest_interval_separated": false
+  },
+  {
+    "benchmark": "bench.direct.PrimitivesBench.spawnJoin",
+    "label": "Sequential child spawn / join",
+    "params": {
+      "capacity": "64",
+      "ops": "1000"
+    },
+    "runtimes": {
+      "ce": {
+        "throughput": 1893.9978352832868,
+        "error": 85.25289761956857,
+        "bytes_per_op": 1454165.150232126,
+        "cpu_ms_per_op": 1.0706341491605185,
+        "fork_means": [
+          1926.2584141430161,
+          1836.9353249995888,
+          1918.7997667072555
+        ],
+        "fork_cv": 0.02616587014311421,
+        "last_vs_first_iteration": 1.031321220625227,
+        "throughput_relative_to_ce": 1.0,
+        "ci_overlaps_ce": true,
+        "allocation_relative_to_ce": 1.0,
+        "cpu_relative_to_ce": 1.0
+      },
+      "kyo": {
+        "throughput": 5355.477894430178,
+        "error": 103.57342579543365,
+        "bytes_per_op": 526062.263490943,
+        "cpu_ms_per_op": 0.19833859395514983,
+        "fork_means": [
+          5381.949901452063,
+          5340.732397773379,
+          5343.751384065094
+        ],
+        "fork_cv": 0.0042900134250740945,
+        "last_vs_first_iteration": 0.989471384467756,
+        "throughput_relative_to_ce": 2.8276050767656526,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.36176239226127,
+        "cpu_relative_to_ce": 0.18525337914045298
+      },
+      "loom": {
+        "throughput": 558.1712217928826,
+        "error": 42.52268042939856,
+        "bytes_per_op": 466292.94322688907,
+        "cpu_ms_per_op": 6.030638946526164,
+        "fork_means": [
+          565.4176129278778,
+          546.4645459088654,
+          562.6315065419046
+        ],
+        "fork_cv": 0.018334047383108024,
+        "last_vs_first_iteration": 1.0835494184844632,
+        "throughput_relative_to_ce": 0.2947053113761329,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.32066023804273913,
+        "cpu_relative_to_ce": 5.63277283024717
+      },
+      "ox": {
+        "throughput": 494.49310662638317,
+        "error": 50.66614014012168,
+        "bytes_per_op": 700458.9549298858,
+        "cpu_ms_per_op": 6.61375806086102,
+        "fork_means": [
+          502.55057938863627,
+          472.29368723610344,
+          508.6350532544096
+        ],
+        "fork_cv": 0.03936248434863768,
+        "last_vs_first_iteration": 1.0216874483498153,
+        "throughput_relative_to_ce": 0.2610843040126397,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.4816914741892093,
+        "cpu_relative_to_ce": 6.177421172346175
+      },
+      "gears": {
+        "throughput": 376.6237624235393,
+        "error": 25.503523471290293,
+        "bytes_per_op": 1575980.2519861846,
+        "cpu_ms_per_op": 7.391042056828384,
+        "fork_means": [
+          364.927953782561,
+          380.7221005384542,
+          384.2212329496026
+        ],
+        "fork_cv": 0.027292114180462474,
+        "last_vs_first_iteration": 1.0093374544159126,
+        "throughput_relative_to_ce": 0.19885121060194208,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 1.0837697848381345,
+        "cpu_relative_to_ce": 6.903424538273585
+      }
+    },
+    "fastest_mean": "kyo",
+    "fastest_interval_separated": true
+  },
+  {
+    "benchmark": "bench.direct.RunnerBench.entry",
+    "label": "Runtime entry",
+    "params": {},
+    "runtimes": {
+      "ce": {
+        "throughput": 126888.4641895199,
+        "error": 3155.1585078812873,
+        "bytes_per_op": 1074.7158694807613,
+        "cpu_ms_per_op": 0.008589045615604255,
+        "fork_means": [
+          126758.86112594367,
+          127218.38934748214,
+          126688.14209513388
+        ],
+        "fork_cv": 0.002268947000836175,
+        "last_vs_first_iteration": 0.9862127560546393,
+        "throughput_relative_to_ce": 1.0,
+        "ci_overlaps_ce": true,
+        "allocation_relative_to_ce": 1.0,
+        "cpu_relative_to_ce": 1.0
+      },
+      "kyo": {
+        "throughput": 152380.4360904075,
+        "error": 1174.3602748427375,
+        "bytes_per_op": 584.0343940710982,
+        "cpu_ms_per_op": 0.007448381653352907,
+        "fork_means": [
+          152557.10350487495,
+          151721.55404716276,
+          152862.65071918478
+        ],
+        "fork_cv": 0.003876523241161949,
+        "last_vs_first_iteration": 0.9951361128588332,
+        "throughput_relative_to_ce": 1.2009006261027237,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.5434314414220652,
+        "cpu_relative_to_ce": 0.8671954937369255
+      },
+      "loom": {
+        "throughput": 168466.54860429536,
+        "error": 3509.2891656308952,
+        "bytes_per_op": 424.23245807189676,
+        "cpu_ms_per_op": 0.006376541110990088,
+        "fork_means": [
+          166412.1484115001,
+          168294.38503536038,
+          170693.11236602563
+        ],
+        "fork_cv": 0.012736466192818843,
+        "last_vs_first_iteration": 0.9919834450972544,
+        "throughput_relative_to_ce": 1.3276742663751897,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.394739177227243,
+        "cpu_relative_to_ce": 0.742403917311305
+      },
+      "ox": {
+        "throughput": 163094.71016391425,
+        "error": 2883.936263063688,
+        "bytes_per_op": 985.8913854625187,
+        "cpu_ms_per_op": 0.006558822924235161,
+        "fork_means": [
+          163696.3069637274,
+          163539.6269546303,
+          162048.196573385
+        ],
+        "fork_cv": 0.005577660097148685,
+        "last_vs_first_iteration": 0.9919286739746408,
+        "throughput_relative_to_ce": 1.2853391457265722,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.9173507281872023,
+        "cpu_relative_to_ce": 0.763626509599546
+      },
+      "gears": {
+        "throughput": 132616.0115904779,
+        "error": 1792.032146984566,
+        "bytes_per_op": 1746.7341916389507,
+        "cpu_ms_per_op": 0.008164721262703655,
+        "fork_means": [
+          133246.22681101155,
+          132953.63491678383,
+          131648.17304363823
+        ],
+        "fork_cv": 0.006415849273683339,
+        "last_vs_first_iteration": 1.0106289522012433,
+        "throughput_relative_to_ce": 1.0451384405788327,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 1.625298594020826,
+        "cpu_relative_to_ce": 0.9505970311614479
+      }
+    },
+    "fastest_mean": "loom",
+    "fastest_interval_separated": false
+  },
+  {
+    "benchmark": "bench.direct.SequentialBaseline.increment",
+    "label": "Sequential arithmetic: separate programming-style baseline",
+    "params": {
+      "depth": "1000"
+    },
+    "runtimes": {
+      "ce": {
+        "throughput": 43684.538056719815,
+        "error": 787.454678582926,
+        "bytes_per_op": 95056.16589348689,
+        "cpu_ms_per_op": 0.024168635324731947,
+        "fork_means": [
+          44048.98517023619,
+          43874.540121174374,
+          43130.08887874888
+        ],
+        "fork_cv": 0.01117156785541535,
+        "last_vs_first_iteration": 0.9979652074996618,
+        "throughput_relative_to_ce": null,
+        "ci_overlaps_ce": null,
+        "allocation_relative_to_ce": null,
+        "cpu_relative_to_ce": null
+      },
+      "kyo": {
+        "throughput": 46307.6089658892,
+        "error": 754.92156242108,
+        "bytes_per_op": 80579.06090625588,
+        "cpu_ms_per_op": 0.023803902048325963,
+        "fork_means": [
+          46568.55031056274,
+          46183.391684847025,
+          46170.88490225786
+        ],
+        "fork_cv": 0.0048818832175223405,
+        "last_vs_first_iteration": 0.9948830626851438,
+        "throughput_relative_to_ce": null,
+        "ci_overlaps_ce": null,
+        "allocation_relative_to_ce": null,
+        "cpu_relative_to_ce": null
+      },
+      "loom": {
+        "throughput": 167392.86270024424,
+        "error": 2258.2796076184827,
+        "bytes_per_op": 456.2325639510397,
+        "cpu_ms_per_op": 0.006415195907944692,
+        "fork_means": [
+          166175.76742322033,
+          167925.50551525783,
+          168077.31516225444
+        ],
+        "fork_cv": 0.006313082678577296,
+        "last_vs_first_iteration": 0.9918179199743815,
+        "throughput_relative_to_ce": null,
+        "ci_overlaps_ce": null,
+        "allocation_relative_to_ce": null,
+        "cpu_relative_to_ce": null
+      },
+      "ox": {
+        "throughput": 162622.9534566531,
+        "error": 1797.0758945639836,
+        "bytes_per_op": 1026.7200738248393,
+        "cpu_ms_per_op": 0.0066301097864510826,
+        "fork_means": [
+          163040.21263059217,
+          162397.864281023,
+          162430.78345834417
+        ],
+        "fork_cv": 0.0022243582759007043,
+        "last_vs_first_iteration": 1.0112117460135999,
+        "throughput_relative_to_ce": null,
+        "ci_overlaps_ce": null,
+        "allocation_relative_to_ce": null,
+        "cpu_relative_to_ce": null
+      },
+      "gears": {
+        "throughput": 132977.16864138035,
+        "error": 3317.543401224215,
+        "bytes_per_op": 1872.2117853971358,
+        "cpu_ms_per_op": 0.008200219264243537,
+        "fork_means": [
+          131885.6243316332,
+          134270.83589506077,
+          132775.04569744712
+        ],
+        "fork_cv": 0.009064588129260765,
+        "last_vs_first_iteration": 0.998312463070225,
+        "throughput_relative_to_ce": null,
+        "ci_overlaps_ce": null,
+        "allocation_relative_to_ce": null,
+        "cpu_relative_to_ce": null
+      }
+    },
+    "fastest_mean": null,
+    "fastest_interval_separated": null
+  },
+  {
+    "benchmark": "bench.direct.SequentialBaseline.increment",
+    "label": "Sequential arithmetic: separate programming-style baseline",
+    "params": {
+      "depth": "10000"
+    },
+    "runtimes": {
+      "ce": {
+        "throughput": 7425.723331402056,
+        "error": 142.65701485508097,
+        "bytes_per_op": 959088.9768339563,
+        "cpu_ms_per_op": 0.13974924163209806,
+        "fork_means": [
+          7458.042890975513,
+          7423.828049300532,
+          7395.29905393012
+        ],
+        "fork_cv": 0.0042305409711198205,
+        "last_vs_first_iteration": 0.990961624555277,
+        "throughput_relative_to_ce": null,
+        "ci_overlaps_ce": null,
+        "allocation_relative_to_ce": null,
+        "cpu_relative_to_ce": null
+      },
+      "kyo": {
+        "throughput": 7277.7331090578555,
+        "error": 846.0520154807899,
+        "bytes_per_op": 800568.4936884099,
+        "cpu_ms_per_op": 0.1481308938017412,
+        "fork_means": [
+          7630.310613179963,
+          6607.263511038711,
+          7595.625202954895
+        ],
+        "fork_cv": 0.07981917369703093,
+        "last_vs_first_iteration": 0.9949537210544869,
+        "throughput_relative_to_ce": null,
+        "ci_overlaps_ce": null,
+        "allocation_relative_to_ce": null,
+        "cpu_relative_to_ce": null
+      },
+      "loom": {
+        "throughput": 166387.9003887185,
+        "error": 4312.332950644355,
+        "bytes_per_op": 456.2329362054443,
+        "cpu_ms_per_op": 0.006463690880006525,
+        "fork_means": [
+          164318.0500529088,
+          167486.7657535182,
+          167358.88535972856
+        ],
+        "fork_cv": 0.010780128740882522,
+        "last_vs_first_iteration": 1.0053509931052855,
+        "throughput_relative_to_ce": null,
+        "ci_overlaps_ce": null,
+        "allocation_relative_to_ce": null,
+        "cpu_relative_to_ce": null
+      },
+      "ox": {
+        "throughput": 163867.4061084109,
+        "error": 2213.5703044279753,
+        "bytes_per_op": 1021.4550884996875,
+        "cpu_ms_per_op": 0.006545830424042987,
+        "fork_means": [
+          162689.0597857542,
+          164421.9950047394,
+          164491.16353473917
+        ],
+        "fork_cv": 0.006231036060838466,
+        "last_vs_first_iteration": 1.0121679374327075,
+        "throughput_relative_to_ce": null,
+        "ci_overlaps_ce": null,
+        "allocation_relative_to_ce": null,
+        "cpu_relative_to_ce": null
+      },
+      "gears": {
+        "throughput": 131091.15162562707,
+        "error": 3900.724341459465,
+        "bytes_per_op": 1888.0380351897402,
+        "cpu_ms_per_op": 0.008247892147264221,
+        "fork_means": [
+          130687.17358819688,
+          131248.44985779253,
+          131337.83143089188
+        ],
+        "fork_cv": 0.002690479918337781,
+        "last_vs_first_iteration": 1.00078780069725,
+        "throughput_relative_to_ce": null,
+        "ci_overlaps_ce": null,
+        "allocation_relative_to_ce": null,
+        "cpu_relative_to_ce": null
+      }
+    },
+    "fastest_mean": null,
+    "fastest_interval_separated": null
+  },
+  {
+    "benchmark": "bench.io.IoBench.requests",
+    "label": "TCP request batches",
+    "params": {
+      "delayMicros": "1000",
+      "parallelism": "8",
+      "size": "256",
+      "transport": "blocking"
+    },
+    "runtimes": {
+      "ce": {
+        "throughput": 20.960350514379744,
+        "error": 0.10582632291565576,
+        "bytes_per_op": 107497.47955747956,
+        "cpu_ms_per_op": 11.035512987012988,
+        "fork_means": [
+          20.932336813276155,
+          20.98949801872124,
+          20.95921671114184
+        ],
+        "fork_cv": 0.0013643600391534838,
+        "last_vs_first_iteration": 1.0023812356458193,
+        "throughput_relative_to_ce": 1.0,
+        "ci_overlaps_ce": true,
+        "allocation_relative_to_ce": 1.0,
+        "cpu_relative_to_ce": 1.0,
+        "batch_p50_ms": 47.513600000000004,
+        "batch_p99_ms": 49.22736640000001,
+        "latency_samples": 196
+      },
+      "kyo": {
+        "throughput": 18.354007631919767,
+        "error": 0.266362690159285,
+        "bytes_per_op": 136657.73099415202,
+        "cpu_ms_per_op": 7.485298245614036,
+        "fork_means": [
+          18.381773506615524,
+          18.3896534107622,
+          18.290595978381575
+        ],
+        "fork_cv": 0.002999740348384768,
+        "last_vs_first_iteration": 1.0051219739626953,
+        "throughput_relative_to_ce": 0.8756536594809372,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 1.2712645129607927,
+        "cpu_relative_to_ce": 0.6782918251668971,
+        "batch_p50_ms": 53.411840000000005,
+        "batch_p99_ms": 68.61881344000001,
+        "latency_samples": 171
+      },
+      "loom": {
+        "throughput": 21.09368033582656,
+        "error": 0.33531013000554893,
+        "bytes_per_op": 70581.83164983166,
+        "cpu_ms_per_op": 15.796340788840789,
+        "fork_means": [
+          21.073218422271502,
+          21.153960309078368,
+          21.0538622761298
+        ],
+        "fork_cv": 0.002517034273667234,
+        "last_vs_first_iteration": 1.0108134313513464,
+        "throughput_relative_to_ce": 1.0063610492274613,
+        "ci_overlaps_ce": true,
+        "allocation_relative_to_ce": 0.6565905725453881,
+        "cpu_relative_to_ce": 1.4314097412082722,
+        "batch_p50_ms": 47.251456000000005,
+        "batch_p99_ms": 48.63033344,
+        "latency_samples": 198
+      },
+      "ox": {
+        "throughput": 20.983091514034253,
+        "error": 0.34249849071194255,
+        "bytes_per_op": 74675.20923520923,
+        "cpu_ms_per_op": 15.944752044252047,
+        "fork_means": [
+          20.94215654882944,
+          21.07856860003622,
+          20.9285493932371
+        ],
+        "fork_cv": 0.003953898665427872,
+        "last_vs_first_iteration": 1.0123458002703434,
+        "throughput_relative_to_ce": 1.0010849532138744,
+        "ci_overlaps_ce": true,
+        "allocation_relative_to_ce": 0.6946693963673812,
+        "cpu_relative_to_ce": 1.4448582556167926,
+        "batch_p50_ms": 47.120384,
+        "batch_p99_ms": 48.433725439999996,
+        "latency_samples": 198
+      },
+      "gears": {
+        "throughput": 21.119609104401793,
+        "error": 0.3404727049413104,
+        "bytes_per_op": 86965.26214526215,
+        "cpu_ms_per_op": 15.154259980759981,
+        "fork_means": [
+          20.99408831582285,
+          21.151033138128035,
+          21.21370585925449
+        ],
+        "fork_cv": 0.0053566691996903915,
+        "last_vs_first_iteration": 1.005002864250771,
+        "throughput_relative_to_ce": 1.0075980881098716,
+        "ci_overlaps_ce": true,
+        "allocation_relative_to_ce": 0.8089981504986012,
+        "cpu_relative_to_ce": 1.3732266002127942,
+        "batch_p50_ms": 47.448064,
+        "batch_p99_ms": 48.63164416000001,
+        "latency_samples": 197
+      }
+    },
+    "fastest_mean": "gears",
+    "fastest_interval_separated": false
+  },
+  {
+    "benchmark": "bench.io.IoBench.requests",
+    "label": "TCP request batches",
+    "params": {
+      "delayMicros": "1000",
+      "parallelism": "8",
+      "size": "256",
+      "transport": "nonblocking"
+    },
+    "runtimes": {
+      "ce": {
+        "throughput": 21.119775625167012,
+        "error": 0.9176371289571614,
+        "bytes_per_op": 336945.66610201396,
+        "cpu_ms_per_op": 11.804093376832508,
+        "fork_means": [
+          21.179730663654972,
+          21.07468683050818,
+          21.104909381337897
+        ],
+        "fork_cv": 0.0025604840794270765,
+        "last_vs_first_iteration": 1.014706411222751,
+        "throughput_relative_to_ce": 1.0,
+        "ci_overlaps_ce": true,
+        "allocation_relative_to_ce": 1.0,
+        "cpu_relative_to_ce": 1.0,
+        "batch_p50_ms": 47.710208,
+        "batch_p99_ms": 50.287083519999996,
+        "latency_samples": 195
+      },
+      "kyo": {
+        "throughput": 22.974503759167213,
+        "error": 0.11986187967128281,
+        "bytes_per_op": 397640.5185185186,
+        "cpu_ms_per_op": 10.54935547504026,
+        "fork_means": [
+          22.946826207282452,
+          23.002393234361694,
+          22.97429183585749
+        ],
+        "fork_cv": 0.0012093458036871705,
+        "last_vs_first_iteration": 0.9949086465863671,
+        "throughput_relative_to_ce": 1.0878194999283064,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 1.1801324620632712,
+        "cpu_relative_to_ce": 0.8937031534963219,
+        "batch_p50_ms": 43.450368000000005,
+        "batch_p99_ms": 44.49894400000001,
+        "latency_samples": 214
+      },
+      "loom": {
+        "throughput": 21.035979785395607,
+        "error": 0.39723931687361175,
+        "bytes_per_op": 151046.12794612796,
+        "cpu_ms_per_op": 14.524253968253968,
+        "fork_means": [
+          21.03964185130229,
+          21.15386463795183,
+          20.914432866932707
+        ],
+        "fork_cv": 0.005693002529169782,
+        "last_vs_first_iteration": 1.0046957788010513,
+        "throughput_relative_to_ce": 0.9960323517986833,
+        "ci_overlaps_ce": true,
+        "allocation_relative_to_ce": 0.44828037022561706,
+        "cpu_relative_to_ce": 1.2304421444818647,
+        "batch_p50_ms": 47.513600000000004,
+        "batch_p99_ms": 48.97767424000001,
+        "latency_samples": 197
+      },
+      "ox": {
+        "throughput": 20.870325252498322,
+        "error": 0.41885244952902373,
+        "bytes_per_op": 211988.5521885522,
+        "cpu_ms_per_op": 15.93235209235209,
+        "fork_means": [
+          20.967174330616572,
+          20.698626554165227,
+          20.945174872713167
+        ],
+        "fork_cv": 0.007144197781019691,
+        "last_vs_first_iteration": 0.9897219390588704,
+        "throughput_relative_to_ce": 0.9881887773290813,
+        "ci_overlaps_ce": true,
+        "allocation_relative_to_ce": 0.6291475852500514,
+        "cpu_relative_to_ce": 1.349731113074891,
+        "batch_p50_ms": 47.710208,
+        "batch_p99_ms": 49.348608,
+        "latency_samples": 195
+      },
+      "gears": {
+        "throughput": 20.99693505081885,
+        "error": 0.5455040057744601,
+        "bytes_per_op": 339552.5291005291,
+        "cpu_ms_per_op": 15.73466041366041,
+        "fork_means": [
+          21.18007784303106,
+          20.848531144268602,
+          20.962196165156886
+        ],
+        "fork_cv": 0.008024082749764596,
+        "last_vs_first_iteration": 1.0131476421835601,
+        "throughput_relative_to_ce": 0.9941836231346235,
+        "ci_overlaps_ce": true,
+        "allocation_relative_to_ce": 1.0077367458934043,
+        "cpu_relative_to_ce": 1.332983390705998,
+        "batch_p50_ms": 47.18592,
+        "batch_p99_ms": 49.020928000000005,
+        "latency_samples": 196
+      }
+    },
+    "fastest_mean": "kyo",
+    "fastest_interval_separated": true
+  },
+  {
+    "benchmark": "bench.io.IoBench.requests",
+    "label": "TCP request batches",
+    "params": {
+      "delayMicros": "1000",
+      "parallelism": "64",
+      "size": "256",
+      "transport": "blocking"
+    },
+    "runtimes": {
+      "ce": {
+        "throughput": 145.09840664036557,
+        "error": 9.025569928268107,
+        "bytes_per_op": 374995.9874487443,
+        "cpu_ms_per_op": 9.462958815163338,
+        "fork_means": [
+          142.97300714507276,
+          150.2267507091837,
+          142.09546206684027
+        ],
+        "fork_cv": 0.030757730684389733,
+        "last_vs_first_iteration": 1.0471681070822079,
+        "throughput_relative_to_ce": 1.0,
+        "ci_overlaps_ce": true,
+        "allocation_relative_to_ce": 1.0,
+        "cpu_relative_to_ce": 1.0,
+        "batch_p50_ms": 6.905856,
+        "batch_p99_ms": 8.242872319999998,
+        "latency_samples": 1292
+      },
+      "kyo": {
+        "throughput": 4.952665263308539,
+        "error": 0.027108619624403252,
+        "bytes_per_op": 305745.4222222222,
+        "cpu_ms_per_op": 24.769044444444443,
+        "fork_means": [
+          4.9655349355688125,
+          4.950988022644027,
+          4.941472831712779
+        ],
+        "fork_cv": 0.0024468478445235854,
+        "last_vs_first_iteration": 1.0004273403688895,
+        "throughput_relative_to_ce": 0.03413314713774903,
+        "ci_overlaps_ce": false,
+        "allocation_relative_to_ce": 0.8153298500667624,
+        "cpu_relative_to_ce": 2.617473554334275,
+        "batch_p50_ms": 201.32659200000003,
+        "batch_p99_ms": 204.47232000000002,
+        "latency_samples": 46
+      },
+      "loom": {
+        "throughput": 143.48831860375515,
+        "error": 5.6535330564930035,
+        "bytes_per_op": 120063.29652585827,
+        "cpu_ms_per_op": 11.795814140287861,
+        "fork_means": [
+          141.5873521071468,
+          145.56155056135347,
+          143.3160531427652
+        ],
+        "fork_cv": 0.013887483220307174,
+        "last_vs_first_iteration": 0.9888545390380796,
+        "throughput_relative_to_ce": 0.9889034754144399,
+        "ci_overlaps_ce": true,
+        "allocation_relative_to_ce": 0.32017221662210166,
+        "cpu_relative_to_ce": 1.246524936934776,
+        "batch_p50_ms": 7.282688,
+        "batch_p99_ms": 8.224768000000001,
+        "latency_samples": 1263
+      },
+      "ox": {
+        "throughput": 140.28613469713753,
+        "error": 6.620345515016435,
+        "bytes_per_op": 135486.67675352452,
+        "cpu_ms_per_op": 12.037948368594702,
+        "fork_means": [
+          143.61370502842232,
+          139.5105414888563,
+          137.734157574134
+        ],
+        "fork_cv": 0.02149557522492978,
+        "last_vs_first_iteration": 0.9743306205738331,
+        "throughput_relative_to_ce": 0.9668344259964513,
+        "ci_overlaps_ce": true,
+        "allocation_relative_to_ce": 0.36130167065332475,
+        "cpu_relative_to_ce": 1.2721125182649247,
+        "batch_p50_ms": 7.307264000000001,
+        "batch_p99_ms": 8.395489280000001,
+        "latency_samples": 1257
+      },
+      "gears": {
+        "throughput": 140.2831077343081,
+        "error": 9.805000124388027,
+        "bytes_per_op": 187563.3720042095,
+        "cpu_ms_per_op": 12.24484829073546,
+        "fork_means": [
+          136.02798691915035,
+          145.41042091761167,
+          139.41091536616227
+        ],
+        "fork_cv": 0.0338717706588014,
+        "last_vs_first_iteration": 1.0521700301145225,
+        "throughput_relative_to_ce": 0.9668135645486965,
+        "ci_overlaps_ce": true,
+        "allocation_relative_to_ce": 0.5001743439450703,
+        "cpu_relative_to_ce": 1.2939767074875623,
+        "batch_p50_ms": 7.192576000000001,
+        "batch_p99_ms": 8.12761088,
+        "latency_samples": 1285
+      }
+    },
+    "fastest_mean": "ce",
+    "fastest_interval_separated": false
+  },
+  {
+    "benchmark": "bench.io.IoBench.requests",
+    "label": "TCP request batches",
+    "params": {
+      "delayMicros": "1000",
+      "parallelism": "64",
+      "size": "256",
+      "transport": "nonblocking"
+    },
+    "runtimes": {
+      "ce": {
+        "throughput": 141.53445954681112,
+        "error": 3.0733470496870914,
+        "bytes_per_op": 593309.4047154087,
+        "cpu_ms_per_op": 5.971312977795659,
+        "fork_means": [
+          140.89255029425553,
+          141.24961064185675,
+          142.46121770432123
+        ],
+        "fork_cv": 0.00580927491140349,
+        "last_vs_first_iteration": 1.0103663879936082,
+        "throughput_relative_to_ce": 1.0,
+        "ci_overlaps_ce": true,
+        "allocation_relative_to_ce": 1.0,
+        "cpu_relative_to_ce": 1.0,
+        "batch_p50_ms": 7.1843840000000005,
+        "batch_p99_ms": 7.743078400000001,
+        "latency_samples": 1279
+      },
+      "kyo": {
+        "throughput": 139.993762548392,
+        "error": 1.730827096021634,
+        "bytes_per_op": 552889.4366612751,
+        "cpu_ms_per_op": 7.956627052841867,
+        "fork_means": [
+          140.12557646348014,
+          139.34717092461074,
+          140.50854025708512
+        ],
+        "fork_cv": 0.004227322886565651,
+        "last_vs_first_iteration": 1.007833530007763,
+        "throughput_relative_to_ce": 0.989114332980446,
+        "ci_overlaps_ce": true,
+        "allocation_relative_to_ce": 0.9318737108616679,
+        "cpu_relative_to_ce": 1.3324753002277059,
+        "batch_p50_ms": 7.225344000000001,
+        "batch_p99_ms": 8.100577280000001,
+        "latency_samples": 1257
+      },
+      "loom": {
+        "throughput": 137.69051564578686,
+        "error": 3.4350098451107596,
+        "bytes_per_op": 199881.91789311066,
+        "cpu_ms_per_op": 9.125886119893343,
+        "fork_means": [
+          138.4623118630966,
+          136.04303539024784,
+          138.56619968401617
+        ],
+        "fork_cv": 0.01036894220556138,
+        "last_vs_first_iteration": 0.9917740157719414,
+        "throughput_relative_to_ce": 0.9728409327782616,
+        "ci_overlaps_ce": true,
+        "allocation_relative_to_ce": 0.33689322350955747,
+        "cpu_relative_to_ce": 1.5282880254021136,
+        "batch_p50_ms": 7.340032000000001,
+        "batch_p99_ms": 7.98785536,
+        "latency_samples": 1245
+      },
+      "ox": {
+        "throughput": 136.77694060873011,
+        "error": 3.476157062617371,
+        "bytes_per_op": 272144.0720983083,
+        "cpu_ms_per_op": 9.292072233969773,
+        "fork_means": [
+          135.43117454954069,
+          137.03982584917648,
+          137.85982142747324
+        ],
+        "fork_cv": 0.009032815273836885,
+        "last_vs_first_iteration": 0.998556481562232,
+        "throughput_relative_to_ce": 0.9663861440294157,
+        "ci_overlaps_ce": true,
+        "allocation_relative_to_ce": 0.4586882829353548,
+        "cpu_relative_to_ce": 1.5561187746350533,
+        "batch_p50_ms": 7.356416,
+        "batch_p99_ms": 8.044544,
+        "latency_samples": 1246
+      },
+      "gears": {
+        "throughput": 139.2530285847206,
+        "error": 2.5691775361689078,
+        "bytes_per_op": 430148.56805729476,
+        "cpu_ms_per_op": 9.585261448170947,
+        "fork_means": [
+          138.28248493522992,
+          139.21549760172238,
+          140.2611032172094
+        ],
+        "fork_cv": 0.007108232622722054,
+        "last_vs_first_iteration": 1.0027863035963565,
+        "throughput_relative_to_ce": 0.9838807385184103,
+        "ci_overlaps_ce": true,
+        "allocation_relative_to_ce": 0.7249987352949901,
+        "cpu_relative_to_ce": 1.6052183973296599,
+        "batch_p50_ms": 7.241728,
+        "batch_p99_ms": 7.847936,
+        "latency_samples": 1265
+      }
+    },
+    "fastest_mean": "ce",
+    "fastest_interval_separated": false
+  }
+]

@@ -47,7 +47,7 @@ object Validation:
                         assert(bench.batch(observed) == Vector.tabulate(size)(_ + 1), (runtime, transport, size))
                         assert(active.get() == 0 && peak.get() <= math.min(size, parallelism))
                         assert((0 until size).forall(i => seen.get(i) == 1))
-                        val expectedVirtual = if Set("gears", "ox", "ceVirtual")(runtime) then size else 0
+                        val expectedVirtual = if Set("loom", "gears", "ox", "ceVirtual")(runtime) then size else 0
                         assert(virtual.get() == expectedVirtual, s"Unexpected threads: $runtime $transport ${virtual.get()}/$size")
                         checks += 1
 
@@ -113,4 +113,5 @@ object Validation:
             checks += 1
         finally fixture.close()
         MeasuredIoValidation.main(args)
-        println(s"PASS $checks four-library I/O checks (${runtimes.mkString(",")})")
+        val label = if runtimes.contains("loom") then "I/O" else "four-library I/O"
+        println(s"PASS $checks $label checks (${runtimes.mkString(",")})")

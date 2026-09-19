@@ -25,7 +25,7 @@ object MeasuredIoValidation:
                         def record(lane: Int, index: Int): Unit =
                             assert(index % 64 == lane)
                             assert(seen.incrementAndGet(index) == 1)
-                            val expectedVirtual = Set("ceVirtual", "gears", "ox")(runtime)
+                            val expectedVirtual = Set("loom", "ceVirtual", "gears", "ox")(runtime)
                             assert(Thread.currentThread().isVirtual == expectedVirtual)
                         def blocking(lane: Int, index: Int): Int =
                             record(lane, index)
